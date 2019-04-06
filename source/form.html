@@ -47,36 +47,36 @@
             </p>
           </section>
           <fieldset class="achievement achievement__list achievement__list--bg-gray">
-            <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="achievement__title title-legend">Ваши безбашенные достижения в путешествии</legend>
             <ul>
               <li class="achievement__item">
-                <input type="checkbox" name="selfie" id="achievement-1" class="achievement__input achievement__input__checkbox" checked>
+                <input type="checkbox" name="achievement" value="selfie" id="achievement-1" class="achievement__input achievement__input__checkbox" checked>
                 <label for="achievement-1" class="achievement">Сделал селфи с акулой</label>
               </li>
               <li class="achievement__item">
-                <input type="checkbox" name="burnt" id="achievement-2" class="achievement__input achievement__input__checkbox" checked>
+                <input type="checkbox" name="achievement" value="burnt" id="achievement-2" class="achievement__input achievement__input__checkbox" checked>
                 <label for="achievement-2" class="achievement">Обгорел на пляже</label>
               </li>
               <li class="achievement__item">
-                <input type="checkbox" name="see-chuck-norris" id="achievement-3" class="achievement__input achievement__input__checkbox">
+                <input type="checkbox" name="achievement" value="see-chuck-norris" id="achievement-3" class="achievement__input achievement__input__checkbox">
                 <label for="achievement-3" class="achievement">Видел Чака Норриса</label>
               </li>
               <li class="achievement__item">
-                <input type="checkbox" name="buying-gift" id="achievement-4" class="achievement__input achievement__input__checkbox">
+                <input type="checkbox" name="achievement" value="buying-gift" id="achievement-4" class="achievement__input achievement__input__checkbox">
                 <label for="achievement-4" class="achievement">Накупил сувениров</label>
               </li>
               <li class="achievement__item">
-                <input type="checkbox" name="hold-tower" id="achievement-5" class="achievement__input achievement__input__checkbox" checked>
+                <input type="checkbox" name="achievement" value="hold-tower" id="achievement-5" class="achievement__input achievement__input__checkbox" checked>
                 <label for="achievement-5" class="achievement">Удержал башню</label>
               </li>
               <li class="achievement__item">
-                <input type="checkbox" name="walk-over-hotel" id="achievement-6" class="achievement__input achievement__input__checkbox">
+                <input type="checkbox" name="achievement" value="walk-over-hotel" id="achievement-6" class="achievement__input achievement__input__checkbox">
                 <label for="achievement-6" class="achievement">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="details-user details-user__wrapper">
-            <legend class="details-user__title details-user__title--hidden">Контактная информация</legend>
+            <legend class="details-user__title details-user__title--hidden title-legend">Контактная информация</legend>
             <ul class="details-user__list">
               <li class="details-user__item">
                 <label for="phone" class="details-user__phone details-user__phone__bottom">Номер телефона</label>
@@ -89,15 +89,15 @@
             </ul>
           </fieldset>
           <fieldset class="application-platform platform">
-            <legend class="platform__title">С каким приложением путешествовали?</legend>
+            <legend class="platform__title title-legend">С каким приложением путешествовали?</legend>
             <ul class="platform__list">
               <li class="platform__item">
                 <input type="radio" id="ios" class="platform__item__radio imput-radio">
-                <label for="">Pink для iOS</label>
+                <label for="ios">Pink для iOS</label>
               </li>
               <li class="platform__item">
                 <input type="radio" id="android" class="platform__item__radio imput-radio">
-                <label for="">Pink на Android</label>
+                <label for="android">Pink на Android</label>
               </li>
               <li class="platform__item">
                 <input type="radio" id="windows" class="platform__item__radio imput-radio">
@@ -105,8 +105,13 @@
               </li>
             </ul>
           </fieldset>
+          <fieldset class="add-comment">
+           <legend class="title-legend">Опишите свои эмоции</legend>
+           <textarea name="comment" id="comment-field" rows="3" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="button btn-submit-form" type="submit"></button>
+          <p class="note">* — обязательные поля</p>
         </form>
-
         <footer class="page-footer">
           <a href="" class="page-footer__logo">
             <img src="" alt="" class="page-footer__logo-image">
@@ -126,7 +131,7 @@
           </div>
           <div class="page-footer__copyright copyright">
             <p class="copyright__text">Разработано</p>
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="button copyright__link">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
           </div>
         </footer>
       </main>
