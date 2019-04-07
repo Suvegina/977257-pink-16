@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Надежда Сувегина](https://up.htmlacademy.ru/adaptive/16/user/977257).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Удод](https://htmlacademy.ru/profile/id523387).
 
 ---
 
