@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк. Конкурс фотографий.</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Логотип мобильного приложения Pink для раскрашивания серых будней в розовый цвет">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="page-form">
+        <h1 class="universal-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <p class="universal-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <form class="main-form" action="https://echo.htmlacademy.ru" method="get">
+          <section class="data">
+            <p class="data__value">
+              <label for="surname" class="data__last-name data__last-name-top">Фамилия:</label>
+              <input id="surname" type="text" class="data-input" placeholder="Укажите фамилию *">
+            </p>
+            <p class="data__value">
+              <label for="name" class="data__first-name data__first-name-top">Имя:</label>
+              <input id="name" type="text" class="data-input" placeholder="Введите ваше имя *">
+            </p>
+            <p class="data__value">
+              <label for="patronym" class="data__patronym data__patronym-top">Отчество:</label>
+              <input id="patronym" type="text" class="data-input" placeholder="Ну и отчество тоже">
+            </p>
+          </section>
+          <div class="achievement">
+            <fieldset class="achievement__list achievement__list--bg-gray">
+              <legend class="achievement__title title-legend">Ваши безбашенные достижения в путешествии</legend><!-- title-legend - общий стиль для текстового блока, прописываются основные настройки стилей на всей странице -->
+              <ul>
+                <li class="achievement__item">
+                  <input type="checkbox" name="achievement" value="selfie" id="achievement-1" class="achievement__input achievement__input-checkbox" checked>
+                  <label for="achievement-1" class="achievement-label">Сделал селфи с акулой</label>
+                </li>
+                <li class="achievement__item">
+                  <input type="checkbox" name="achievement" value="burnt" id="achievement-2" class="achievement__input achievement__input-checkbox" checked>
+                  <label for="achievement-2" class="achievement-label">Обгорел на пляже</label>
+                </li>
+                <li class="achievement__item">
+                  <input type="checkbox" name="achievement" value="see-star-man" id="achievement-3" class="achievement__input achievement-input__checkbox">
+                  <label for="achievement-3" class="achievement-label">Видел Чака Норриса</label>
+                </li>
+                <li class="achievement__item">
+                  <input type="checkbox" name="achievement" value="buying-gift" id="achievement-4" class="achievement__input achievement__input-checkbox">
+                  <label for="achievement-4" class="achievement-label">Накупил сувениров</label>
+                </li>
+                <li class="achievement__item">
+                  <input type="checkbox" name="achievement" value="hold-tower" id="achievement-5" class="achievement__input achievement__input-checkbox" checked>
+                  <label for="achievement-5" class="achievement-label">Удержал башню</label>
+                </li>
+                <li class="achievement__item">
+                  <input type="checkbox" name="achievement" value="walk-over-hotel" id="achievement-6" class="achievement__input achievement__input-checkbox">
+                  <label for="achievement-6" class="achievement-label">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="details-user">
+            <fieldset class="details-user__wrapper">
+              <legend class="details-user__title details-user__title--hidden title-legend">Контактная информация</legend>
+              <ul class="details-user__list">
+                <li class="details-user__item">
+                  <label for="phone" class="details-user__phone details-user__phone-bottom">Номер телефона</label>
+                  <input id="phone" type="text" class="details-user__input" placeholder="Номер, пожалуйста">
+                </li>
+                <li class="details-user__item">
+                  <label for="mail" class="details-user__mail  details-user__mail-bottom">Адрес почты</label>
+                  <input id="mail" type="text" class="details-user__input" placeholder="Введите почту *">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="application-platform platform">
+            <legend class="platform__title title-legend">С каким приложением путешествовали?</legend>
+            <ul class="platform__list">
+              <li class="platform__item">
+                <input type="radio" id="ios" class="platform__radio imput-radio">
+                <label for="ios">Pink для iOS</label>
+              </li>
+              <li class="platform__item">
+                <input type="radio" id="android" class="platform__radio imput-radio">
+                <label for="android">Pink на Android</label>
+              </li>
+              <li class="platform__item">
+                <input type="radio" id="windows" class="platform__radio imput-radio">
+                <label for="windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="add-comment">
+            <legend class="add-comment__title title-legend">Опишите свои эмоции</legend>
+            <textarea name="comment" rows="3" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="button btn-submit-form" type="submit">Отправить форму</button>
+          <p class="note"><span class="lettering-select">*</span> — обязательные поля</p>
+        </form>
+        <footer class="page-footer">
+          <a href="" class="page-footer__logo">
+            <img src="" alt="Логотип приложения Pink" class="page-footer__logo-image">
+          </a>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="https://www.twitter.com/htmlacademy" class="social__link social__link--twitter">Twitter</a>
+              </li>
+              <li class="social__item">
+                <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">Facebook</a>
+              </li>
+              <li class="social__item">
+                <a href="https://www.youtube.com/htmlacademy" class="social__link social__link--youtube">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+          </div>
+        </footer>
+      </main>
+    </header>
+  </body>
+</html>

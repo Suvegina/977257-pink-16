@@ -5,8 +5,166 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo" href="">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Логотип мобильного приложения Pink для раскрашивания серых будней в розовый цвет">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="page-main">
+        <h1 class="visually-hidden">Мобильное приложение для расскрашивания серых будней</h1>
+        <section class="app">
+          <header class="app__header">
+            <img src="img/" alt="Мобильное приложение подойдет для любого телефона!" class="app__image app__image-right app__image-bottom">
+            <div class="app__device">
+              <h2 class="app__title">Взгляните на жизнь иначе!</h2>
+              <button class="app__btn-device">Скачать приложение</button>
+              <section class="app__download">
+                <div class="intro app__wrapper" aria-label="Для смартфонов:">
+                  <a href="" class="app__platform">Apple</a>
+                  <a href="" class="app__platform">Android</a>
+                  <a href="" class="app__platform">Windows</a>
+                </div>
+                <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+              </section>
+            </div>
+          </header>
+        </section>
+        <section class="advantages">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <p class="advantages__slogan universal-title">Устали от серости мегаполиса?</p>
+          <p class="advantages__flag universal-title">Нам есть, что вам предложить!</p>
+            <div class="mobil-screen">
+              <img src="" alt="Обычная фотография" class="mobil-screen__row">
+              <img src="" alt="Фотография в розовом цвете" class="mobil-screen__row">
+              <img src="" alt="Фотография с нанесением смайла" class="mobil-screen__row mobil-screen__left">
+            </div>
+          <ul class="advantages__wrapper advantages__list">
+            <li class="advantages__item-left advantages__item-center">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description universal-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item-left advantages__item-center">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description universal-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item-left advantages__item-center">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description universal-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+            <!-- Сдублировала блоки, пока что пусть они будут тут --------
+            <li class="advantages__item">
+              <h3 class="advantages__title advantages__title-center advantages__title-left">Поднимает настроение</h3>
+              <p class="advantages__description advantages__description-center advantages__description-left universal-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item-left advantages__item-center">
+              <h3 class="advantages__title advantages__title-center advantages__title-left">Меняет мир вокруг</h3>
+              <p class="advantages__description advantages__description-center advantages__description-left universal-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item-left advantages__item-center">
+              <h3 class="advantages__title advantages__title-center advantages__title-left">Заводит новых друзей</h3>
+              <p class="advantages__description advantages__description-center advantages__description-left universal-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li> -->
+            <img src="" alt="" class="mobil-screen--buttom">
+          </ul>
+        </section>
+        <section class="feedback">
+          <div class="feedback__wrapper">
+            <h2 class="visually-hidden"></h2>
+            <div class="feedback__list slider">
+              <blockquote class="feedback__item slider__items">
+                <cite class="feedback__autr-name">Николай Петров</cite>
+                <p class="feedback__text universal-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+              <!-- <blockquote class="feedback__item slider__items">
+                <cite class="feedback__autr-name">Автор 2-го отзыва</cite>
+                <p class="feedback__text">Текст отзыва</p>
+              </blockquote>
+              <blockquote class="feedback__item slider__items">
+                <cite class="feedback__autr-name">Автор 3-го отзыва</cite>
+                <p class="feedback__text">Текст отзыва</p>
+              </blockquote> -->
+            </div>
+            <p class="feedback__toggles slider__toggles">
+              <button class="slider__toggle slider__toggle--active" type="button">1</button>
+              <button class="slider__toggle" type="button">2</button>
+              <button class="slider__toggle" type="button">3</button>
+            </p>
+          </div>
+        </section>
+        <div class="price">
+          <h2 class="visually-hidden">Тарифы на покупку приложения Pink</h2>
+          <!-- Здесь будет находиться еще один отзыв -->
+          <section class="price__section">
+            <div class="price__item">
+              <p class="price__mark">ХИТ</p>
+              <b class="price__title">Стандарт</b><!-- universal-text - общий стиль для текстового блока, прописываются основные настройки стилей на всем проекте -->
+              <p class="price__cost universal-text">3,99 USD</p>
+            </div>
+            <ul class="price-list">
+              <li>
+                <p class="price-list__field">Розовый фильтр</p>
+                <span class="price price-list"></span> <!-- Добавляем svg иконки через псевдоэлементы -->
+              </li>
+              <li>
+                <p class="price-list__field">Смайлики</p>
+                <span class="price price-list"></span> <!-- Добавляем svg иконки через псевдоэлементы -->
+              </li>
+              <li>
+                <p class="price-list__field">Комментарии</p>
+                <span class="price price-list"></span> <!-- Добавляем svg иконки через псевдоэлементы -->
+              </li>
+            </ul>
+          </section>
+          <!-- Здесь будет находиться еще один отзыв -->
+          <div class="feedback__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--active" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
+        <footer class="main-footer">
+          <h3 class="universal-title__different">Остались вопросы? Свяжитесь с нами!</h3>
+          <ul class="contact-footer">
+            <li>
+              <p class="title-footer">Звоните:</p>
+              <a href="tel:+78125556666"><p class="contact-footer">+7 (812) 555-66-66</p></a>
+            </li>
+            <li>
+              <p class="title-footer">Пишите:</p>
+              <p class="contact-footer">mail@htmlacademy.ru</p>
+            </li>
+            <li>
+              <p class="title-footer">Приезжайте в гости:</p>
+              <p class="contact-footer">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+          <section class="modal modal__map">
+            <h2 class="visually-hidden">Как добраться до офиса</h2>
+            <iframe src="">
+              <!-- Здесь будет располагаться карта -->
+            </iframe>
+          </section>
+          </p>
+        </footer>
+      </main>
+    </header>
+    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p> -->
   </body>
 </html>

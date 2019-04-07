@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк. Фотографии пользователей.</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Логотип мобильного приложения Pink для раскрашивания серых будней в розовый цвет">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list  site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="page-form">
+        <h1 class="universal-title">Фотографии пользователей</h1><!-- universal-title - общий стиль для текстового блока, прописываются основные настройки стилей на всём проекте -->
+        <p class="universal-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p><!-- universal-text - общий стиль для текстового блока, прописываются основные настройки стилей на всём проекте -->
+        <div class="reviews">
+          <section class="reviews-panorama panorama">
+            <p class="reviews__caption">ПАНОРАМА ДНЯ</p>
+            <img class="panorama__full panorama__crop" src="" alt="Панорамная фотография. Вид с высоты птичьего полёта.">
+            <blockquote class="reviews__item">
+              <p class="reviews__autr-name">Анна</p>
+              <span class="reviews__last-time">(5 минут назад)</span>
+              <cite class="reviews__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</cite>
+              <span class="reviews__likes reviews__likes-right">Нравится: 215</span><!-- Иконка сердечка будет прописываться через псевдоэлемент: before - для блочного элемента reviews__likes (относительно расположение слева), after - для блочного элемента reviews__likes-right (относительно расположение справа)-->
+            </blockquote>
+          </section>
+          <div class="reviews__other">
+            <section class="reviews__list">
+              <img src="" alt="Фотография новой машины" class="reviews__photo">
+              <blockquote class="reviews__item">
+                <p class="reviews__autr-name">Левон</p>
+                <span class="reviews__last-time">(5 часов назад)</span>
+                <cite class="reviews__text">Вчера он на луну летал, сегодня в руки к нам попал.</cite>
+                <span class="reviews__likes reviews__likes-right">Нравится: 356</span>
+              </blockquote>
+            </section>
+            <section class="reviews__list">
+              <img src="" alt="Купил новую барабанную установку" class="reviews__photo">
+              <blockquote class="reviews__item">
+                <p class="reviews__autr-name">Антон</p>
+                <span class="reviews__last-time">(12 часов назад)</span>
+                <cite class="reviews__text">Соседи будут рады!</cite>
+                <span class="reviews__likes reviews__likes-right">Нравится: 666</span>
+              </blockquote>
+            </section>
+            <section class="reviews__list">
+              <img src="" alt="Фотография офисной башни" class="reviews__photo">
+              <blockquote class="reviews__item">
+                <p class="reviews__autr-name">Борис</p>
+                <span class="reviews__last-time">(20 часов назад)</span>
+                <cite class="reviews__text">Здесь могла быть ваша цитата о высоком и вечном.</cite>
+                <span class="reviews__likes reviews__likes-right">Нравится: 215</span>
+              </blockquote>
+            </section>
+            <section class="reviews__list">
+              <img src="" alt="Фотография продажи кубанской бахчи оптом и в розницу" class="reviews__photo">
+              <blockquote class="reviews__item">
+                <p class="reviews__autr-name">Сергей</p>
+                <span class="reviews__last-time">(25 часов назад)</span>
+                <cite class="reviews__text">Самая кубанская в мире!</cite>
+                <span class="reviews__likes reviews__likes-right">Нравится: 4</span>
+              </blockquote>
+            </section>
+            <section class="reviews__list">
+              <img src="" alt="Фотография о том, как я летом забрался на высокую гору в надежде увидеть снег" class="reviews__photo">
+              <blockquote class="reviews__item">
+                <p class="reviews__autr-name">Максим</p>
+                <span class="reviews__last-time">(40 часов назад)</span>
+                <cite class="reviews__text">Где снег-то?</cite>
+                <span class="reviews__likes reviews__likes-right">Нравится: 150</span>
+              </blockquote>
+            </section>
+            <section class="reviews__list">
+              <img src="" alt="Фотография встречать рассвет за 2 000 километров над уровнем моря - превосходно!" class="reviews__photo">
+              <blockquote class="reviews__item">
+                <p class="reviews__autr-name">Надежда</p>
+                <span class="reviews__last-time">(45 часов назад)</span>
+                <cite class="reviews__text">Всем GM и взаимные лайки!</cite>
+                <span class="reviews__likes reviews__likes-right">Нравится: 2560</span>
+              </blockquote>
+            </section>
+          </div>
+          <section class="filter upload" aria-label="Загрузите фотографию, и преображайте её прямо находясь на сайте.">
+            <h2 class="filter__title"></h2>
+            <div class="upload__image">
+              <img src="" alt="Загруженная картинка" class="upload__image">
+            </div>
+            <ul class="edit" aria-label="Выберите настройки фильтров:">
+              <li class="edit__list">
+                <a href=""><img src="" alt="Кнопка изменения кадрирования изображения" class="edit__item edit__item-left"></a>
+              </li>
+              <li class="edit__list">
+                <a href=""><img src="" alt="Кнопка изменение цветового тона изображения" class="edit__item edit__item-left"></a>
+              </li>
+              <li class="edit-list">
+                <a href=""><img src="" alt="Кнопка изменение насыщенности изображения" class="edit__item edit__item-left"></a>
+              </li>
+            </ul>
+            <div class="range" aria-label="Потяните шкалу (вправо) для увеличения или (влево) для уменьшения эффекта фильтрации">
+              <div class="range__scale">
+                <div class="range__bar"></div>
+              </div>
+              <div class="range__toggle"></div>
+            </div>
+            <button class="btn-range" type="submit" name="load-image">Показать</button>
+            <button class="btn-range-cancel" type="reset" name="cancel">Показать</button>
+          </section>
+        </div>
+        <footer class="page-footer">
+          <a href="" class="page-footer__logo">
+            <img src="" alt="Логотип приложения Pink" class="page-footer__logo-image">
+          </a>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="https://www.twitter.com/htmlacademy" class="social__link social__link--twitter">Twitter</a>
+              </li>
+              <li class="social__item">
+                <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">Facebook</a>
+              </li>
+              <li class="social__item">
+                <a href="https://www.youtube.com/htmlacademy" class="social__link social__link--youtube">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+          </div>
+        </footer>
+      </main>
+    </header>
+  </body>
+</html>
