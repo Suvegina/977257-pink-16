@@ -1,0 +1,109 @@
+body {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1;
+  height: 1;
+  margin: -1;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+
+  // -webkit-clip-path: inset(100%);
+  //     clip-path: inset(100%);
+  overflow: hidden;
+}
+.page-header__logo path,
+.main-nav__toggle path {
+  fill: $white-color;
+}
+
+.page-header__logo:hover path,
+.page-header__logo:focus path,
+.main-nav__toggle:hover path,
+.main-nav__toggle:focus path{
+  fill: $color-element;
+}
+
+.page-header__logo:active path,
+.main-nav__toggle:active path {
+  fill: $active-color-element;
+  // fill: $active-color; - для декстопа
+}
+
+
+.main-nav {
+  background-image: url("img/bg-back-mobile@1x.jpg");
+  background-color: $main-color;
+}
+
+.main-nav__toggle {
+  fill: $white-color;
+  border: none;
+  background: none;
+}
+
+.main-nav__list{
+  margin: 0;
+  padding:0;
+}
+
+.site-list {
+  list-style: none;
+  text-transform: uppercase;
+  // text-align: center;
+}
+
+.site-list__item a {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-list__item a:hover,
+.site-list__item a:focus {
+  font-weight: 700;
+  color: $color-element;
+}
+
+.site-list__item a:active {
+  font-weight: 700;
+  color: $active-color;
+}
+//
+.site-list__item--active {
+// прописать сюда внешний вид активного элемента в мобильной версии.
+}
+
+// для десктопного меню
+
+// .site-list__item--active {
+//   position: relative;
+// }
+// .site-list__item--active a:not([href]) {
+//   background-color: #000000;
+// }
+
+// .site-list__item--active::after {
+//   content: "";
+
+//   position: absolute;
+//   right: 20px;
+//   bottom: 0;
+//   left: 20px;
+
+//   height: 2px;
+
+//   background-color: #ffffff;
+// }

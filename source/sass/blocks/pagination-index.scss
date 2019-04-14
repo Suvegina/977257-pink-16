@@ -1,0 +1,35 @@
+.feedback__toggles,
+.price__toggles {
+  display: flex;
+}
+
+.slider__toggle {
+  margin: 10px;
+  opacity: 0.3;
+  width: 2px;
+  height: 2px;
+  background-color: $main-color;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 2px solid rgba(0,0,0,0);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.slider__toggle:hover,
+.slider__toggle:focus {
+  color: $main-color;
+  opacity: 1;
+}
+
+.slider__toggle:active {
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+.slider__toggle--active {
+  border: 5px solid $main-color;
+  border-radius: 50%;
+  opacity: 1;
+}

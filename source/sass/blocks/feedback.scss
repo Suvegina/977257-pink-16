@@ -1,0 +1,26 @@
+.feedback {
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.feedback::before {
+  width: 320px;
+  height: 123px;
+
+  top: 0;
+
+  position: absolute;
+  background-image: url("img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+}
+
+.feedback__autr-name {
+  line-height: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.feedback__text {
+  line-height: 30px;
+}

@@ -1,0 +1,89 @@
+.filter {
+  background-color: $gray-color;
+}
+
+.filter__title {
+
+}
+
+.upload {
+
+}
+
+.upload__image {
+
+}
+
+.filter__edit {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.edit__item {
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.edit__item path,
+.edit__item rect {
+  fill: $main-color;
+  opacity: 0.3;
+}
+
+.edit__item:hover path,
+.edit__item:hover rect,
+.edit__item:focus path,
+.edit__item:focus rect {
+  fill: $main-color;
+  opacity: 0.5;
+}
+
+.edit__item--active path,
+.edit__item--active rect {
+  fill: $color-element;
+  opacity: 1;
+}
+
+.range {
+
+}
+
+.range__scale {
+
+}
+
+.range__bar {
+
+}
+
+.range__toggle {
+
+}
+
+.btn-range {
+
+}
+
+.btn-range:hover,
+.btn-range:focus {
+
+}
+
+.btn-range:active {
+
+}
+
+.btn-range-cancel {
+
+}
+
+.btn-range-cancel:hover,
+.btn-range-cancel:focus {
+
+}
+
+.btn-range-cancel:active {
+
+}

@@ -1,0 +1,20 @@
+.page-cover {
+  width: 100%;
+  min-height: 235px;
+
+  margin: 0;
+  padding: 0;
+
+  background-image: url("img/bg-back-mobile@1x.jpg");
+  background-color: $main-color;
+  color: white;
+  background-repeat: no-repeat;
+}
+
+.page-cover__title {
+  padding-top: 100px;
+}
+
+.page-cover__text {
+  line-height: 30px;
+}

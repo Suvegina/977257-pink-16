@@ -1,1 +1,20 @@
-body { background: red; }
+@import "normalize.scss";
+@import "blocks/var-fonts-style.scss";
+@import "blocks/variables.scss";
+@import "blocks/header.scss";
+@import "blocks/app.scss";
+@import "blocks/advantages.scss";
+@import "blocks/feedback.scss";
+@import "blocks/price.scss";
+@import "blocks/pagination-index.scss";
+@import "blocks/footer-index.scss";
+@import "blocks/page-cover.scss";
+@import "blocks/page-gallery.scss";
+@import "blocks/filter.scss";
+@import "blocks/btn-filter.scss";
+// @import
+// @import
+// @import
+// @import
+// @import
+// @import
