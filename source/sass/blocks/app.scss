@@ -1,6 +1,7 @@
 .app {
-  background-image: url(img/bg-back-mobile@1x.jpg);
+  background-image: url(../../img/bg-back-mobile@1x.jpg);
   background-color: $main-color;
+  background-repeat: no-repeat;
 }
 
 // .app__header {
@@ -9,11 +10,17 @@
 
 .app__title {
   color: $white-color;
+  margin: 0;
+  padding: 0;
 }
 
 .app__text {
   color: $white-color;
   font-weight: 300;
+}
+
+.app__device {
+  background-color: $main-color;
 }
 
 .app__btn-device {

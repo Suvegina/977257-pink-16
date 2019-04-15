@@ -1,6 +1,7 @@
 .feedback {
   background-color: #ffffff;
   margin: 0 auto;
+  position: relative;
 }
 
 .feedback::before {
@@ -10,7 +11,7 @@
   top: 0;
 
   position: absolute;
-  background-image: url("img/bg-triangle-white.svg");
+  background-image: url(../../img/bg-triangle-white.svg);
   background-repeat: no-repeat;
 }
 

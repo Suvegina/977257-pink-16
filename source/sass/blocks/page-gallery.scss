@@ -84,7 +84,6 @@
 
   padding: 0 17px;
   margin: 0 31px;
-  // margin-bottom: 17px;
   position: relative;
 }
 
@@ -95,10 +94,10 @@
   width: 13px;
   height: 12px;
 
-  left: 0;
-  top: 0;
+  left: -13px;
+  top: 4px;
 
-  background-image: url("img/icon-heart.svg");
+  background-image: url(../../img/icon-heart.svg);
   background-repeat: no-repeat;
   position: absolute;
 }

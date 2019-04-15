@@ -47,11 +47,12 @@
 }
 
 .range {
-
+  position: relative;
 }
 
 .range__scale {
-
+  height: 2px;
+  background:$main-color;
 }
 
 .range__bar {
