@@ -11,7 +11,7 @@
 }
 
 .upload__image {
-
+  margin-bottom: 36px;
 }
 
 .filter__edit {
@@ -51,6 +51,7 @@
 }
 
 .range__scale {
+  width: 240px;
   height: 2px;
   background:$main-color;
 }
@@ -63,9 +64,40 @@
 
 }
 
-.btn-range {
+// .app__btn-device {
+//   color: $white-color;
+//   font-weight: 700;
+//   border: 2px solid #fff;
+//   border-radius: 30px;
+//   background: none;
+//   padding: 13px;
+//   margin-bottom: 25px;
+// }
 
+// .app__btn-device:hover,
+// .app__btn-device:focus {
+//   color: $color-element;
+//   background: $white-color;
+// }
+
+// .app__btn-device:active {
+//   color: $active-color-element;
+//   background: $white-color;
+// }
+
+
+.btn-range {
+  color: $color-element;
+  font-weight: 700;
+  font-size: 18px;
+  width: 280px;
+  padding: 15px 0;
+
+  border: 3px solid $color-element;
+  border-radius: 30px;
+  background: none;
 }
+
 
 .btn-range:hover,
 .btn-range:focus {
