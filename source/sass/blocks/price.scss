@@ -61,40 +61,39 @@
 }
 
 .price-list__field {
-
+  position: relative;
 }
 
 .price-list__option {
-  position: relative;
   width: 320px;
 }
 
-.price-list__option-yes::before {
-  content: "";
-  position: absolute;
-  // display: block;
+// .price-list__option-yes::before {
+//   content: "";
+//   position: absolute;
+//   display: block;
 
-  width: 31px;
-  height: 21px;
+//   width: 31px;
+//   height: 21px;
 
-  bottom: 10px;
-  right: 10px;
+//   bottom: 10px;
+//   right: 10px;
 
-  background-image: url(../../img/icon-yes.svg);
-  background-repeat: no-repeat;
-}
+//   background-image: url(../../img/icon-yes.svg);
+//   background-repeat: no-repeat;
+// }
 
-.price-list__option-no::after {
-  content: "";
-  position: absolute;
-  // display: block;
+// .price-list__option-no::after {
+//   content: "";
+//   position: absolute;
+//   display: block;
 
-  width: 27px;
-  height: 26px;
+//   width: 27px;
+//   height: 26px;
 
-  bottom: 10px;
-  right: 10px;
+//   bottom: 10px;
+//   right: 10px;
 
-  background-image: url(../../img/icon-no.svg);
-  background-repeat: no-repeat;
-}
+//   background-image: url(../../img/icon-no.svg);
+//   background-repeat: no-repeat;
+// }
