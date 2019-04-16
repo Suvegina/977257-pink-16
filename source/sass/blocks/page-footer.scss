@@ -3,7 +3,16 @@
 }
 
 .page-footer__logo {
+}
 
+.page-footer__logo:hover path,
+.page-footer__logo:focus path {
+  fill: $color-element;
+}
+
+.page-footer__logo:active path {
+  // fill: inherit;
+  opacity: 0.3;
 }
 
 .page-footer__social {
@@ -15,15 +24,41 @@
 }
 
 .social__list {
-
+  list-style: none;
+  display: flex;
 }
 
 .social__item {
-
+  padding: 0 10px;
 }
 
 .social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  width: 46px;
+  height: 46px;
+
+  border: 3px solid $main-color-element;
+  border-radius: 50%;
+}
+
+.social__link path {
+  fill: $color-element;
+}
+
+.social__link:hover,
+.social__link:focus {
+  border-color: $main-color;
+}
+
+.social__link:active {
+  border-color: $main-color-element;
+}
+
+.social__link:active path {
+  opacity: 0.3;
 }
 
 .social__link--twitter {
@@ -38,8 +73,6 @@
 
 }
 
-
-
 .page-footer__copyright {
 
 }
@@ -52,7 +85,16 @@
 
 }
 
-.copyright__link {
-
+.copyright__link path {
+  fill: $color-element;
 }
 
+.copyright__link:hover path,
+.copyright__link:focus path {
+  fill: $main-color;
+}
+
+.copyright__link:active path {
+  fill: $main-color;
+  opacity: 0.3;
+}
