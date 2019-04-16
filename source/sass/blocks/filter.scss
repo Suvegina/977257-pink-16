@@ -41,6 +41,16 @@
   opacity: 0.5;
 }
 
+// .edit__item {
+//   opacity: 0.5;
+
+//   &:hover,
+//   &:hover {
+//     fill: $main-color;
+//     opacity: 0.5;
+//   }
+// }
+
 .edit__item--active path,
 .edit__item--active rect {
   fill: $color-element;

@@ -16,43 +16,48 @@
   border-radius: 50%;
 
   cursor: pointer;
-}
 
-.slider__toggle:hover,
-.slider__toggle:focus {
+  &:hover,
+  &:focus {
   color: $main-color;
   opacity: 1;
+  }
+
+  &:active {
+  opacity: 0.1;
+  }
 }
 
-.slider__toggle:active {
-  opacity: 0.1;
-}
+// .slider__toggle
 
 .slider__toggle--active {
   position: relative;
   opacity: 1;
   background: $white-color;
-}
 
-.slider__toggle--active:hover,
-.slider__toggle--active:focus {
+  &:hover,
+  &:focus {
   background: $main-color;
-}
+  }
 
-.slider__toggle--active:active {
+  &:active {
   opacity: 0.1;
+  }
+
 }
 
-.slider__toggle--active::before {
-  content: "";
-  position: absolute;
 
-  width: 15px;
-  height: 15px;
-  top: -5px;
-  left: -5px;
-  z-index: -1;
+// .slider__toggle--active
+// .slider__toggle--active::before {
+//   content: "";
+//   position: absolute;
 
-  background: $main-color;
-  border-radius: 50%;
-}
+//   width: 15px;
+//   height: 15px;
+//   top: -5px;
+//   left: -5px;
+//   z-index: -1;
+
+//   background: $main-color;
+//   border-radius: 50%;
+// }
