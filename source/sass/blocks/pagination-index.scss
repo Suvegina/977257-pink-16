@@ -6,9 +6,10 @@
 .slider__toggle {
   margin: 10px;
   opacity: 0.3;
-  width: 2px;
-  height: 2px;
-  background-color: $main-color;
+  width: 4px;
+  height: 4px;
+
+  background: $main-color;
   vertical-align: middle;
   text-decoration: none;
   border: 2px solid rgba(0,0,0,0);
@@ -24,12 +25,34 @@
 }
 
 .slider__toggle:active {
-  border-radius: 50%;
   opacity: 0.1;
 }
 
 .slider__toggle--active {
-  border: 5px solid $main-color;
-  border-radius: 50%;
+  position: relative;
   opacity: 1;
+  background: $white-color;
+}
+
+.slider__toggle--active:hover,
+.slider__toggle--active:focus {
+  background: $main-color;
+}
+
+.slider__toggle--active:active {
+  opacity: 0.1;
+}
+
+.slider__toggle--active::before {
+  content: "";
+  position: absolute;
+
+  width: 15px;
+  height: 15px;
+  top: -5px;
+  left: -5px;
+  z-index: -1;
+
+  background: $main-color;
+  border-radius: 50%;
 }
