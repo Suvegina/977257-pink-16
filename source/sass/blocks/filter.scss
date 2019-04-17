@@ -1,44 +1,53 @@
 .filter {
   background-color: $gray-color;
-}
 
-.filter__title {
+  &__title {
 
+  }
+
+  &__edit {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .upload {
 
+  &__image {
+    margin-bottom: 36px;
+  }
 }
 
-.upload__image {
-  margin-bottom: 36px;
-}
+.edit {
+  &__item {
+    padding: 0 20px;
+    cursor: pointer;
+    margin-bottom: 40px;
 
-.filter__edit {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+    path,
+    rect {
+      fill: $main-color;
+      opacity: 0.3;
+    }
 
-.edit__item {
-  padding: 0 20px;
-  cursor: pointer;
-  margin-bottom: 40px;
-}
-
-.edit__item path,
-.edit__item rect {
-  fill: $main-color;
-  opacity: 0.3;
-}
-
-.edit__item:hover path,
-.edit__item:hover rect,
-.edit__item:focus path,
-.edit__item:focus rect {
-  fill: $main-color;
-  opacity: 0.5;
+    &:hover,
+    &:focus {
+      path,
+      rect {
+        fill: $main-color;
+        opacity: 0.5;
+      }
+    }
+    &--active {
+      path,
+      rect {
+        fill: $color-element;
+        opacity: 1;
+      }
+    }
+  }
 }
 
 // .edit__item {
@@ -51,49 +60,112 @@
 //   }
 // }
 
-.edit__item--active path,
-.edit__item--active rect {
-  fill: $color-element;
-  opacity: 1;
-}
+
 
 .range {
   position: relative;
   margin-bottom: 35px;
+
+  &__scale {
+    width: 240px;
+    height: 2px;
+    background: $main-color;
+
+    // position: relative;
+  }
+
+  // .range__bar {
+
+  // }
+
+  &__toggle {
+
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+
+    top: -7px;
+    left: 196px;
+
+    background: $white-color;
+    border: 2px solid $color-element;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background: $color-element;
+    }
+  }
 }
 
-.range__scale {
-  width: 240px;
-  height: 2px;
-  background: $main-color;
 
-  // position: relative;
+.btn-range {
+  display: flex;
+
+  margin-top: 40px;
+  padding-bottom: 42px;
+
+  &__post {
+    color: $color-element;
+    font-weight: 700;
+    font-size: 18px;
+    width: 280px;
+    padding: 15px 0;
+
+    border: 3px solid $color-element;
+    border-radius: 30px;
+    background: none;
+
+    &:hover,
+    &:focus {
+      color: $white-color;
+      background-color: $color-element;
+    }
+
+    &:active {
+      color: $active-color;
+      background: $color-element;
+    }
+  }
+
+  &__cancel {
+    color: $main-color;
+    font-weight: 700;
+    font-size: 18px;
+    width: 280px;
+    padding: 15px 0;
+
+    border: 3px solid $main-color;
+    border-radius: 30px;
+    background: none;
+
+    opacity: 0.1;
+
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 0.3;
+      color: $active-color;
+      background: $main-color;
+    }
+  }
 }
 
-// .range__bar {
 
-// }
-
-.range__toggle {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-
-  top: -7px;
-  left: 196px;
-
-  background: $white-color;
-  border: 2px solid $color-element;
-  border-radius: 50%;
-
-  cursor: pointer;
+.dividing-line {
+  width: 100%;
+  height: 1px;
+  background: $main-color-element;
+  // border: 1px solid $main-color-element;
 }
 
-.range__toggle:hover,
-.range__toggle:focus {
-  background: $color-element;
-}
+
 
 // .app__btn-device {
 //   color: $white-color;
@@ -115,66 +187,3 @@
 //   color: $active-color-element;
 //   background: $white-color;
 // }
-
-.btn-range {
-  display: flex;
-
-  margin-top: 40px;
-  padding-bottom: 42px;
-}
-
-.dividing-line {
-  width: 100%;
-  height: 1px;
-  background: $main-color-element;
-  // border: 1px solid $main-color-element;
-}
-
-.btn-range__post {
-  color: $color-element;
-  font-weight: 700;
-  font-size: 18px;
-  width: 280px;
-  padding: 15px 0;
-
-  border: 3px solid $color-element;
-  border-radius: 30px;
-  background: none;
-}
-
-
-.btn-range__post:hover,
-.btn-range__post:focus {
-  color: $white-color;
-  background-color: $color-element;
-}
-
-.btn-range__post:active {
-  color: $active-color;
-  background: $color-element;
-}
-
-.btn-range__cancel {
-  color: $main-color;
-  font-weight: 700;
-  font-size: 18px;
-  width: 280px;
-  padding: 15px 0;
-
-  border: 3px solid $main-color;
-  border-radius: 30px;
-  background: none;
-
-  opacity: 0.1;
-}
-
-.btn-range__cancel:hover,
-.btn-range__cancel:focus {
-  opacity: 0.3;
-}
-
-.btn-range__cancel:active {
-  opacity: 0.3;
-  color: $active-color;
-  background: $main-color;
-}
