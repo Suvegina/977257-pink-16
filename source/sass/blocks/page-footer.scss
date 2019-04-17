@@ -3,17 +3,18 @@
 }
 
 .page-footer__logo {
-}
-
-.page-footer__logo:hover path,
-.page-footer__logo:focus path {
-  fill: $color-element;
-}
-
-.page-footer__logo:active path {
+  &:hover path,
+  &:focus path {
+    fill: $color-element;
+  }
+  &:active path {
   // fill: inherit;
-  opacity: 0.3;
+    opacity: 0.3;
+  }
 }
+
+
+
 
 .page-footer__social {
 
@@ -21,80 +22,81 @@
 
 .social {
 
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    padding: 0 10px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 46px;
+    height: 46px;
+
+    border: 3px solid $main-color-element;
+    border-radius: 50%;
+
+    path {
+      fill: $color-element;
+    }
+
+    &:active path {
+      opacity: 0.3;
+    }
+    &:hover,
+    &:focus {
+      border-color: $main-color;
+    };
+
+    &:active {
+      border-color: $main-color-element;
+    }
+  }
+
+  &__link--twitter {
+
+  }
+
+  &__link--facebook {
+
+  }
+
+  &__link--youtube {
+
+  }
 }
 
-.social__list {
-  list-style: none;
-  display: flex;
-}
+.page-footer {
 
-.social__item {
-  padding: 0 10px;
-}
+  &__copyright {
 
-.social__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 46px;
-  height: 46px;
-
-  border: 3px solid $main-color-element;
-  border-radius: 50%;
-}
-
-.social__link path {
-  fill: $color-element;
-}
-
-.social__link:hover,
-.social__link:focus {
-  border-color: $main-color;
-}
-
-.social__link:active {
-  border-color: $main-color-element;
-}
-
-.social__link:active path {
-  opacity: 0.3;
-}
-
-.social__link--twitter {
-
-}
-
-.social__link--facebook {
-
-}
-
-.social__link--youtube {
-
-}
-
-.page-footer__copyright {
-
+  }
 }
 
 .copyright {
 
-}
+  &__text {
 
-.copyright__text {
+  }
 
-}
+  &__link path {
+    fill: $color-element;
+  }
 
-.copyright__link path {
-  fill: $color-element;
-}
+  &__link:hover path,
+  &__link:focus path {
+    fill: $main-color;
+  }
 
-.copyright__link:hover path,
-.copyright__link:focus path {
-  fill: $main-color;
-}
+  &__link:active path {
+    fill: $main-color;
+    opacity: 0.3;
+  }
 
-.copyright__link:active path {
-  fill: $main-color;
-  opacity: 0.3;
 }
