@@ -1,13 +1,26 @@
 .feedback {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #ffffff;
   margin: 0 auto;
   position: relative;
+}
 
+.feedback__wrapper {
+  margin-top: 45px;
+  // margin-bottom: 20px;
+}
+
+.feedback__item {
+  text-align: center;
+}
 // При позиционировании, нужно задать правильное расположение
 
-  // &::before {
+  // .feedback::before {
   //   content: "";
   //   position: absolute;
+
   //   width: 320px;
   //   height: 123px;
 
@@ -17,50 +30,65 @@
   //   background-repeat: no-repeat;
   // }
 
-  &__autr-name {
-    line-height: 30px;
-    font-weight: 700;
-    font-size: 18px;
-    font-style: normal;
-  }
+.feedback__autr-name {
+  line-height: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  padding-bottom: 25px;
+}
 
-  &__text {
-    line-height: 30px;
-  }
+.feedback__text {
+  line-height: 30px;
+  margin: 0;
+}
 
+.feedback__toggles {
+  display: flex;
+  list-style: none;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  // padding-top: 35px;
+  // padding-bottom: 40px;
+  // display: flex;
+  // list-style: none;
+  // align-items: center;
+}
 
 // Стилизация стрелок для слайдера на планшетную версию
 
-  // &__slider {
-  //   background-repeat: no-repeat;
+// &__slider {
+//   background-repeat: no-repeat;
 
-    // &__arrow-down,
-    // &__arrow-next {
-      // width: 22px;
-      // height: 42px;
+  // &__arrow-down,
+  // &__arrow-next {
+    // width: 22px;
+    // height: 42px;
 
-  //     background-repeat: no-repeat;
-    //   opacity: 0.3;
+//     background-repeat: no-repeat;
+  //   opacity: 0.3;
 //     }
 
-  //   &__arrow-down {
-  //     background-image: url(../../icon-review-arrow-left.svg);
-  //   }
+//   &__arrow-down {
+//     background-image: url(../../icon-review-arrow-left.svg);
+//   }
 
-  //   &__arrow-next {
-  //     background-image: url(../../icon-review-arrow-right.svg);
-  //   }
+//   &__arrow-next {
+//     background-image: url(../../icon-review-arrow-right.svg);
+//   }
 
-  //   &:hover,
-  //   &:focus {
-  //   opacity: 0.6;
-  //   }
+//   &:hover,
+//   &:focus {
+//   opacity: 0.6;
+//   }
 
-  //   &:active {
-  //   opacity: 0.1;
-  //   }
-  // }
-}
+//   &:active {
+//   opacity: 0.1;
+//   }
+// }
+
 
 
 

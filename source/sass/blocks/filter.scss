@@ -1,189 +1,62 @@
 .filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: $gray-color;
+}
 
-  &__title {
+.filter__title {
 
-  }
+}
 
-  &__edit {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.filter__edit {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter__upload {
+
+}
+
+.filter__upload-image {
+  padding-top: 20px;
+  margin-bottom: 36px;
+}
+
+.filter__item {
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 40px;
+  padding: 0 20px;
+
+  path,
+  rect {
+  fill: $main-color;
+  opacity: 0.3;
   }
 }
 
-.upload {
-
-  &__image {
-    margin-bottom: 36px;
-  }
-}
-
-.edit {
-  &__item {
-    padding: 0 20px;
-    cursor: pointer;
-    margin-bottom: 40px;
-
+.filter__item {
+  &:hover,
+  &:focus {
     path,
     rect {
-      fill: $main-color;
-      opacity: 0.3;
-    }
-
-    &:hover,
-    &:focus {
-      path,
-      rect {
-        fill: $main-color;
-        opacity: 0.5;
-      }
-    }
-    &--active {
-      path,
-      rect {
-        fill: $color-element;
-        opacity: 1;
-      }
-    }
-  }
-}
-
-// .edit__item {
-//   opacity: 0.5;
-
-//   &:hover,
-//   &:hover {
-//     fill: $main-color;
-//     opacity: 0.5;
-//   }
-// }
-
-
-
-.range {
-  position: relative;
-  margin-bottom: 35px;
-
-  &__scale {
-    width: 240px;
-    height: 2px;
-    background: $main-color;
-
-    // position: relative;
-  }
-
-  // .range__bar {
-
-  // }
-
-  &__toggle {
-
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
-
-    top: -7px;
-    left: 196px;
-
-    background: $white-color;
-    border: 2px solid $color-element;
-    border-radius: 50%;
-
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-      background: $color-element;
+    fill: $main-color;
+    opacity: 0.5;
     }
   }
 }
 
 
-.btn-range {
-  display: flex;
-
-  margin-top: 40px;
-  padding-bottom: 42px;
-
-  &__post {
-    color: $color-element;
-    font-weight: 700;
-    font-size: 18px;
-    width: 280px;
-    padding: 15px 0;
-
-    border: 3px solid $color-element;
-    border-radius: 30px;
-    background: none;
-
-    &:hover,
-    &:focus {
-      color: $white-color;
-      background-color: $color-element;
-    }
-
-    &:active {
-      color: $active-color;
-      background: $color-element;
-    }
-  }
-
-  &__cancel {
-    color: $main-color;
-    font-weight: 700;
-    font-size: 18px;
-    width: 280px;
-    padding: 15px 0;
-
-    border: 3px solid $main-color;
-    border-radius: 30px;
-    background: none;
-
-    opacity: 0.1;
-
-    &:hover,
-    &:focus {
-      opacity: 0.3;
-    }
-
-    &:active {
-      opacity: 0.3;
-      color: $active-color;
-      background: $main-color;
+.filter__item {
+  &--active {
+    path,
+    rect {
+      fill: $color-element;
+      opacity: 1;
     }
   }
 }
-
-
-.dividing-line {
-  width: 100%;
-  height: 1px;
-  background: $main-color-element;
-  // border: 1px solid $main-color-element;
-}
-
-
-
-// .app__btn-device {
-//   color: $white-color;
-//   font-weight: 700;
-//   border: 2px solid #fff;
-//   border-radius: 30px;
-//   background: none;
-//   padding: 13px;
-//   margin-bottom: 25px;
-// }
-
-// .app__btn-device:hover,
-// .app__btn-device:focus {
-//   color: $color-element;
-//   background: $white-color;
-// }
-
-// .app__btn-device:active {
-//   color: $active-color-element;
-//   background: $white-color;
-// }

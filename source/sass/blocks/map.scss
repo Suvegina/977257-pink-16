@@ -1,0 +1,15 @@
+.map {
+  position: relative;
+}
+
+.map::before {
+  content: "";
+  width: 320px;
+  height: 123px;
+
+  top: 0;
+
+  position: absolute;
+  background-image: url(../../img/bg-triangle-white-footer.svg);
+  background-repeat: no-repeat;
+}

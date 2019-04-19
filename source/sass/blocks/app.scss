@@ -2,56 +2,68 @@
   background-image: url(../../img/bg-back-mobile@1x.jpg);
   background-color: $main-color;
   background-repeat: no-repeat;
+}
+.app__header {
+  padding-top: 110px;
+  padding-bottom: 30px;
+  margin-bottom: 43px;
+}
 
-  &__header {
-    padding-top: 110px;
+.app__image {
+  display: block;
+}
+
+.app__title {
+  color: $white-color;
+  margin: 0;
+  padding: 0;
+}
+
+.app__device {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $main-color;
+  padding-top: 28px;
+}
+
+.app__btn-device {
+  color: $white-color;
+  font-weight: 700;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background: none;
+  padding: 13px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 280px;
+
+  &:hover,
+  &:focus {
+    color: $color-element;
+    background: $white-color;
   }
 
-  &__title {
-    color: $white-color;
-    margin: 0;
-    padding: 0;
-  }
-
-  &__text {
-    color: $white-color;
-    font-weight: 300;
-  }
-
-  &__device {
-    background-color: $main-color;
-    padding-top: 28px;
-  }
-
-  &__btn-device {
-    color: $white-color;
-    font-weight: 700;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    background: none;
-    padding: 13px;
-    margin-bottom: 25px;
-  }
-
-  &__btn-device {
-
-      &:hover,
-      &:focus {
-      color: $color-element;
-      background: $white-color;
-      }
-
-      &:active {
-        color: $active-color-element;
-        background: $white-color;
-      }
-  }
-
-  &__download {
-
-  }
-
-  &__platform {
-
+  &:active {
+    color: $active-color-element;
+    background: $white-color;
   }
 }
+
+.app__download {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.app__text {
+  color: $white-color;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+
+.app__platform {
+
+}
+
