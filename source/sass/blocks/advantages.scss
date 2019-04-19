@@ -1,27 +1,26 @@
-// .advantages {
+.advantages {
 
-// }
+  &__list {
+    list-style: none;
+    background-color: $gray-color;
+  }
 
-.advantages__list {
-  list-style: none;
-  background-color: $gray-color;
+  &__item {
+
+  }
+
+  &__slogan,
+  &__flag {
+    font-weight: 300;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__description {
+
+  }
 }
-
-// .advantages__item {
-
-// }
-
-// .advantages__slogan,
-// .advantages__flag {
-//   font-weight: 300;
-// }
-
-.advantages__title {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-// .advantages__description {
-
-// }

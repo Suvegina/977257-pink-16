@@ -2,26 +2,66 @@
   background-color: #ffffff;
   margin: 0 auto;
   position: relative;
+
+// При позиционировании, нужно задать правильное расположение
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 320px;
+  //   height: 123px;
+
+  //   top: 0;
+
+  //   background-image: url(../../img/bg-triangle-white.svg);
+  //   background-repeat: no-repeat;
+  // }
+
+  &__autr-name {
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+  }
+
+  &__text {
+    line-height: 30px;
+  }
+
+
+// Стилизация стрелок для слайдера на планшетную версию
+
+  // &__slider {
+  //   background-repeat: no-repeat;
+
+    // &__arrow-down,
+    // &__arrow-next {
+      // width: 22px;
+      // height: 42px;
+
+  //     background-repeat: no-repeat;
+    //   opacity: 0.3;
+//     }
+
+  //   &__arrow-down {
+  //     background-image: url(../../icon-review-arrow-left.svg);
+  //   }
+
+  //   &__arrow-next {
+  //     background-image: url(../../icon-review-arrow-right.svg);
+  //   }
+
+  //   &:hover,
+  //   &:focus {
+  //   opacity: 0.6;
+  //   }
+
+  //   &:active {
+  //   opacity: 0.1;
+  //   }
+  // }
 }
 
-.feedback::before {
-  width: 320px;
-  height: 123px;
 
-  top: 0;
 
-  position: absolute;
-  background-image: url(../../img/bg-triangle-white.svg);
-  background-repeat: no-repeat;
-}
 
-.feedback__autr-name {
-  line-height: 30px;
-  font-weight: 700;
-  font-size: 18px;
-  font-style: normal;
-}
-
-.feedback__text {
-  line-height: 30px;
-}

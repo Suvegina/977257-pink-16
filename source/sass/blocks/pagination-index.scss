@@ -1,63 +1,44 @@
-.feedback__toggles,
-.price__toggles {
-  display: flex;
-}
-
-.slider__toggle {
-  margin: 10px;
-  opacity: 0.3;
-  width: 4px;
-  height: 4px;
-
-  background: $main-color;
-  vertical-align: middle;
-  text-decoration: none;
-  border: 2px solid rgba(0,0,0,0);
-  border-radius: 50%;
-
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-  color: $main-color;
-  opacity: 1;
-  }
-
-  &:active {
-  opacity: 0.1;
+.feedback,
+.price {
+  &__toggles {
+    display: flex;
+    list-style: none;
+    align-items: center;
   }
 }
 
-// .slider__toggle
+.slider {
+  &__toggle {
+    margin: 10px;
+    opacity: 0.3;
+    width: 4px;
+    height: 4px;
 
-.slider__toggle--active {
-  position: relative;
-  opacity: 1;
-  background: $white-color;
+    background: $main-color;
+    vertical-align: middle;
+    text-decoration: none;
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 50%;
 
-  &:hover,
-  &:focus {
-  background: $main-color;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+
+    &--active {
+      width: 6px;
+      height: 6px;
+
+      background: $white-color;
+      border: 3px solid $main-color;
+      opacity: 1;
+    }
   }
-
-  &:active {
-  opacity: 0.1;
-  }
-
 }
-
-
-// .slider__toggle--active
-// .slider__toggle--active::before {
-//   content: "";
-//   position: absolute;
-
-//   width: 15px;
-//   height: 15px;
-//   top: -5px;
-//   left: -5px;
-//   z-index: -1;
-
-//   background: $main-color;
-//   border-radius: 50%;
-// }

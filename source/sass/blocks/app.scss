@@ -2,52 +2,55 @@
   background-image: url(../../img/bg-back-mobile@1x.jpg);
   background-color: $main-color;
   background-repeat: no-repeat;
-}
 
-// .app__header {
+  &__header {
 
-// }
+  }
 
-.app__title {
-  color: $white-color;
-  margin: 0;
-  padding: 0;
-}
+  &__title {
+    color: $white-color;
+    margin: 0;
+    padding: 0;
+  }
 
-.app__text {
-  color: $white-color;
-  font-weight: 300;
-}
+  &__text {
+    color: $white-color;
+    font-weight: 300;
+  }
 
-.app__device {
-  background-color: $main-color;
-}
+  &__device {
+    background-color: $main-color;
+  }
 
-.app__btn-device {
-  color: $white-color;
-  font-weight: 700;
-  border: 2px solid #fff;
-  border-radius: 30px;
-  background: none;
-  padding: 13px;
-  margin-bottom: 25px;
-}
+  &__btn-device {
+    color: $white-color;
+    font-weight: 700;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background: none;
+    padding: 13px;
+    margin-bottom: 25px;
+  }
 
-.app__btn-device:hover,
-.app__btn-device:focus {
-  color: $color-element;
-  background: $white-color;
-}
+  &__btn-device {
 
-.app__btn-device:active {
-  color: $active-color-element;
-  background: $white-color;
-}
+      &:hover,
+      &:focus {
+      color: $color-element;
+      background: $white-color;
+      }
 
-.app__download {
+      &:active {
+        color: $active-color-element;
+        background: $white-color;
+      }
+  }
 
-}
+  &__download {
 
-.app__platform {
+  }
 
+  &__platform {
+
+  }
 }
