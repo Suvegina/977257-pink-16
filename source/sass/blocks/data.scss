@@ -1,0 +1,81 @@
+.data__last-name-top,
+.data__first-name,
+.data__patronym,
+.title-legend,
+.details-user__mail,
+.details-user__phone {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $color-element;
+
+}
+
+.data,
+.details-user,
+.add-comment {
+  &__input {
+    padding: 20px;
+    background-color: $white-color;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+
+    &:hover,
+    &:focus {
+      border-color: $main-color;
+      outline: none;
+    }
+
+    &:active {
+      border-color: $color-element;
+      outline: none;
+    }
+  }
+}
+
+.achievement__section,
+.details-user__wrapper,
+.application-platform,
+.add-comment {
+  border: none;
+}
+
+.details-user,
+.achievement,
+.platform {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding:0;
+  }
+}
+
+.data {
+
+}
+
+.data__value {
+
+  }
+
+  .data__last-name {
+  }
+
+  .data__last-name-top {
+  }
+
+  .data__first-name {
+  }
+
+  .data__first-name-top {
+  }
+
+  .data__patronym {
+  }
+
+  .data__patronym-top {
+  }
+
+.title-legend {
+
+}

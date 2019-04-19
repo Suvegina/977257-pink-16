@@ -5,9 +5,9 @@
   margin: 0;
   padding: 0;
 
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
-  background-color: $main-color;
   color: white;
+  background-color: $main-color;
+  background-image: url(../../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
 }
 
@@ -21,4 +21,11 @@
 .page-cover__text {
   text-align: center;
   line-height: 30px;
+  padding: 50px 0 45px 0;
+  margin: 0;
+}
+
+.page-cover__text-end {
+  text-align: center;
+  margin: 45px 20px;
 }
