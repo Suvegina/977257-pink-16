@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
 
   &__header {
-
+    padding-top: 110px;
   }
 
   &__title {
@@ -20,6 +20,7 @@
 
   &__device {
     background-color: $main-color;
+    padding-top: 28px;
   }
 
   &__btn-device {
