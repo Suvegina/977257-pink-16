@@ -2,6 +2,10 @@
 
 }
 
+.advantages__heading {
+  @include visually-hidden
+}
+
 .advantages__mobil-screen {
   display: block;
   margin: 0 auto;
@@ -35,9 +39,9 @@
 
 .advantages__slogan,
 .advantages__flag {
-  font-weight: 300;
+  @include heading-style
   text-align: center;
-  padding-bottom: 30px
+  padding-bottom: 30px;
 }
 
 .advantages__title,
@@ -52,6 +56,6 @@
   padding-bottom: 15px;
 }
 
-.advantages__description {
+// .advantages__description {
 
-}
+// }

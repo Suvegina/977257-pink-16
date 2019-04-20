@@ -19,15 +19,15 @@
 
 @import "blocks/page-footer.scss";
 
-@import "blocks/fields-form.scss";
-// @import "blocks/data.scss";
-// @import "blocks/achievement.scss";
-// @import "blocks/platform.scss";
-// @import "blocks/details-user.scss";
+@import "blocks/main-form.scss";
+@import "blocks/data.scss";
+@import "blocks/achievement.scss";
+@import "blocks/details-user.scss";
+@import "blocks/platform.scss";
 // @import "blocks/checkbox-form.scss";
 // @import "blocks/radio-form.scss";
-// @import "blocks/comment-form.scss";
-// @import "blocks/.btn-submit-form.scss";
+@import "blocks/comment-form.scss";
+// @import "blocks/btn-submit-form.scss";
 
 
 // @import "blocks/page-gallery.scss";

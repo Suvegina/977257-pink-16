@@ -1,13 +1,49 @@
 .main-footer {
-
   background-color: $white-color;
+}
 
+// накладываем блок поверх карты
+
+// .main-footer__wraper {
+//   content: "";
+//   position: absolute;
+
+//   bottom: 0px;
+//   left: 0px;
+//   z-index: 10;
+// }
+
+.main-footer__headline {
+  @include heading-style
+  text-align: center;
+  color: $main-color;
+
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
+.main-footer__contact {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+  background-color: white;
 }
 
 .main-footer__item {
   text-align: center;
   margin: 0 auto;
   padding-bottom: 20px;
+}
+
+.main-footer__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+
+  margin: 0;
+  color: $main-color;
 }
 
 .main-footer__link {
@@ -36,33 +72,3 @@
     border-bottom: none;
   }
 }
-
-.main-footer__headline {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 30px;
-  text-align: center;
-
-  margin: 0;
-  padding-top: 50px;
-  padding-bottom: 35px;
-}
-
-.main-footer__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-
-  margin: 0;
-  color: $main-color;
-}
-
-
-.main-footer__contact {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-}
-

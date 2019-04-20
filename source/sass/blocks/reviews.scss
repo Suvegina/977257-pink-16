@@ -2,12 +2,16 @@
 
 }
 
-.reviews-panorama {
+// .reviews-panorama {
 
+// }
+.reviews__title {
+  @include page-cover-text
 }
 
 .reviews__panorama {
   position: relative;
+  margin-top: 25px;
 }
 
 .reviews__panorama-img {

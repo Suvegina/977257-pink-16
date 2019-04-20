@@ -1,13 +1,21 @@
 .filter {
+}
+
+.filter__wraper {
+  background-color: $gray-color;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: $gray-color;
 }
 
-.filter__title {
-
+.filter__caption {
+  text-align: center;
+  margin: 45px 20px;
 }
+
+// .filter__title {
+
+// }
 
 .filter__edit {
   display: flex;
@@ -49,7 +57,6 @@
     }
   }
 }
-
 
 .filter__item {
   &--active {

@@ -1,0 +1,71 @@
+// // details-user.scss
+
+.details-user {
+  margin-bottom: 40px;
+}
+
+.details-user__mail,
+.details-user__phone {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $color-element;
+
+}
+
+.details-user__input {
+  @include input-form
+  @include placeholder-style
+  min-width: 240px;
+
+  &:hover,
+  &:focus {
+    border-color: $main-color;
+    outline: none;
+  }
+
+  &:active {
+    border-color: $color-element;
+    outline: none;
+  }
+}
+
+.details-user__wrapper {
+  border: none;
+}
+
+.details-user__list {
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+
+
+.details-user__title {
+  @include style-description
+  padding: 30px;
+  text-align: center;
+}
+.details-user__phone,
+.details-user__mail {
+  @include style-description
+  margin-left: 20px;
+}
+
+
+
+// .details-user
+// .details-user__wrapper
+
+.details-user__title {
+  display: none; /*Скрыт на собильной версии*/
+}
+
+
+// .title-legend
+// .details-user__list
+// .details-user__item
+// .details-user__phone-bottom
+// .details-user__input
+
+// .details-user__mail-bottom

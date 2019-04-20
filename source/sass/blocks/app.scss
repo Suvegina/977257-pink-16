@@ -3,6 +3,11 @@
   background-color: $main-color;
   background-repeat: no-repeat;
 }
+
+.app__head-title {
+  @include visually-hidden
+}
+
 .app__header {
   padding-top: 110px;
   padding-bottom: 30px;
@@ -67,3 +72,6 @@
 
 }
 
+.app__application-name {
+  @include visually-hidden
+}

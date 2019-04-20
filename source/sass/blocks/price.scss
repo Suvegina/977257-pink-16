@@ -21,6 +21,11 @@
   // странно применяются настройки для элемента, или нужен другой элемент
 }
 
+.price__heading {
+  @include visually-hidden
+}
+
+
 .price__section {
   border: 2px solid #e5e5e5;
   border-top: none;

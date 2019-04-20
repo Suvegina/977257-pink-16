@@ -12,8 +12,13 @@
   // margin-bottom: 20px;
 }
 
+.feedback__heading {
+  @include visually-hidden
+}
+
 .feedback__item {
   text-align: center;
+  margin: 0 25px;
 }
 // При позиционировании, нужно задать правильное расположение
 
@@ -35,12 +40,12 @@
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
+  margin-bottom: 25px;
   padding-bottom: 25px;
 }
 
 .feedback__text {
-  line-height: 30px;
-  margin: 0;
+  @include caption-style
 }
 
 .feedback__toggles {
@@ -50,12 +55,9 @@
 
   margin: 0;
   padding: 0;
-  // padding-top: 35px;
-  // padding-bottom: 40px;
-  // display: flex;
-  // list-style: none;
-  // align-items: center;
 }
+
+
 
 // Стилизация стрелок для слайдера на планшетную версию
 

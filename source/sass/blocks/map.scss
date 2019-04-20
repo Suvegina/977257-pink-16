@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.map__heading {
+  @include visually-hidden
+}
+
 .map::before {
   content: "";
   width: 320px;
@@ -13,3 +17,7 @@
   background-image: url(../../img/bg-triangle-white-footer.svg);
   background-repeat: no-repeat;
 }
+
+// .map__mark {
+//   display: inline-block;
+// }

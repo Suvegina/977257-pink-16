@@ -14,44 +14,53 @@ img {
   height: auto;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1;
-  height: 1;
-  margin: -1;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-
-  // -webkit-clip-path: inset(100%);
-  //     clip-path: inset(100%);
-  overflow: hidden;
-}
 .page-header__logo path,
 .main-nav__toggle path {
   fill: $white-color;
 }
 
-.page-header__logo:hover path,
-.page-header__logo:focus path,
-.main-nav__toggle:hover path,
-.main-nav__toggle:focus path{
-  fill: $color-element;
+.page-header__logo,
+.main-nav__toggle {
+
+  &:hover path,
+  &:focus path{
+    fill: $color-element;
+  }
 }
 
-.page-header__logo:active path,
-.main-nav__toggle:active path {
-  fill: $active-color-element;
-  // fill: $active-color; - для декстопа
+.page-header__logo,
+.main-nav__toggle {
+
+  &:active path {
+    fill: $active-color-element;
+    // fill: $active-color; - для декстопа
+  }
 }
+
+
+// .page-header__logo path,
+// .main-nav__toggle path {
+//   fill: $white-color;
+// }
+
+// .page-header__logo:hover path,
+// .page-header__logo:focus path,
+// .main-nav__toggle:hover path,
+// .main-nav__toggle:focus path{
+//   fill: $color-element;
+// }
+
+// .page-header__logo:active path,
+// .main-nav__toggle:active path {
+//   fill: $active-color-element;
+//   // fill: $active-color; - для декстопа
+// }
 
 
 .main-nav {
-  // background-image: url(../../img/bg-back-mobile@1x.jpg);
   background-color: $main-color;
 
-  &__menu {
+  .main-nav__menu {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
@@ -59,13 +68,13 @@ img {
 
   }
 
-  &__toggle {
+  .main-nav__toggle {
     fill: $white-color;
     border: none;
     background: none;
   }
 
-  &__list{
+  .main-nav__list {
     margin: 0;
     padding:0;
   }
@@ -76,11 +85,11 @@ img {
   text-transform: uppercase;
   text-align: center;
 
-  &__item {
+  .site-list__item {
     font-weight: 700;
     color: #fff;
     text-decoration: none;
-    padding: 20px;
+    padding: 19px;
     border-top: 1px solid $active-color;
     border-bottom: 1px solid black;
 
