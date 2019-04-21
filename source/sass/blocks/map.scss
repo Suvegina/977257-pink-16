@@ -1,0 +1,23 @@
+.map {
+  position: relative;
+}
+
+.map__heading {
+  @include visually-hidden
+}
+
+.map::before {
+  content: "";
+  width: 320px;
+  height: 123px;
+
+  top: 0;
+
+  position: absolute;
+  background-image: url(../../img/bg-triangle-white-footer.svg);
+  background-repeat: no-repeat;
+}
+
+// .map__mark {
+//   display: inline-block;
+// }

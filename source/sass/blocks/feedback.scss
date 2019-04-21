@@ -1,0 +1,97 @@
+.feedback {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ffffff;
+  margin: 0 auto;
+  position: relative;
+}
+
+.feedback__wrapper {
+  margin-top: 45px;
+  // margin-bottom: 20px;
+}
+
+.feedback__heading {
+  @include visually-hidden
+}
+
+.feedback__item {
+  text-align: center;
+  margin: 0 25px;
+}
+// При позиционировании, нужно задать правильное расположение
+
+  // .feedback::before {
+  //   content: "";
+  //   position: absolute;
+
+  //   width: 320px;
+  //   height: 123px;
+
+  //   top: 0;
+
+  //   background-image: url(../../img/bg-triangle-white.svg);
+  //   background-repeat: no-repeat;
+  // }
+
+.feedback__autr-name {
+  line-height: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
+.feedback__text {
+  @include caption-style
+}
+
+.feedback__toggles {
+  display: flex;
+  list-style: none;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+
+// Стилизация стрелок для слайдера на планшетную версию
+
+// &__slider {
+//   background-repeat: no-repeat;
+
+  // &__arrow-down,
+  // &__arrow-next {
+    // width: 22px;
+    // height: 42px;
+
+//     background-repeat: no-repeat;
+  //   opacity: 0.3;
+//     }
+
+//   &__arrow-down {
+//     background-image: url(../../icon-review-arrow-left.svg);
+//   }
+
+//   &__arrow-next {
+//     background-image: url(../../icon-review-arrow-right.svg);
+//   }
+
+//   &:hover,
+//   &:focus {
+//   opacity: 0.6;
+//   }
+
+//   &:active {
+//   opacity: 0.1;
+//   }
+// }
+
+
+
+
+

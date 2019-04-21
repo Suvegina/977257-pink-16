@@ -1,0 +1,120 @@
+.page-footer {
+
+}
+
+.page-footer__logo-wraper {
+  display: flex;
+  justify-content: center;
+
+  padding: 40px 0;
+}
+
+.page-footer__logo {
+
+  &:hover path,
+  &:focus path {
+    fill: $color-element;
+  }
+  &:active path {
+  // fill: inherit;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__social {
+
+}
+
+.social {
+
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.social__item {
+  padding: 0 10px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  border: 3px solid $main-color-element;
+  border-radius: 50%;
+
+  path {
+    fill: $color-element;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+  &:hover,
+  &:focus {
+    border-color: $main-color;
+  };
+
+  &:active {
+    border-color: $main-color-element;
+  }
+}
+
+.social__name-hidden {
+  @include visually-hidden
+}
+
+//   .social__link {
+
+//     &--twitter,
+//     &--facebook,
+//     &--youtube {
+
+//       // ?
+//   }
+// }
+
+.page-footer__copyright {
+padding: 40px 0;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright__text {
+  padding-right: 15px;
+  margin: 0;
+}
+
+.copyright__link path {
+  fill: $color-element;
+}
+
+.copyright__link {
+
+  :hover path,
+  :focus path {
+    fill: $main-color;
+  }
+}
+
+.copyright__link:active path {
+  fill: $main-color;
+  opacity: 0.3;
+}
+
+.copyright__hidden-text {
+  @include visually-hidden
+}

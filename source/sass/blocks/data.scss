@@ -1,0 +1,37 @@
+.data {
+  margin: 0 20px 40px 20px;
+
+}
+
+.data__value {
+  margin: 0;
+}
+
+// лэйблы к инпутам
+.data__last-name,
+.data__first-name,
+.data__patronym {
+  @include style-description
+  margin-left: 20px;
+}
+
+// Стилизация инпутов
+.data__input {
+  @include input-form
+  min-width: 240px;
+}
+
+.data__input {
+  &:hover,
+  &:focus {
+    @include input-form-hover
+  }
+}
+
+.data__input {
+  @include placeholder-style
+
+  &:active{
+    @include input-form-active
+  }
+}

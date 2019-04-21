@@ -1,0 +1,155 @@
+.price {
+  padding-top: 90px;
+  background-color: $gray-color;
+  // position: relative;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+
+  //   width: 100%;
+  //   height: 100%;
+
+  //   top: -30px;
+  //   left: -150px;
+
+  //   background-image: url(../../img/bg-triangle-white-footer.svg);
+  //   background-repeat: no-repeat;
+  //   z-index: 0;
+  // }
+
+  // странно применяются настройки для элемента, или нужен другой элемент
+}
+
+.price__heading {
+  @include visually-hidden
+}
+
+
+.price__section {
+  border: 2px solid #e5e5e5;
+  border-top: none;
+  border-bottom: none;
+}
+
+.price__item {
+  display: flex;
+  background: $main-color;
+}
+
+.price__mark,
+.price__title,
+.price__cost {
+  color: $white-color;
+  font-weight: 300;
+  // line-height: 30px;
+
+  text-transform: uppercase;
+}
+
+.price__description {
+  display: block;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 22px;
+}
+
+.price__mark {
+  margin: 0;
+  padding-left: 25px;
+
+  font-size: 14px;
+  position: relative;
+
+  width: 74px;
+  height: 73px;
+  transform: rotate(-45deg);
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 74px;
+    height: 73px;
+
+    top: -10px;
+    right: 22px;
+
+    background-image: url(../../img/bg-hit.svg);
+    background-repeat: no-repeat;
+
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+}
+
+.price__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.price__cost {
+  font-size: 24px;
+  margin: 0;
+}
+
+.price__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  // padding-bottom: 40px;
+  list-style: none;
+}
+
+.price__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  // margin-bottom: 30px;
+}
+
+
+.price__list-field {
+}
+
+.price__list-option {
+  display: flex;
+  justify-content: space-between;
+  background-color: $white-color;
+
+  padding: 3px 20px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+// .price-list__option-yes::before {
+//   content: "";
+//   position: absolute;
+//   display: block;
+
+//   width: 31px;
+//   height: 21px;
+
+//   bottom: 10px;
+//   right: 10px;
+
+//   background-image: url(../../img/icon-yes.svg);
+//   background-repeat: no-repeat;
+// }
+
+// .price-list__option-no::after {
+//   content: "";
+//   position: absolute;
+//   display: block;
+
+//   width: 27px;
+//   height: 26px;
+
+//   bottom: 10px;
+//   right: 10px;
+
+//   background-image: url(../../img/icon-no.svg);
+//   background-repeat: no-repeat;
+// }

@@ -1,0 +1,53 @@
+// .feedback,
+// .price {
+//   &__toggles {
+//     display: flex;
+//     list-style: none;
+//     align-items: center;
+//   }
+// }
+
+.slider {
+}
+
+.slider__toggle {
+  margin: 0 auto;
+  margin: 10px;
+  margin-top: 30px;
+  padding: 0;
+  margin-bottom: 40px;
+
+  opacity: 0.3;
+  width: 4px;
+  height: 4px;
+
+  background: $main-color;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 2px solid rgba(0,0,0,0);
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.slider__toggle {
+  &--active {
+    width: 6px;
+    height: 6px;
+
+    background: $white-color;
+    border: 3px solid $main-color;
+    opacity: 1;
+  }
+}
+
