@@ -1,5 +1,5 @@
 .app {
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-image: url(../img/bg-back-mobile@1x.jpg);
   background-color: $main-color;
   background-repeat: no-repeat;
 }
@@ -19,6 +19,7 @@
 }
 
 .app__title {
+  display: none; /* это применить только на мобилке, на др. поставить значение inline-block или block */
   color: $white-color;
   margin: 0;
   padding: 0;

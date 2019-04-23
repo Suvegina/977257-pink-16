@@ -1,10 +1,12 @@
 .page-header__logo path,
-.main-nav__toggle path {
+.main-nav__toggle--open path,
+.main-nav__toggle--close path {
   fill: $white-color;
 }
 
 .page-header__logo,
-.main-nav__toggle {
+.main-nav__toggle--open,
+.main-nav__toggle--close {
 
   &:hover path,
   &:focus path{
@@ -13,12 +15,17 @@
 }
 
 .page-header__logo,
-.main-nav__toggle {
+.main-nav__toggle--open,
+.main-nav__toggle--close {
 
   &:active path {
     fill: $active-color-element;
     // fill: $active-color; - для декстопа
   }
+}
+
+.main-nav__toggle--open {
+  display: none;
 }
 
 
@@ -33,7 +40,8 @@
 
   }
 
-  .main-nav__toggle {
+  .main-nav__toggle--open,
+  .main-nav__toggle--close {
     fill: $white-color;
     border: none;
     background: none;
@@ -122,11 +130,8 @@
   padding: 20px;
 }
 
-  .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav__list {
+.main-nav__toggle--open
+.main-nav__list {
     margin: 0;
     padding:0;
   }
