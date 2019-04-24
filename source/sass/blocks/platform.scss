@@ -69,14 +69,27 @@
 
     &:hover,
     &:focus {
-      @include input-form-hover
+      border-color: $main-color;
+      outline: none;
     }
 
     &:active {
-      @include input-form-active
+      border-color: $color-element;
+      outline: none;
     }
   }
 }
+
+// .platform__input-radio {
+//   &:hover,
+//   &:focus {
+//     @include input-form-hover
+//   }
+
+//   &:active {
+//     @include input-form-active
+//   }
+// }
 
 .platform__input-radio:checked + .platform__label {
   &::after {
@@ -90,19 +103,7 @@
     left: -54px;
 
     background-color: $color-element;
-    // background-image: url(../../img/icon-yes-check.svg);
-    background-repeat: no-repeat;
     border-radius: 50%;
-
-
-    &:hover,
-    &:focus {
-      @include input-form-hover
-    }
-
-    &:active {
-      @include input-form-active
-    }
   }
 }
 

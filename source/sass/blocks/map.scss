@@ -1,23 +1,31 @@
 .map {
-  position: relative;
+  // position: relative;
+}
+
+.map {
+  display: block;
   margin: 0 auto;
+  background-image: url(../img/bg-map-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  z-index: -1;
 }
 
 .map__heading {
   @include visually-hidden
 }
 
-.map::before {
-  content: "";
-  width: 320px;
-  height: 123px;
+// .map::before {
+//   content: "";
+//   position: absolute;
+//   width: 320px;
+//   height: 123px;
 
-  top: 0;
+//   top: 0;
 
-  position: absolute;
-  background-image: url(../../img/bg-triangle-white-footer.svg);
-  background-repeat: no-repeat;
-}
+//   background-image: url(../img/bg-triangle-white-footer.svg);
+//   background-repeat: no-repeat;
+// }
 
 // .map__mark {
 //   display: inline-block;
@@ -31,9 +39,31 @@
 
 
 @media (min-width: $tablet-width) {
-
+  .map {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 660px;
+    height: 648px;
+    bottom: 0px;
+    background-image: url(../img/bg-map-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: -1;
+  }
 }
 
 @media (min-width: $desktop-width) {
-
+  .map-mark {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1200px;
+    height: 976px;
+    bottom: 0px;
+    background-image: url(../img/bg-map-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: -1;
+  }
 }

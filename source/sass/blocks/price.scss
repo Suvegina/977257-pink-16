@@ -8,21 +8,21 @@
   background-color: $gray-color;
   z-index: -1;
 
-  &::before {
-    content: "";
-    position: absolute;
-    margin: 0 auto;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   margin: 0 auto;
 
-    width: 1200px;
-    height: 94px;
+  //   width: 1200px;
+  //   height: 94px;
 
-    bottom: -50px;
-    left: 0px;
+  //   bottom: -50px;
+  //   left: 0px;
 
-    background-image: url(../img/bg-triangle-white.svg);
-    background-repeat: no-repeat;
-    transform: rotate(90leg);
-  }
+  //   background-image: url(../img/bg-triangle-white.svg);
+  //   background-repeat: no-repeat;
+  //   transform: rotate(90leg);
+  // }
 }
 
 .price__heading {
@@ -79,7 +79,7 @@
     top: -10px;
     right: 22px;
 
-    background-image: url(../../img/bg-hit.svg);
+    background-image: url(../img/bg-hit.svg);
     background-repeat: no-repeat;
 
     transform: rotate(45deg);

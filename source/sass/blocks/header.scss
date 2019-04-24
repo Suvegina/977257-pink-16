@@ -28,149 +28,248 @@
   display: none;
 }
 
-
 .main-nav {
   background-color: $main-color;
-
-  .main-nav__menu {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid black;
-    padding: 20px;
-
-  }
-
-  .main-nav__toggle--open,
-  .main-nav__toggle--close {
-    fill: $white-color;
-    border: none;
-    background: none;
-  }
-
-  .main-nav__list {
-    margin: 0;
-    padding:0;
-  }
 }
-
-.site-list {
-  list-style: none;
-  text-transform: uppercase;
-  text-align: center;
-
-  .site-list__item {
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    padding: 19px;
-    border-top: 1px solid $active-color;
-    border-bottom: 1px solid black;
-
-    & a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-
-      &:hover,
-      &:focus {
-        font-weight: 700;
-        color: $color-element;
-      }
-
-      &:active {
-        font-weight: 700;
-        color: $active-color;
-      }
-    }
-
-    //
-    &--active {
-    // внешний вид активного элемента в мобильной версии не имеет.
-    }
-  }
-
-
-
-// @media (min-width: $mobile-width) {
-
-// }
-
-
-@media (min-width: $tablet-width) {
-
-  .site-list__item {
-    padding: 20px;
-    }
-  }
-
-
-@media (min-width: $desktop-width) {
-
-.main-nav {
-  background-color: $main-color-underlay;
-  margin: 0 auto;
-
-  content: "";
-  position: absolute;
-
-  width: 1200px;
-  height: auto;
-
-  top: 0px;
-
-  z-index: 10;
-}
-
 
 .main-nav__menu {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
   border-bottom: 1px solid black;
   padding: 20px;
 }
 
-.main-nav__toggle--open
+.main-nav__toggle--open,
+.main-nav__toggle--close {
+  fill: $white-color;
+  border: none;
+  background: none;
+}
+
 .main-nav__list {
-    margin: 0;
-    padding:0;
-  }
+  margin: 0;
+  padding:0;
 }
 
 .site-list {
   list-style: none;
   text-transform: uppercase;
   text-align: center;
+}
+
+.site-list__item {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  padding: 19px;
+  border-top: 1px solid $active-color;
+  border-bottom: 1px solid black;
+
+  & a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+
+    &:hover,
+    &:focus {
+      font-weight: 700;
+      color: $color-element;
+    }
+
+    &:active {
+      font-weight: 700;
+      color: $active-color;
+    }
+  }
+
+  // //
+  // &--active {
+  // // внешний вид активного элемента в мобильной версии не имеет.
+  // }
+}
+
+@media (min-width: $mobile-width) {
+
+}
+
+
+@media (min-width: $tablet-width) {
+
+// .main-nav {
+//   background-color: $main-color;
+// }
+
+// .main-nav__menu {
+//   display: flex;
+//   justify-content: space-between;
+//   border-bottom: 1px solid black;
+//   padding: 20px;
+// }
+
+// .main-nav__toggle--open,
+// .main-nav__toggle--close {
+//   fill: $white-color;
+//   border: none;
+//   background: none;
+// }
+
+// .main-nav__list {
+//   margin: 0;
+//   padding:0;
+// }
+
+// .site-list {
+//   list-style: none;
+//   text-transform: uppercase;
+//   text-align: center;
+// }
+
+//   .site-list__item {
+//   font-weight: 700;
+//   color: #fff;
+//   text-decoration: none;
+//   border-top: 1px solid $active-color;
+//   border-bottom: 1px solid black;
+//   padding: 30px;
+//     }
+// }
+
+@media (max-width: $width-for-gadget) {
+
+.site-list__item {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-top: 1px solid $active-color;
+  border-bottom: 1px solid black;
+  padding: 30px;
+
+}
+
+// .main-nav {
+//   background-color: $main-color;
+// }
+
+// .main-nav__menu {
+//   display: flex;
+//   justify-content: space-between;
+//   border-bottom: 1px solid black;
+//   padding: 20px;
+// }
+
+// .main-nav__toggle--open,
+// .main-nav__toggle--close {
+//   fill: $white-color;
+//   border: none;
+//   background: none;
+// }
+
+// .main-nav__list {
+//   margin: 0;
+//   padding:0;
+// }
+
+// .site-list {
+//   list-style: none;
+//   text-transform: uppercase;
+//   text-align: center;
+// }
+
+//   .site-list__item {
+//   font-weight: 700;
+//   color: #fff;
+//   text-decoration: none;
+//   border-top: 1px solid $active-color;
+//   border-bottom: 1px solid black;
+//   padding: 30px;
+//     }
+// }
+
+}
+}
+
+@media (min-width: $desktop-width) {
+
+  .main-nav {
+    margin: 0 auto;
+
+    content: "";
+    // position: absolute;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    top: 0px;
+    z-index: 10;
+
+    // display: flex;
+    // flex-wrap: nowrap;
+    // justify-content: space-between;
+    background-color: $main-color-menu;
+  }
+
+  .main-nav__container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+  }
+
+  .main-nav__menu {
+    border-bottom: none;
+  }
+
+  .main-nav__toggle--close,
+  .main-nav__toggle--open {
+    display: none;
+  }
+
+//   .main-nav__list {
+//       margin: 0;
+//       padding:0;
+//     }
+//   }
+
+  .site-list {
+    list-style: none;
+    text-transform: inherit;
+    text-align: center;
+
+    display: flex;
+  }
 
   .site-list__item {
     font-weight: 700;
     color: #fff;
     text-decoration: none;
-    padding: 19px;
-    border-top: 1px solid $active-color;
-    border-bottom: 1px solid black;
+    // padding: 19px;
+    border-top: none;
+    border-bottom: none;
 
-    & a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
+}
 
-      &:hover,
-      &:focus {
-        font-weight: 700;
-        color: $color-element;
-      }
 
-      &:active {
-        font-weight: 700;
-        color: $active-color;
-      }
-    }
 
-    //
-    &--active {
-    // внешний вид активного элемента в мобильной версии не имеет.
-    }
+  // для десктопного меню
+
+  .site-list__item--active {
+    position: relative;
+  }
+
+  // .site-list__item--active a:not([href]) {
+  //   // background-color: #000000;
+  // }
+
+  .site-list__item--active::after {
+    content: "";
+
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+
+    height: 2px;
+
+    background-color: #ffffff;
   }
 }
 
@@ -193,26 +292,3 @@
 //   // fill: $active-color; - для декстопа
 // }
 
-
-  // для десктопного меню
-
-  // .site-list__item--active {
-  //   position: relative;
-  // }
-  // .site-list__item--active a:not([href]) {
-  //   background-color: #000000;
-  // }
-
-  // .site-list__item--active::after {
-  //   content: "";
-
-  //   position: absolute;
-  //   right: 20px;
-  //   bottom: 0;
-  //   left: 20px;
-
-  //   height: 2px;
-
-  //   background-color: #ffffff;
-  // }
-}

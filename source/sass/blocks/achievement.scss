@@ -88,18 +88,18 @@
     top: 9px;
     left: -57px;
 
-    background-image: url(../../img/icon-yes-check.svg);
+    background-image: url(../img/icon-yes-check.svg);
     background-repeat: no-repeat;
 
 
-    &:hover,
-    &:focus {
-      @include input-form-hover
-    }
+    // &:hover,
+    // &:focus {
+    //   @include input-form-hover
+    // }
 
-    &:active {
-      @include input-form-active
-    }
+    // &:active {
+    //   @include input-form-active
+    // }
   }
 }
 

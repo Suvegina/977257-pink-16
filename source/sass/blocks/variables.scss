@@ -4,6 +4,7 @@
 $main-color: rgb(40,54,69);
 $main-color-element: rgba(40,54,69,0.1);
 $main-color-underlay: rgba(40,54,69,0.3);
+$main-color-menu: rgba(0,0,0,0.3);
 
 
 $color-element: rgb(210,40,86);
@@ -21,6 +22,7 @@ $btn-filter-color: #2aab6d;
 $btn-filter-main: #1c9b5e;
 $btn-filter-disabled: #e5e5e5;
 
+$color-title-addvantages: #000000;
 
 
 // Переменные разрешений версий экрана
@@ -28,3 +30,6 @@ $btn-filter-disabled: #e5e5e5;
 $mobile-width: 320px;
 $tablet-width: 660px;
 $desktop-width: 1000px;
+$width-for-gadget: 999px;
+
+
