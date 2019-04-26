@@ -2,7 +2,7 @@
 // }
 
 .advantages__heading {
-  @include visually-hidden
+  @include visually-hidden;
 }
 
 .advantages__mobil-screen {
@@ -17,7 +17,6 @@
 
   // padding: 0;
   // padding: 85px 150px 0 150px;
-
 
   background-color: $gray-color;
   z-index: -1;
@@ -41,7 +40,6 @@
   margin: 0 auto;
   padding: 0;
   padding-top: 60px;
-
 
   // background-color: $gray-color;
   // z-index: -1;
@@ -74,7 +72,7 @@
 .advantages__slogan,
 .advantages__flag {
   display: block;
-  @include heading-style
+  @include heading-style;
   text-align: center;
   z-index: 10;
 }
@@ -103,7 +101,6 @@
   display: inline-block;
 }
 
-
 @media (min-width: $mobile-width) {
   .advantages__wrapper-item {
     margin: 0 auto;
@@ -118,14 +115,11 @@
   .advantages__mobil-item-wrapper--mob {
     display: block;
   }
-
-
 }
 
 @media (max-width: $width-only-for-mobile) {
   .advantages__wrapper {
   display: flex;
-
   }
 
   .advantages__item {
@@ -201,7 +195,6 @@
 //     max-width: 310px;
 //     margin-bottom: 30px;
 //   }
-
 
 // Мутная настройка, ниже
 

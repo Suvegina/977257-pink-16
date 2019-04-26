@@ -6,7 +6,6 @@
 
 .achievement__section {
   border: none;
-
 }
 
 .achievement__title {
@@ -33,9 +32,6 @@
   user-select: none;
 }
 
-
-
-
 // чекбокс
 
 .achievement__input {
@@ -46,7 +42,6 @@
   display: block;
   position: relative;
 }
-
 
 .achievement__input-checkbox + .achievement__label {
   cursor: pointer;
@@ -97,25 +92,13 @@
 
     background-image: url(../img/icon-yes-check.svg);
     background-repeat: no-repeat;
-
-
-    // &:hover,
-    // &:focus {
-    //   @include input-form-hover
-    // }
-
-    // &:active {
-    //   @include input-form-active
-    // }
   }
 }
-
 
 
 @media (min-width: $mobile-width) {
 
 }
-
 
 @media (min-width: $tablet-width) {
 

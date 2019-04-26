@@ -6,7 +6,7 @@
 }
 
 .app__head-title {
-  @include visually-hidden
+  @include visually-hidden;
   margin: 0;
 }
 
@@ -50,7 +50,7 @@
 .app__btn-device {
   color: $white-color;
   font-weight: 700;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   border-radius: 30px;
   background: none;
   padding: 17px;
@@ -94,7 +94,7 @@
 // }
 
 .app__application-name {
-  @include visually-hidden
+  @include visually-hidden;
 }
 
 // @media (min-width: $mobile-width) {
@@ -118,11 +118,10 @@
 
   .app__title {
     display: block;
-    @include heading-style-medium
+    @include heading-style-medium;
     width: 400px;
     text-align: center;
     margin-bottom: 30px;
-
   }
 
   .app__device {
@@ -169,10 +168,9 @@
 
   .app__title {
     display: block;
-    @include heading-style-large
+    @include heading-style-large;
     width: 400px;
     text-align: center;
     margin-bottom: 30px;
-
   }
 }

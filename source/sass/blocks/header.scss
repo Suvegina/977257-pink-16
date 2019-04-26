@@ -190,21 +190,22 @@
 
 @media (min-width: $desktop-width) {
 
+.page-header {
+  position: relative;
+  z-index: 1;
+  background-color: red;
+  // background-color: rgba(0,0,0,0.3)
+}
+
+.page-main {
+  margin-top: -120px;
+}
   .main-nav {
     margin: 0 auto;
-
-    content: "";
-    // position: absolute;
     padding-top: 30px;
     padding-bottom: 20px;
 
-    top: 0px;
-    z-index: 10;
-
-    // display: flex;
-    // flex-wrap: nowrap;
-    // justify-content: space-between;
-    background-color: $main-color-menu;
+    top: 0px;;
   }
 
   .main-nav__container {
