@@ -29,7 +29,6 @@
   position: relative;
   display: block;
 
-  // cursor: pointer;
   user-select: none;
 }
 
@@ -80,16 +79,22 @@
   }
 }
 
-// .platform__input-radio {
-//   &:hover,
-//   &:focus {
-//     @include input-form-hover
-//   }
+.platform__input-radio + .platform__label:hover,
+.platform__input-radio + .platform__label:focus {
 
-//   &:active {
-//     @include input-form-active
-//   }
-// }
+  &::before {
+    border-color: $main-color;
+    outline: none;
+  }
+}
+
+.platform__input-radio + .platform__label:active {
+
+  &::before {
+    border-color: $color-element;
+    outline: none;
+  }
+}
 
 .platform__input-radio:checked + .platform__label {
   &::after {
@@ -106,18 +111,6 @@
     border-radius: 50%;
   }
 }
-
-// .platform__input-radio {
-//   content: "";
-//   position: absolute;
-
-//   width: 15px;
-//   height: 15px;
-
-//   border: 2px solid #e5e5e5;
-//   border-radius: 50%;
-// }
-
 
 
 @media (min-width: $mobile-width) {

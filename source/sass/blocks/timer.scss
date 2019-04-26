@@ -9,6 +9,7 @@
 .timer__inner {
   content: "";
   position: absolute;
+  display: block;
   z-index: 10;
 
   bottom: -25px;
@@ -22,6 +23,7 @@
 .timer__clock {
   content: "";
   position: absolute;
+  display: block;
 
   left: -88px;
   bottom: -115px;
