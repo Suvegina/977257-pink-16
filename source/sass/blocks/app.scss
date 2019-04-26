@@ -47,7 +47,6 @@
 //   background-color: $main-color;
 // }
 
-
 .app__btn-device {
   color: $white-color;
   font-weight: 700;
@@ -98,12 +97,9 @@
   @include visually-hidden
 }
 
-
-
 // @media (min-width: $mobile-width) {
 
 // }
-
 
 @media (min-width: $tablet-width) {
   .app__header {
@@ -157,8 +153,6 @@
   }
 }
 
-
-
 @media (min-width: $desktop-width) {
   .app {
     display: flex;
@@ -182,4 +176,3 @@
 
   }
 }
-

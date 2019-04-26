@@ -14,8 +14,6 @@
   overflow: hidden;
 }
 
-
-
 //Общий стиль заголовков
 @mixin heading-style {
   font-size: 24px;
@@ -52,7 +50,6 @@
 
   padding: 0;
   margin: 0;
-
 }
 
 // @mixin caption-style-medium {
@@ -76,7 +73,6 @@
 //   margin: 0;
 
 // }
-
 
 // Единый стиль написания заголовков на обложках внутр. страниц
 @mixin page-cover-text {
@@ -115,10 +111,8 @@
   // color: $main-color;
 }
 
-
 //Общий стиль описания для планшета
 //Общий стиль описания для декстопа
-
 
 // стиль подписи к блокам формы label / legend
 @mixin style-description {
@@ -160,6 +154,4 @@
 // стиль рамок для fieldset
 // @mixin
 
-
 // @mixin
-
