@@ -1,0 +1,41 @@
+.timer {
+  display: flex;
+}
+
+.timer__wrapper {
+  position: relative;
+}
+
+.timer__inner {
+  content: "";
+  position: absolute;
+  z-index: 10;
+
+  bottom: -25px;
+  left: -25px;
+
+  path {
+    fill: $color-element;
+  }
+}
+
+.timer__clock {
+  content: "";
+  position: absolute;
+
+  left: -88px;
+  bottom: -115px;
+
+  font-size: 120px;
+  font-weight: 700;
+  color: $color-element;
+
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+
+}
