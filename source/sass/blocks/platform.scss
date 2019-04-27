@@ -7,11 +7,10 @@
 
 .platform__wrapper {
   border: none;
-
 }
 
 .platform__title {
-  @include style-description
+  @include style-description;
   text-align: center;
   margin: 40px 0;
 }
@@ -19,7 +18,7 @@
 .platform__list {
   list-style: none;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 .platform__item {
@@ -32,13 +31,10 @@
   user-select: none;
 }
 
-
-
 // радиобатон
 
-
 .platform__radio {
-  @include visually-hidden
+  @include visually-hidden;
 }
 
 
@@ -58,7 +54,6 @@
 
     width: 31px;
     height: 31px;
-
     top: 0px;
     left: -64px;
 
@@ -81,7 +76,6 @@
 
 .platform__input-radio + .platform__label:hover,
 .platform__input-radio + .platform__label:focus {
-
   &::before {
     border-color: $main-color;
     outline: none;
@@ -89,7 +83,6 @@
 }
 
 .platform__input-radio + .platform__label:active {
-
   &::before {
     border-color: $color-element;
     outline: none;
@@ -112,16 +105,14 @@
   }
 }
 
+// @media (min-width: $mobile-width) {
 
-@media (min-width: $mobile-width) {
+// }
 
-}
+// @media (min-width: $tablet-width) {
 
+// }
 
-@media (min-width: $tablet-width) {
+// @media (min-width: $desktop-width) {
 
-}
-
-@media (min-width: $desktop-width) {
-
-}
+// }

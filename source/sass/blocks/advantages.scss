@@ -130,6 +130,7 @@
 // Нужно переопределить значения в планшетной версии
 
 @media (min-width: $tablet-width) {
+
   .advantages__slogan,
   .advantages__flag {
     @include heading-style-medium

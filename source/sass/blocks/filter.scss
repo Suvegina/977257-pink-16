@@ -25,9 +25,9 @@
   padding: 0;
 }
 
-.filter__upload {
+// .filter__upload {
 
-}
+// }
 
 .filter__upload-image {
   padding-top: 20px;
@@ -42,23 +42,19 @@
 
   path,
   rect {
-  fill: $main-color;
-  opacity: 0.3;
+    fill: $main-color;
+    opacity: 0.3;
   }
-}
 
-.filter__item {
   &:hover,
   &:focus {
     path,
     rect {
-    fill: $main-color;
-    opacity: 0.5;
+      fill: $main-color;
+      opacity: 0.5;
     }
   }
-}
 
-.filter__item {
   &--active {
     path,
     rect {
@@ -68,18 +64,14 @@
   }
 }
 
+// @media (min-width: $mobile-width) {
 
+// }
 
+// @media (min-width: $tablet-width) {
 
-@media (min-width: $mobile-width) {
+// }
 
-}
+// @media (min-width: $desktop-width) {
 
-
-@media (min-width: $tablet-width) {
-
-}
-
-@media (min-width: $desktop-width) {
-
-}
+// }

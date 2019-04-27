@@ -7,16 +7,10 @@
 .page-header__logo,
 .main-nav__toggle--open,
 .main-nav__toggle--close {
-
   &:hover path,
-  &:focus path{
+  &:focus path {
     fill: $color-element;
   }
-}
-
-.page-header__logo,
-.main-nav__toggle--open,
-.main-nav__toggle--close {
 
   &:active path {
     fill: $active-color-element;
@@ -48,7 +42,7 @@
 
 .main-nav__list {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 .site-list {
@@ -61,14 +55,15 @@
   font-weight: 700;
   color: #fff;
   text-decoration: none;
+
   padding: 19px;
   border-top: 1px solid $active-color;
   border-bottom: 1px solid black;
 
   & a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
 
     &:hover,
     &:focus {
@@ -81,125 +76,117 @@
       color: $active-color;
     }
   }
-
-  // //
-  // &--active {
-  // // внешний вид активного элемента в мобильной версии не имеет.
-  // }
 }
 
-@media (min-width: $mobile-width) {
+// @media (min-width: $mobile-width) {
 
-}
-
-
-@media (min-width: $tablet-width) {
-
-// .main-nav {
-//   background-color: $main-color;
 // }
 
-// .main-nav__menu {
-//   display: flex;
-//   justify-content: space-between;
-//   border-bottom: 1px solid black;
-//   padding: 20px;
-// }
+// @media (min-width: $tablet-width) {
 
-// .main-nav__toggle--open,
-// .main-nav__toggle--close {
-//   fill: $white-color;
-//   border: none;
-//   background: none;
-// }
+//   .main-nav {
+//     background-color: $main-color;
+//   }
 
-// .main-nav__list {
-//   margin: 0;
-//   padding:0;
-// }
+//   .main-nav__menu {
+//     display: flex;
+//     justify-content: space-between;
+//     border-bottom: 1px solid black;
+//     padding: 20px;
+//   }
 
-// .site-list {
-//   list-style: none;
-//   text-transform: uppercase;
-//   text-align: center;
-// }
+//   .main-nav__toggle--open,
+//   .main-nav__toggle--close {
+//     fill: $white-color;
+//     border: none;
+//     background: none;
+//   }
+
+//   .main-nav__list {
+//     margin: 0;
+//     padding:0;
+//   }
+
+//   .site-list {
+//     list-style: none;
+//     text-transform: uppercase;
+//     text-align: center;
+//   }
 
 //   .site-list__item {
-//   font-weight: 700;
-//   color: #fff;
-//   text-decoration: none;
-//   border-top: 1px solid $active-color;
-//   border-bottom: 1px solid black;
-//   padding: 30px;
-//     }
+//     font-weight: 700;
+//     color: #fff;
+//     text-decoration: none;
+//     border-top: 1px solid $active-color;
+//     border-bottom: 1px solid black;
+//     padding: 30px;
+//   }
 // }
 
 @media (max-width: $width-for-gadget) {
 
-.site-list__item {
-  font-weight: 700;
-  color: #fff;
-  text-decoration: none;
-  border-top: 1px solid $active-color;
-  border-bottom: 1px solid black;
-  padding: 30px;
+  .site-list__item {
+    font-weight: 700;
+    color: #fff;
+    padding: 30px;
 
-}
+    border-top: 1px solid $active-color;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+  }
 
-// .main-nav {
-//   background-color: $main-color;
-// }
+//   .main-nav {
+//     background-color: $main-color;
+//   }
 
-// .main-nav__menu {
-//   display: flex;
-//   justify-content: space-between;
-//   border-bottom: 1px solid black;
-//   padding: 20px;
-// }
+//   .main-nav__menu {
+//     display: flex;
+//     justify-content: space-between;
+//     border-bottom: 1px solid black;
+//     padding: 20px;
+//   }
 
-// .main-nav__toggle--open,
-// .main-nav__toggle--close {
-//   fill: $white-color;
-//   border: none;
-//   background: none;
-// }
+//   .main-nav__toggle--open,
+//   .main-nav__toggle--close {
+//     fill: $white-color;
+//     border: none;
+//     background: none;
+//   }
 
-// .main-nav__list {
-//   margin: 0;
-//   padding:0;
-// }
+//   .main-nav__list {
+//     margin: 0;
+//     padding:0;
+//   }
 
-// .site-list {
-//   list-style: none;
-//   text-transform: uppercase;
-//   text-align: center;
-// }
+//   .site-list {
+//     list-style: none;
+//     text-transform: uppercase;
+//     text-align: center;
+//   }
 
 //   .site-list__item {
-//   font-weight: 700;
-//   color: #fff;
-//   text-decoration: none;
-//   border-top: 1px solid $active-color;
-//   border-bottom: 1px solid black;
-//   padding: 30px;
-//     }
-// }
-
-}
+//     font-weight: 700;
+//     color: #fff;
+//     text-decoration: none;
+//     border-top: 1px solid $active-color;
+//     border-bottom: 1px solid black;
+//     padding: 30px;
+//   }
 }
 
 @media (min-width: $desktop-width) {
 
-.page-header {
-  position: relative;
-  z-index: 1;
-  background-color: red;
-  // background-color: rgba(0,0,0,0.3)
-}
+  .page-header {
+    position: relative;
+    z-index: 1;
+    background-color: red;
+    // background-color: rgba(0, 0, 0, 0.3)
+  }
 
-.page-main {
-  margin-top: -120px;
-}
+  .page-main {
+    margin-top: -120px;
+  }
+
   .main-nav {
     margin: 0 auto;
     padding-top: 30px;
@@ -212,7 +199,6 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-
   }
 
   .main-nav__menu {
@@ -224,11 +210,10 @@
     display: none;
   }
 
-//   .main-nav__list {
-//       margin: 0;
-//       padding:0;
-//     }
-//   }
+  // .main-nav__list {
+  //   margin: 0;
+  //   padding:0;
+  // }
 
   .site-list {
     list-style: none;
@@ -242,13 +227,9 @@
     font-weight: 700;
     color: #fff;
     text-decoration: none;
-    // padding: 19px;
     border-top: none;
     border-bottom: none;
-
-}
-
-
+  }
 
   // для десктопного меню
 
@@ -272,23 +253,22 @@
 
     background-color: #ffffff;
   }
+
+  .page-header__logo path,
+  .main-nav__toggle path {
+    fill: $white-color;
+  }
+
+  .page-header__logo:hover path,
+  .page-header__logo:focus path,
+  .main-nav__toggle:hover path,
+  .main-nav__toggle:focus path {
+    fill: $color-element;
+  }
+
+  .page-header__logo:active path,
+  .main-nav__toggle:active path {
+    fill: $active-color-element;
+    // fill: $active-color; - для декстопа
+  }
 }
-
-
-// .page-header__logo path,
-// .main-nav__toggle path {
-//   fill: $white-color;
-// }
-
-// .page-header__logo:hover path,
-// .page-header__logo:focus path,
-// .main-nav__toggle:hover path,
-// .main-nav__toggle:focus path{
-//   fill: $color-element;
-// }
-
-// .page-header__logo:active path,
-// .main-nav__toggle:active path {
-//   fill: $active-color-element;
-//   // fill: $active-color; - для декстопа
-// }

@@ -7,8 +7,8 @@
 //   }
 // }
 
-.slider {
-}
+// .slider {
+// }
 
 .slider__toggle {
   margin: 0 auto;
@@ -38,9 +38,7 @@
   &:active {
     opacity: 0.1;
   }
-}
 
-.slider__toggle {
   &--active {
     width: 6px;
     height: 6px;
@@ -51,17 +49,14 @@
   }
 }
 
+// @media (min-width: $mobile-width) {
 
+// }
 
-@media (min-width: $mobile-width) {
+// @media (min-width: $tablet-width) {
 
-}
+// }
 
+// @media (min-width: $desktop-width) {
 
-@media (min-width: $tablet-width) {
-
-}
-
-@media (min-width: $desktop-width) {
-
-}
+// }

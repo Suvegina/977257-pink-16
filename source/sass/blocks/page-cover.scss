@@ -15,7 +15,7 @@
 }
 
 .page-cover__title {
-  @include heading-style
+  @include heading-style;
   text-align: center;
   padding: 35px 40px;
 }
@@ -34,9 +34,8 @@
   }
 
   .page-cover__title {
-    @include heading-style-medium
+    @include heading-style-medium;
     margin: 0 auto;
-    // text-align: center;
     padding: 35px 40px;
   }
 }
@@ -49,9 +48,8 @@
   }
 
   .page-cover__title {
-    @include heading-style-large
+    @include heading-style-large;
     margin: 0 auto;
-    // text-align: center;
     padding: 180px 0 100px 0;
   }
 }

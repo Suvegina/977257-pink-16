@@ -4,34 +4,34 @@
 }
 
 .add-comment__title {
-  @include style-description
+  @include style-description;
   text-align: center;
   padding: 40px 0 15px 0;
 }
 
 // Стилизация инпутов
 .add-comment__input {
-  @include input-form
+  @include input-form;
   min-width: 240px;
 }
 
 .add-comment__input {
   &:hover,
   &:focus {
-    @include input-form-hover
+    @include input-form-hover;
   }
 }
 
 .add-comment__input {
   min-height: 200px;
 
-  &:active{
-    @include input-form-active
+  &:active {
+    @include input-form-active;
   }
 }
 
 .add-comment__input {
-  @include placeholder-style
+  @include placeholder-style;
 }
 
 // @media (min-width: $mobile-width) {

@@ -1,6 +1,6 @@
-.page-footer {
+// .page-footer {
 
-}
+// }
 
 .page-footer__logo-wraper {
   display: flex;
@@ -10,24 +10,23 @@
 }
 
 .page-footer__logo {
-
   &:hover path,
   &:focus path {
     fill: $color-element;
   }
+
   &:active path {
-  // fill: inherit;
     opacity: 0.3;
   }
 }
 
-.page-footer__social {
+// .page-footer__social {
 
-}
+// }
 
-.social {
+// .social {
 
-}
+// }
 
 .social__list {
   list-style: none;
@@ -59,10 +58,11 @@
   &:active path {
     opacity: 0.3;
   }
+
   &:hover,
   &:focus {
     border-color: $main-color;
-  };
+  }
 
   &:active {
     border-color: $main-color-element;
@@ -70,7 +70,7 @@
 }
 
 .social__name-hidden {
-  @include visually-hidden
+  @include visually-hidden;
 }
 
 //   .social__link {
@@ -103,7 +103,6 @@
 }
 
 .copyright__link {
-
   :hover path,
   :focus path {
     fill: $main-color;
@@ -116,20 +115,18 @@
 }
 
 .copyright__hidden-text {
-  @include visually-hidden
+  @include visually-hidden;
 }
 
+// @media (min-width: $mobile-width) {
+
+// }
 
 
-@media (min-width: $mobile-width) {
+// @media (min-width: $tablet-width) {
 
-}
+// }
 
+// @media (min-width: $desktop-width) {
 
-@media (min-width: $tablet-width) {
-
-}
-
-@media (min-width: $desktop-width) {
-
-}
+// }

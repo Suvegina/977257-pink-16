@@ -13,13 +13,14 @@
 }
 
 .feedback__heading {
-  @include visually-hidden
+  @include visually-hidden;
 }
 
 .feedback__item {
   text-align: center;
   margin: 0 25px;
 }
+
 // При позиционировании, нужно задать правильное расположение
 
   // .feedback::before {
@@ -45,7 +46,7 @@
 }
 
 .feedback__text {
-  @include caption-style
+  @include caption-style;
 }
 
 .feedback__toggles {
@@ -57,8 +58,6 @@
   margin: 0;
   padding: 0;
 }
-
-
 
 // Стилизация стрелок для слайдера на планшетную версию
 
@@ -92,16 +91,15 @@
 //   }
 // }
 
+// @media (min-width: $mobile-width) {
 
-@media (min-width: $mobile-width) {
-
-}
+// }
 
 
-@media (min-width: $tablet-width) {
+// @media (min-width: $tablet-width) {
 
-}
+// }
 
-@media (min-width: $desktop-width) {
+// @media (min-width: $desktop-width) {
 
-}
+// }

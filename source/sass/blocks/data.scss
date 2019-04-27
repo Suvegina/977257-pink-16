@@ -7,31 +7,34 @@
 }
 
 // лэйблы к инпутам
+
 .data__last-name,
 .data__first-name,
 .data__patronym {
-  @include style-description
+  @include style-description;
   margin-left: 20px;
 }
 
 // Стилизация инпутов
+
 .data__input {
-  @include input-form
+  @include input-form;
   min-width: 240px;
 }
 
 .data__input {
+
   &:hover,
   &:focus {
-    @include input-form-hover
+    @include input-form-hover;
   }
 }
 
 .data__input {
-  @include placeholder-style
+  @include placeholder-style;
 
   &:active{
-    @include input-form-active
+    @include input-form-active;
   }
 }
 

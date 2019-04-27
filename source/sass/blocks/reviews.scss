@@ -1,9 +1,9 @@
-.reviews {
+// .reviews {
 
-}
+// }
 
 .reviews__title {
-  @include page-cover-text
+  @include page-cover-text;
 }
 
 .reviews__panorama {
@@ -43,9 +43,9 @@
   margin: 0 auto;
 }
 
-.reviews__list {
+// .reviews__list {
 
-}
+// }
 
 .reviews__item {
   width: 280px;
@@ -88,9 +88,7 @@
   padding: 0 17px;
   margin: 0 31px;
   position: relative;
-}
 
-.reviews__likes {
   &::before {
     content: "";
     display: block;
@@ -101,27 +99,25 @@
     left: -13px;
     top: 4px;
 
-    background-image: url(../img/icon-heart.svg);
+    background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
     position: absolute;
   }
 }
 
-.reviews__other {
+// .reviews__other {
 
-}
+// }
 
+// @media (min-width: $mobile-width) {
 
-
-@media (min-width: $mobile-width) {
-
-}
+// }
 
 
-@media (min-width: $tablet-width) {
+// @media (min-width: $tablet-width) {
 
-}
+// }
 
-@media (min-width: $desktop-width) {
+// @media (min-width: $desktop-width) {
 
-}
+// }
