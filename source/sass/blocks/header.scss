@@ -2,6 +2,10 @@
   background-color: $main-color;
 }
 
+.page-header__logo {
+  padding-left: 9px;
+}
+
 .page-header__logo path,
 .main-nav__toggle--open path,
 .main-nav__toggle--close path {
@@ -47,6 +51,15 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) and (max-width: $width-for-gadget) {
+  .main-nav__menu {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 40px;
+  }
 }
 
 @media (min-width: $desktop-width) {
