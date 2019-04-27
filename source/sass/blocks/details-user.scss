@@ -43,9 +43,10 @@
 
 .details-user__title {
   display: none; /*Скрыт на собильной версии*/
-  @include style-description;
   padding: 30px;
   text-align: center;
+
+  @include style-description;
 }
 
 // .details-user

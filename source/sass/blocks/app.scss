@@ -118,10 +118,11 @@
 
   .app__title {
     display: block;
-    @include heading-style-medium;
     width: 400px;
     text-align: center;
     margin-bottom: 30px;
+
+    @include heading-style-medium;
   }
 
   .app__device {

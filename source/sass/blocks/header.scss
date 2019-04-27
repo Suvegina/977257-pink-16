@@ -1,3 +1,7 @@
+.page-header {
+  background-color: $main-color;
+}
+
 .page-header__logo path,
 .main-nav__toggle--open path,
 .main-nav__toggle--close path {
@@ -23,7 +27,7 @@
 }
 
 .main-nav {
-  background-color: $main-color;
+  max-width: 1200px;
 }
 
 .main-nav__menu {
@@ -45,140 +49,11 @@
   padding: 0;
 }
 
-.site-list {
-  list-style: none;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.site-list__item {
-  font-weight: 700;
-  color: $white-color;
-  text-decoration: none;
-
-  padding: 19px;
-  border-top: 1px solid $active-color;
-  border-bottom: 1px solid black;
-
-  & a {
-    color: $white-color;
-    text-decoration: none;
-    font-weight: 700;
-
-    &:hover,
-    &:focus {
-      font-weight: 700;
-      color: $color-element;
-    }
-
-    &:active {
-      font-weight: 700;
-      color: $active-color;
-    }
-  }
-}
-
-// @media (min-width: $mobile-width) {
-
-// }
-
-// @media (min-width: $tablet-width) {
-
-//   .main-nav {
-//     background-color: $main-color;
-//   }
-
-//   .main-nav__menu {
-//     display: flex;
-//     justify-content: space-between;
-//     border-bottom: 1px solid black;
-//     padding: 20px;
-//   }
-
-//   .main-nav__toggle--open,
-//   .main-nav__toggle--close {
-//     fill: $white-color;
-//     border: none;
-//     background: none;
-//   }
-
-//   .main-nav__list {
-//     margin: 0;
-//     padding:0;
-//   }
-
-//   .site-list {
-//     list-style: none;
-//     text-transform: uppercase;
-//     text-align: center;
-//   }
-
-//   .site-list__item {
-//     font-weight: 700;
-//     color: #fff;
-//     text-decoration: none;
-//     border-top: 1px solid $active-color;
-//     border-bottom: 1px solid black;
-//     padding: 30px;
-//   }
-// }
-
-@media (max-width: $width-for-gadget) {
-  .site-list__item {
-    font-weight: 700;
-    color: #fff;
-    padding: 30px;
-
-    border-top: 1px solid $active-color;
-    border-bottom: 1px solid black;
-    text-decoration: none;
-  }
-
-    // .main-nav {
-    //   background-color: $main-color;
-    // }
-
-    // .main-nav__menu {
-    //   display: flex;
-    //   justify-content: space-between;
-    //   border-bottom: 1px solid black;
-    //   padding: 20px;
-    // }
-
-    // .main-nav__toggle--open,
-    // .main-nav__toggle--close {
-    //   fill: $white-color;
-    //   border: none;
-    //   background: none;
-    // }
-
-    // .main-nav__list {
-    //   margin: 0;
-    //   padding:0;
-    // }
-
-    // .site-list {
-    //   list-style: none;
-    //   text-transform: uppercase;
-    //   text-align: center;
-    // }
-
-    // .site-list__item {
-    //   font-weight: 700;
-    //   color: #fff;
-    //   text-decoration: none;
-    //   border-top: 1px solid $active-color;
-    //   border-bottom: 1px solid black;
-    //   padding: 30px;
-    // }
-}
-
 @media (min-width: $desktop-width) {
   .page-header {
     position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
-    background-color: red;
-    // background-color: rgba(0, 0, 0, 0.3)
   }
 
   .page-main {
@@ -187,12 +62,15 @@
 
   .main-nav {
     margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    // top: 0px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background-color: none;
   }
 
   .main-nav__container {
+    width: 980px;
+    margin: 0 auto;
+
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -205,67 +83,5 @@
   .main-nav__toggle--close,
   .main-nav__toggle--open {
     display: none;
-  }
-
-  // .main-nav__list {
-  //   margin: 0;
-  //   padding:0;
-  // }
-
-  .site-list {
-    list-style: none;
-    text-transform: inherit;
-    text-align: center;
-
-    display: flex;
-  }
-
-  .site-list__item {
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
-    border-top: none;
-    border-bottom: none;
-  }
-
-  // для десктопного меню
-
-  .site-list__item--active {
-    position: relative;
-  }
-
-  // .site-list__item--active a:not([href]) {
-  //   // background-color: #000000;
-  // }
-
-  .site-list__item--active::after {
-    content: "";
-
-    position: absolute;
-    right: 20px;
-    bottom: 0;
-    left: 20px;
-
-    height: 2px;
-
-    background-color: #ffffff;
-  }
-
-  .page-header__logo path,
-  .main-nav__toggle path {
-    fill: $white-color;
-  }
-
-  .page-header__logo:hover path,
-  .page-header__logo:focus path,
-  .main-nav__toggle:hover path,
-  .main-nav__toggle:focus path {
-    fill: $color-element;
-  }
-
-  .page-header__logo:active path,
-  .main-nav__toggle:active path {
-    fill: $active-color-element;
-    // fill: $active-color; - для декстопа
   }
 }

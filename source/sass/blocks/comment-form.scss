@@ -4,17 +4,19 @@
 }
 
 .add-comment__title {
-  @include style-description;
   text-align: center;
   padding: 40px 0 15px 0;
+
+  @include style-description;
 }
 
 // Стилизация инпутов
 .add-comment__input {
   min-height: 200px;
+  min-width: 240px;
+
   @include input-form;
   @include placeholder-style;
-  min-width: 240px;
 
   &:hover,
   &:focus {
