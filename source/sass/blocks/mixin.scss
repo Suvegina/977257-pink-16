@@ -146,19 +146,23 @@
 // стиль шрифта для плейсхолдера
 @mixin placeholder-style {
   &::-webkit-input-placeholder {
-    color:#000000; opacity:1;
+    color: #000000;
+    opacity: 1;
   }/* webkit */
 
   &::-moz-placeholder {
-    color:#000000; opacity:1;
+    color: #000000;
+    opacity: 1;
   }/* Firefox 19+ */
 
   &:-moz-placeholder {
-    color:#000000; opacity:1;
+    color: #000000;
+    opacity: 1;
   }/* Firefox 18- */
 
   &:-ms-input-placeholder {
-    color:#000000; opacity:1;
+    color: #000000;
+    opacity: 1;
   }/* IE */
 }
 

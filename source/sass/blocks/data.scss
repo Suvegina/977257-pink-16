@@ -19,21 +19,15 @@
 
 .data__input {
   @include input-form;
+  @include placeholder-style;
   min-width: 240px;
-}
-
-.data__input {
 
   &:hover,
   &:focus {
     @include input-form-hover;
   }
-}
 
-.data__input {
-  @include placeholder-style;
-
-  &:active{
+  &:active {
     @include input-form-active;
   }
 }

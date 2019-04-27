@@ -11,27 +11,19 @@
 
 // Стилизация инпутов
 .add-comment__input {
+  min-height: 200px;
   @include input-form;
+  @include placeholder-style;
   min-width: 240px;
-}
 
-.add-comment__input {
   &:hover,
   &:focus {
     @include input-form-hover;
   }
-}
-
-.add-comment__input {
-  min-height: 200px;
 
   &:active {
     @include input-form-active;
   }
-}
-
-.add-comment__input {
-  @include placeholder-style;
 }
 
 // @media (min-width: $mobile-width) {

@@ -6,6 +6,8 @@
 
 .details-user__mail,
 .details-user__phone {
+  @include style-description;
+  margin-left: 20px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -36,27 +38,18 @@
 .details-user__list {
   list-style: none;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 .details-user__title {
+  display: none; /*Скрыт на собильной версии*/
   @include style-description;
   padding: 30px;
   text-align: center;
 }
 
-.details-user__phone,
-.details-user__mail {
-  @include style-description;
-  margin-left: 20px;
-}
-
 // .details-user
 // .details-user__wrapper
-
-.details-user__title {
-  display: none; /*Скрыт на собильной версии*/
-}
 
 // .title-legend
 // .details-user__list
