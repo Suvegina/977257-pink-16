@@ -1,5 +1,6 @@
 .page-header {
   background-color: $main-color;
+  z-index: 1;
 }
 
 .page-header__logo {
@@ -66,7 +67,6 @@
   .page-header {
     position: relative;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
   }
 
   .page-main {
