@@ -1,42 +1,43 @@
 .timer {
   display: flex;
+  position: relative;
 }
 
-// .timer__wrapper {
-//   position: relative;
-// }
+.timer__wrapper {
+  fill: $color-element;
+}
 
-// .timer__inner {
-//   content: "";
-//   position: absolute;
-//   display: block;
-//   z-index: 10;
+.timer__inner {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: 10;
 
-//   bottom: -25px;
-//   left: -25px;
+  bottom: 22px;
+  left: 22px;
 
-//   path {
-//     fill: $color-element;
-//   }
-// }
+  path {
+    fill: $color-element;
+  }
+}
 
-// .timer__clock {
-//   content: "";
-//   position: absolute;
-//   display: block;
+.timer__clock {
+  content: "";
+  position: absolute;
+  display: block;
 
-//   left: -88px;
-//   bottom: -115px;
+  left: 75px;
+  bottom: 35px;
 
-//   font-size: 120px;
-//   font-weight: 700;
-//   color: $color-element;
-// }
+  font-size: 120px;
+  font-weight: 700;
+  color: $color-element;
+}
 
 // @media (min-width: $tablet-width) {
 
 // }
 
-// @media (min-width: $desktop-width) {
-
-// }
+@media (min-width: $desktop-width) {
+  background-color: $gray-color;
+}
