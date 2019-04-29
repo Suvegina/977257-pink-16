@@ -16,6 +16,11 @@
   @include visually-hidden;
 }
 
+.slider__items:nth-child(2),
+.slider__items:nth-child(3) {
+  display: none;
+}
+
 .feedback__item {
   text-align: center;
   margin: 0 25px;
