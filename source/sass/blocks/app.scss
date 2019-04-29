@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  box-sizing: content-box;
 
   z-index: -1;
 }
@@ -123,7 +124,7 @@
     width: 700px;
     height: 545px;
 
-    bottom: 1px;
+    bottom: 24px;
     right: 1px;
   }
 

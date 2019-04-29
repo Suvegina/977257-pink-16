@@ -7,13 +7,15 @@
 //   }
 // }
 
-// .slider {
-// }
+.slider {
+  // width: 65px;
+  box-sizing: border-box;
+}
 
 .slider__toggle {
   margin: 0 auto;
   margin-top: 30px;
-  padding: 10px;
+  padding: 2px;
   margin-bottom: 40px;
 
   opacity: 0.3;
@@ -53,9 +55,14 @@
 // }
 
 // @media (min-width: $tablet-width) {
-
+//   .slider__toggle {
+//     margin: 0 auto;
+//     margin-top: 35px;
+//   }
 // }
 
-// @media (min-width: $desktop-width) {
-
-// }
+@media (min-width: $desktop-width) {
+  .slider__toggle {
+    display: none;
+  }
+}

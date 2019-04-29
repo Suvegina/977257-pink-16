@@ -52,27 +52,26 @@
   margin: 0;
 }
 
-// @mixin caption-style-medium {
-//   text-align: center;
-//   font-size: 18px;
-//   line-height: 30px;
-//   font-weight: 300;
+@mixin caption-style-medium {
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
 
-//   padding: 0;
-//   margin: 0;
+  // padding: 0;
+  // margin: 0;
+}
 
-// }
+@mixin caption-style-large {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
 
-// @mixin caption-style-large {
-//   text-align: center;
-//   font-size: 14px;
-//   line-height: 30px;
-//   font-weight: 300;
+  // padding: 0;
+  // margin: 0;
 
-//   padding: 0;
-//   margin: 0;
-
-// }
+}
 
 // Единый стиль написания заголовков на обложках внутр. страниц
 @mixin page-cover-text {
