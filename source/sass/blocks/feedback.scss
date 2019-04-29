@@ -45,6 +45,10 @@
   padding-bottom: 25px;
 }
 
+.feedback__autr-info {
+  display: none;
+}
+
 .feedback__text {
   @include caption-style;
 }
