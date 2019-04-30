@@ -1,6 +1,11 @@
-// .map {
-//   // position: relative;
-// }
+.map {
+  position: relative;
+  min-height: 645px;
+}
+
+.map__heading {
+  @include visually-hidden;
+}
 
 // .map {
 //   display: block;
