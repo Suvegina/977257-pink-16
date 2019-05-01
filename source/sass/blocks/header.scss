@@ -32,7 +32,7 @@
 }
 
 .main-nav {
-  max-width: 1200px;
+  // max-width: 1200px;
 }
 
 .main-nav__menu {
@@ -40,7 +40,15 @@
   justify-content: space-between;
   border-bottom: 1px solid black;
   padding: 20px;
+
+  width: 320px;
+  margin: 0 auto;
 }
+
+  .main-nav__menu-inner {
+    justify-content: space-between;
+    display: flex;
+  }
 
 .main-nav__toggle--open,
 .main-nav__toggle--close {
@@ -56,10 +64,14 @@
 
 @media (min-width: $tablet-width) and (max-width: $width-for-gadget) {
   .main-nav__menu {
-    display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid black;
     padding: 40px;
+  }
+
+  .main-nav__menu-inner {
+    width: 660px;
+    justify-content: space-between;
+    display: flex;
   }
 }
 
@@ -90,7 +102,13 @@
   }
 
   .main-nav__menu {
+    width: 200px;
+    margin: 0 auto;
     border-bottom: none;
+  }
+
+  .main-nav__menu-inner {
+    width: 1200px;
   }
 
   .main-nav__toggle--close,

@@ -12,13 +12,14 @@
 .advantages__flag {
   display: block;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
 
   @include heading-style;
 }
 
 .advantages__slogan {
-  margin: 40px 40px 30px 40px;
+  // margin: 40px 40px 30px 40px;
+  margin: 40px 0 30px 0;
 }
 
 .advantages__flag {
@@ -30,25 +31,25 @@
   margin: 0 auto;
   background-color: $gray-color;
   box-sizing: border-box;
-  // overflow-x: inherit;
-  // position: relative;
+  overflow-x: inherit;
+  position: relative;
+  overflow: hidden;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   display: block;
-  //   margin: 0 auto;
-  //   // overflow-x: hidden;;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: 0 auto;
 
-  //   min-width: 1200px;
-  //   height: 95px;
+    min-width: 1200px;
+    height: 95px;
 
-  //   top: -1px;
-  //   left: -1px;
+    top: -70px;
+    left: -1px;
 
-  //   background-image: url("../img/bg-triangle-white.svg");
-  //   background-repeat: no-repeat;
-  // }
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__container {
@@ -120,7 +121,11 @@
     text-align: center;
     z-index: 1;
   }
-
+.advantages__section {
+  &::before {
+    top: -30px;
+  }
+}
   .advantages__slogan {
     margin-top: 48px;
     margin-bottom: 0;

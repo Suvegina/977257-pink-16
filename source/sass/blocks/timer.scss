@@ -11,7 +11,7 @@
   content: "";
   position: absolute;
   display: block;
-  z-index: 10;
+  // z-index: 1;
 
   bottom: 22px;
   left: 22px;
@@ -38,6 +38,12 @@
 
 // }
 
-// @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  // .timer__inner {
+  //   bottom: 47px;
+  // }
 
-// }
+  // .timer__clock {
+  //   bottom: 55px;
+  // }
+}

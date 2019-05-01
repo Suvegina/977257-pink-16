@@ -3,7 +3,7 @@
 }
 
 html {
-  box-sizing: border-box;
+  // box-sizing: border-box;
 }
 
 body {
@@ -11,14 +11,30 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  // box-sizing: content-box;
 
-  min-width: 320px;
   margin: auto;
-  // position: relative;
+  box-sizing: content-box;
 }
 
 img {
   max-width: 100%;
   vertical-align: bottom;
+}
+
+@media (min-width: $mobile-width) {
+  body {
+    min-width: 320px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: 1200px;
+  }
 }

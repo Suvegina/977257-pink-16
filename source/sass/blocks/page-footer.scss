@@ -73,18 +73,12 @@
   @include visually-hidden;
 }
 
-//   .social__link {
-
-//     &--twitter,
-//     &--facebook,
-//     &--youtube {
-
-//       // ?
-//   }
-// }
-
 .page-footer__copyright {
   padding: 40px 0;
+}
+
+.page-footer__hidden {
+  display: none;
 }
 
 .copyright {

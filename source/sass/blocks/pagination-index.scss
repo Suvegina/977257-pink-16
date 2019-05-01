@@ -9,18 +9,18 @@
 
 .slider {
   // width: 65px;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 .slider__toggle {
   margin: 0 auto;
   margin-top: 30px;
-  padding: 2px;
+  // padding: 2px;
   margin-bottom: 40px;
 
   opacity: 0.3;
-  width: 4px;
-  height: 4px;
+  width: 3px;
+  height: 3px;
 
   background: $main-color;
   vertical-align: middle;
@@ -41,8 +41,9 @@
   }
 
   &--active {
-    width: 6px;
-    height: 6px;
+    // width: 6px;
+    // height: 6px;
+    padding: 2px;
 
     background: $white-color;
     border: 3px solid $main-color;

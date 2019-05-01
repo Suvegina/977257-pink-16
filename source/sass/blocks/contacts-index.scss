@@ -1,18 +1,24 @@
 .main-contacts {
-  background-color: $white-color;
-  margin-bottom: 292px;
+  // background-color: $white-color;
+  // margin-bottom: 292px;
+  position: relative;
 }
 
 // накладываем блок поверх карты
 
-// .main-contacts__wraper {
-//   content: "";
-//   position: absolute;
+.main-contacts__wraper {
+  background-color: #ffffff;
+  // z-index: 2;
+  // position: relative;
+}
 
-//   bottom: 0px;
-//   left: 0px;
-//   z-index: 10;
-// }
+.main-contacts__map {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -432px;
+    z-index: -1;
+  }
 
 .main-contacts__headline {
   @include heading-style;
@@ -20,8 +26,8 @@
   color: $main-color;
 
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 35px;
+  padding-top: 46px;
+  padding-bottom: 31px;
 }
 
 .main-contacts__contact {
@@ -29,12 +35,31 @@
   margin: 0;
   padding: 0 20px;
   background-color: white;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+
+    min-width: 595px;
+    height: 61px;
+
+    bottom: -47px;
+    left: -40%;
+
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
 }
 
 .main-contacts__item {
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
+  overflow: hidden;
 }
 
 .main-contacts__title {
@@ -72,12 +97,15 @@
     text-decoration: none;
     border-bottom: none;
   }
-
-  // .main-contacts__map {
-
-  // }
 }
 
+.map__mark {
+  content: "";
+  position: absolute;
+  display: block;
+
+  top: 1px;
+}
 // @media (min-width: $mobile-width) {
 
 // }
