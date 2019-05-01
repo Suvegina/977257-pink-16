@@ -88,6 +88,7 @@
 
   .benefit__timer {
     transform: scale(1);
+    left: 0;
   }
 
   .benefit__inner {
@@ -114,10 +115,6 @@
     display: inline-block;
     width: 530px;
     padding-bottom: 30px;
-  }
-
-  .benefit__timer {
-    left: 0;
   }
 
   // .timer__wrapper {

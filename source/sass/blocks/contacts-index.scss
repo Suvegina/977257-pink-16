@@ -13,12 +13,12 @@
 }
 
 .main-contacts__map {
-    content: "";
-    position: absolute;
-    display: block;
-    top: -432px;
-    z-index: -1;
-  }
+  content: "";
+  position: absolute;
+  display: block;
+  top: -432px;
+  z-index: -1;
+}
 
 .main-contacts__headline {
   @include heading-style;

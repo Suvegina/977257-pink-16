@@ -121,11 +121,13 @@
     text-align: center;
     z-index: 1;
   }
-.advantages__section {
-  &::before {
-    top: -30px;
+
+  .advantages__section {
+    &::before {
+      top: -30px;
+    }
   }
-}
+
   .advantages__slogan {
     margin-top: 48px;
     margin-bottom: 0;
