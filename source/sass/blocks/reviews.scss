@@ -3,12 +3,14 @@
 // }
 
 .reviews__title {
+  width: 248px;
   @include page-cover-text;
+  margin: 0 auto;
 }
 
 .reviews__panorama {
   position: relative;
-  margin-top: 25px;
+  margin-top: 4px;
 }
 
 .reviews__panorama-img {
@@ -22,8 +24,6 @@
   font-size: 12px;
   font-weight: 700;
   line-height: 24px;
-
-  // display: inline-block;
 
   color: $white-color;
   background-color: $color-element;
@@ -114,10 +114,13 @@
 // }
 
 
-// @media (min-width: $tablet-width) {
-
-// }
+@media (min-width: $tablet-width) {
+  .reviews__title {
+    font-size: 18px;
+  }
+}
 
 // @media (min-width: $desktop-width) {
-
+//   .reviews__title {
+//   }
 // }

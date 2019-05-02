@@ -15,8 +15,10 @@
 .slider__toggle {
   margin: 0 auto;
   margin-top: 30px;
-  // padding: 2px;
   margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
 
   opacity: 0.3;
   width: 3px;
@@ -41,8 +43,6 @@
   }
 
   &--active {
-    // width: 6px;
-    // height: 6px;
     padding: 2px;
 
     background: $white-color;
@@ -55,12 +55,11 @@
 
 // }
 
-// @media (min-width: $tablet-width) {
-//   .slider__toggle {
-//     margin: 0 auto;
-//     margin-top: 35px;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  .slider__toggle {
+    margin-bottom: 25px;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .slider__toggle {

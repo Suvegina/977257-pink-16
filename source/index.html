@@ -61,8 +61,8 @@
         <header class="app__header">
           <div class="app__image">
             <picture>
-              <source media="(min-width: 999px)" srcset="img/iphone-hand-desktop@1x.png 1x"><!-- , img/iphone-hand-desktop@2x.png 2x -->
-              <source media="(min-width: 559px)" srcset="img/iphone-hand-tablet@1x.png 1x"><!-- , img/iphone-hand-tablet@2x.png 2x -->
+              <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x"><!-- , img/iphone-hand-desktop@2x.png 2x -->
+              <source media="(min-width: 560px)" srcset="img/iphone-hand-tablet@1x.png 1x"><!-- , img/iphone-hand-tablet@2x.png 2x -->
               <img src="img/iphone-hand-mobile@1x.png"  alt="Мобильное приложение подойдет для любого телефона!"><!-- srcset="img/iphone-hand-mobile@2x.png 2x" -->
             </picture>
           </div>
@@ -121,10 +121,9 @@
               </div>
               <div class="advantages__mobil-screen advantages__mobil-screen--on-mobile">
                 <picture>
-                  <source media="(min-width: 1000px)" srcset="img/iphone-screen-3-desktop@1x.png 1x"><!-- , img/iphone-screen-3-desktop@2x.png 2x -->
+                  <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x"><!-- , img/iphone-screen-3-desktop@2x.png 2x -->
                   <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x"><!-- , img/iphone-screen-3-tablet@2x.png 2x -->
-                  <!-- <source media="(max-width: 659px)" srcset="img/iphone-screen-mobile@1x-crop.png 1x"> --><!-- , img/iphone-screen-mobile@2x-crop.png 2x -->
-                  <img src="img/iphone-screen-mobile@1x-crop.png" srcset="img/iphone-screen-mobile@2x-crop.png 2x" alt="Фотография с нанесением смайла">
+                  <img src="img/iphone-screen-mobile@1x-crop.png" alt="Фотография с нанесением смайла"><!--  srcset="img/iphone-screen-mobile@2x-crop.png 2x" -->
                 </picture>
               </div>
             </div>
@@ -297,6 +296,62 @@
             </ul>
           </section>
         </div>
+<!--         <section class="price__content">
+          <table class="price__wrapper">
+            <tr class="price__section">
+              <th class="price__item price__item--hidden"></td>
+              <th class="price__item price__section-base">
+                <b class="price__title">База</b>
+                <p class="price__cost">1,99 USD</p>
+              </td>
+              <th class="price__item price__item-marking">
+                <p class="price__mark">хит</p>
+                <b class="price__title">Стандарт</b>
+                <p class="price__cost">3,99 USD</p>
+              </td>
+              <th class="price__item price__item-unlimited">
+                <b class="price__title">Анлим</b>
+                <p class="price__cost">9,99 USD</p>
+              </td>
+            </tr>
+            <tr class="price__list">
+              <td class="price__list-title price__list-title--hidden">Смайлики</td>
+              <td class="price__list-field price__list-field--hidden">Смайлики
+                <span class="price__list-option-yes"></span>
+              </td>
+              <td class="price__list-field price__list-field--hidden">Смайлики
+                <span class="price__list-option-yes"></span>
+              </td>
+              <td class="price__list-field price__list-field--hidden">Смайлики
+                <span class="price__list-option-yes"></span>
+              </td>
+            </tr>
+            <tr class="price__list">
+              <td class="price__list-title price__list-title--hidden">Розовый фильтр</td>
+              <td class="price__list-field price__list-field--hidden">Розовый фильтр
+                <span class="price__list-option-yes"></span>
+              </td>
+              <td class="price__list-field price__list-field--hidden">Розовый фильтр
+                <span class="price__list-option-yes"></span>
+              </td>
+              <td class="price__list-field price__list-field--hidden">Розовый фильтр
+                <span class="price__list-option-no"></span>
+              </td>
+            </tr>
+            <tr class="price__list">
+              <td class="price__list-title price__list-title--hidden">Комментарии</td>
+              <td class="price__list-field price__list-field--hidden">Комментарии
+                <span class="price__list-option-yes"></span>
+              </td>
+              <td class="price__list-field price__list-field--hidden">Комментарии
+                <span class="price__list-option-no"></span>
+              </td>
+              <td class="price__list-field price__list-field--hidden">Комментарии
+                <span class="price__list-option-no"></span>
+              </td>
+            </tr>
+          </table>
+        </section> -->
         <ul class="price__toggles slider__toggles" aria-label="Кнопки переключение слайдера с тарифами">
           <li class="slider__toggle" aria-label="первый слайд">
             <a href="#"></a>
@@ -310,27 +365,30 @@
         </ul>
       </div>
       <div class="main-contacts">
-        <div class="main-contacts__wraper">
-          <h3 class="main-contacts__headline">Остались вопросы? Свяжитесь с нами!</h3>
-          <ul class="main-contacts__contact">
-            <li class="main-contacts__item">
-              <p class="main-contacts__title">Звоните:</p>
-              <a href="tel:+78125556666" class="main-contacts__link">+7 (812) 555-66-66</a>
-            </li>
-            <li class="main-contacts__item">
-              <p class="main-contacts__title">Пишите:</p>
-              <a href="mailto:mail@htmlacademy.ru"class="main-contacts__link">mail@htmlacademy.ru</a>
-            </li>
-            <li class="main-contacts__item">
-              <p class="main-contacts__title">Приезжайте в гости:</p>
-              <p class="main-contacts__link">ул. Большая Конюшенная, 19/8</p>
-            </li>
-          </ul>
-        </div>
+        <section class="main-contacts__content">
+          <div class="main-contacts__wraper">
+            <h3 class="main-contacts__headline">Остались вопросы? Свяжитесь с нами!</h3>
+            <ul class="main-contacts__contact">
+              <li class="main-contacts__item">
+                <p class="main-contacts__title">Звоните:</p>
+                <a href="tel:+78125556666" class="main-contacts__link">+7 (812) 555-66-66</a>
+              </li>
+              <li class="main-contacts__item">
+                <p class="main-contacts__title">Пишите:</p>
+                <a href="mailto:mail@htmlacademy.ru"class="main-contacts__link">mail@htmlacademy.ru</a>
+              </li>
+              <li class="main-contacts__item">
+                <p class="main-contacts__title">Приезжайте в гости:</p>
+                <p class="main-contacts__link">ул. Большая Конюшенная, 19/8</p>
+              </li>
+            </ul>
+          </div>
+        </section>
         <section class="main-contacts__map map">
           <div class="map_container">
             <h2 class="map__heading">Наш офис на карте</h2>
-            <img class="map__mark" src="img/bg-map-mobile@1x.png">
+            <span class="map__mark"></span>
+            <!-- <img class="map__mark" src="img/bg-map-mobile@1x.png"> -->
           </div>
         </section>
       </div>
