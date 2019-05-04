@@ -1,5 +1,6 @@
-// .filter {
-// }
+.filter {
+  @include mobile-size;
+}
 
 .filter__wraper {
   background-color: $gray-color;
@@ -10,23 +11,21 @@
 
 .filter__caption {
   text-align: center;
-  margin: 45px 20px;
+  margin: 26px 20px 40px;
+  line-height: 30px;
 }
-
-// .filter__title {
-
-// }
 
 .filter__edit {
   display: flex;
   align-items: center;
   list-style: none;
+  position: relative;
+  padding: 5px 30px;
   margin: 0;
-  padding: 0;
+  margin-bottom: 40px;
 }
 
-// .filter__upload {
-
+// .filter__upload-image {
 // }
 
 .filter__upload-image {
@@ -36,8 +35,6 @@
 
 .filter__item {
   cursor: pointer;
-  margin-bottom: 40px;
-  padding: 0 20px;
 
   path,
   rect {
@@ -63,6 +60,35 @@
   }
 }
 
+.filter__items--crop .filter__item {
+  padding-top: 60px;
+  padding-left: 14px;
+}
+
+.filter__items--color .filter__range,
+.filter__items--contrast .filter__range {
+  display: none;
+}
+
+.filter__items--color,
+.filter__items--contrast {
+  position: absolute;
+}
+
+.filter__items--color {
+  top: 7px;
+  left: 125px;
+}
+
+.filter__items--contrast {
+  top: 13px;
+  right: 57px;
+}
+
+.filter__range {
+  margin-top: 30px;
+}
+
 // @media (min-width: $mobile-width) {
 
 // }
@@ -70,6 +96,7 @@
 // @media (min-width: $tablet-width) {
 
 // }
+
 
 // @media (min-width: $desktop-width) {
 
