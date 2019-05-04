@@ -17,6 +17,9 @@
 .main-nav__toggle--open,
 .main-nav__toggle--close {
   display: block;
+  fill: $white-color;
+  border: none;
+  background: none;
   padding: 0;
 }
 
@@ -53,15 +56,6 @@
   width: 320px;
   justify-content: space-between;
   display: flex;
-}
-
-.main-nav__toggle {
-  &--open,
-  &--close {
-    fill: $white-color;
-    border: none;
-    background: none;
-  }
 }
 
 .main-nav__list {
