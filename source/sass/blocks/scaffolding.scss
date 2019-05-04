@@ -2,9 +2,9 @@
   box-sizing: inherit;
 }
 
-html {
-  // box-sizing: border-box;
-}
+// html {
+//   box-sizing: border-box;
+// }
 
 body {
   font-family: "OpenSans", "Arial", sans-serif;
@@ -12,29 +12,42 @@ body {
   font-size: 14px;
   line-height: 24px;
 
-  margin: auto;
+  margin: 0 auto;
   box-sizing: content-box;
 }
 
 img {
   max-width: 100%;
+  height: auto;
   vertical-align: bottom;
 }
 
 @media (min-width: $mobile-width) {
-  body {
-    min-width: 320px;
+  // body {
+  //   width: 320px;
+  // }
+
+  .page-main,
+  .page-gallery,
+  .page-form {
+    margin-top: -70px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  body {
-    min-width: 660px;
+  // body {
+  //   width: 660px;
+  // }
+
+  .page-main,
+  .page-gallery,
+  .page-form {
+    margin-top: -110px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  body {
-    min-width: 1200px;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   // body {
+//   //   width: 1200px;
+//   // }
+// }

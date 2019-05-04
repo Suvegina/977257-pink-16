@@ -1,13 +1,14 @@
 .page-cover {
-  width: 100%;
-  min-height: 170px;
+  width: 320px;
+  min-height: 238px;
 
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   display: flex;
   align-items: center;
 
+  z-index: 0;
   color: white;
   background-color: $main-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -19,6 +20,8 @@
   @include heading-style;
   text-align: center;
   padding: 35px 40px;
+  vertical-align: 0;
+  padding-top: 54px;
   margin: 0 auto;
 }
 
@@ -30,24 +33,32 @@
 
 @media (min-width: $tablet-width) {
   .page-cover {
+    @include tablet-size;
+    min-height: 442px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center center;
+    background-position: top;
+    background-size: inherit;
   }
 
   .page-cover__title {
-    @include heading-style-medium;
+    @include heading-style-large;
     padding: 35px 40px;
+    padding-top: 65px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-cover {
+    @include desktop-size;
+    min-height: 392px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center;
   }
 
   .page-cover__title {
     @include heading-style-large;
     margin: 0 auto;
-    padding: 180px 0 100px 0;
+    width: 750px;
+    padding: 172px 0 103px 0;
   }
 }

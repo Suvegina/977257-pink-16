@@ -1,15 +1,17 @@
-// .reviews {
-
-// }
+.reviews {
+  @include mobile-size;
+  overflow: hidden;
+}
 
 .reviews__title {
-  width: 248px;
+  width: 240px;
   @include page-cover-text;
   margin: 0 auto;
 }
 
 .reviews__panorama {
   position: relative;
+  overflow: hidden;
   margin-top: 4px;
 }
 
@@ -31,7 +33,7 @@
   text-align: center;
 
   width: 140px;
-  padding: 10px 0;
+  padding: 6px 0;
   margin: 0;
 
   right: 20px;
@@ -43,15 +45,10 @@
   margin: 0 auto;
 }
 
-// .reviews__list {
 
-// }
 
 .reviews__item {
-  width: 280px;
-  // min-height: 192px;
-
-  padding: 17px 0;
+  padding: 18px 17px 20px;
   margin: 20px;
   margin-top: 0;
 
@@ -59,9 +56,13 @@
   background-color: $gray-color;
 }
 
+  // .reviews__info {
+
+  // }
+
 .reviews__autr-name {
   display: inline-block;
-  padding: 0 17px;
+  // padding: 0 17px;
   margin: 0;
 
   font-weight: 700;
@@ -74,40 +75,34 @@
 
 .reviews__text {
   display: block;
-  padding: 0 17px;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
   font-weight: 400;
   font-style: normal;
 }
 
-.reviews__likes {
-  // display: inline-block;
-  font-weight: 400;
-  color: $color-element;
-
-  padding: 0 17px;
-  margin: 0 31px;
-  position: relative;
-
-  &::before {
-    content: "";
-    display: block;
-
-    width: 13px;
-    height: 12px;
-
-    left: -13px;
-    top: 4px;
-
-    background-image: url("../img/icon-heart.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-  }
+.reviews__result {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
-// .reviews__other {
+.reviews__likes-heart {
+  display: block;
 
-// }
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+}
+
+.reviews__likes {
+  font-weight: 400;
+  color: $color-element;
+  margin: 0 15px;
+}
+
+
 
 // @media (min-width: $mobile-width) {
 
@@ -115,12 +110,167 @@
 
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    @include tablet-size;
+  }
+
   .reviews__title {
     font-size: 18px;
+    width: 496px;
+    padding: 90px 0 72px;
+  }
+
+  // ---------------------------------
+
+  .reviews__panorama-wrap {
+    width: 700px;
+    height: 509px;
+  }
+
+  .reviews__panorama {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .reviews__panorama-img {
+    min-width: 100%;
+    min-height: 100%;
+    flex-shrink: 0;
+
+    .reviews__text {
+      display: inline-block;
+    }
+  }
+
+  .reviews__caption {
+    padding: 7px 0;
+
+    top: 55px;
+    right: 20px;
+  }
+
+  .reviews__panorama-img,
+  .reviews__photo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .reviews__photo {
+    margin: 0;
+  }
+
+  .reviews__other {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // align-items: flex-start;
+    padding: 0 20px;
+
+    .reviews__likes {
+      margin: 0;
+    }
+
+    .reviews__result {
+      width: 100%;
+    }
+
+    .reviews__text {
+      display: inline-block;
+      min-height: 48px;
+    }
+    // .reviews__text {
+    //   align-self: flex-start;
+    // }
+  }
+
+  .reviews__list {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    // align-content: flex-start;
+    margin: 0;
+  }
+
+  .reviews__item-panorama {
+    width: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 22px 28px;
+    margin: 0 20px 50px;
+
+    .reviews__info {
+      order: -2;
+    }
+
+    .reviews__result {
+      order: -1;
+    }
+  }
+
+  .reviews__item-other {
+    // align-content: baseline;
+    min-height: 111px;
+    padding: 22px 28px;
+
+    .reviews__result {
+      align-self: flex-end;
+    }
+  }
+
+  .reviews__text {
+    display: block;
+    padding: 0;
+    margin-bottom: 4px;
+  }
+
+  .reviews__result {
+    text-transform: uppercase;
+    font-size: 12px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .reviews__title {
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .reviews {
+    @include desktop-size;
+  }
+
+  .reviews__title {
+    width: 550px;
+    padding-top: 92px;
+  }
+
+  .reviews__panorama-img {
+    padding-top: 12px;
+  }
+
+  .reviews__caption {
+    top: 64px;
+    right: 130px;
+  }
+
+  .reviews__item-panorama {
+    width: 885px;
+    margin-bottom: 37px;
+  }
+
+  .reviews__other {
+    width: 960px;
+    padding: 0;
+    margin: 0 auto;
+
+    .reviews__list {
+      margin: 10px;
+      margin-bottom: 45px;
+    }
+  }
+}

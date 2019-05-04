@@ -1,62 +1,43 @@
-// .main-contacts {
-//   // background-color: $white-color;
-//   // margin-bottom: 292px;
-//   // position: relative;
-// }
+.main-contacts {
+  @include mobile-size;
+  overflow: hidden;
+  position: relative;
+  height: 613px;
+}
 
 .main-contacts__content {
   position: relative;
   background-color: #ffffff;
 
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     display: block;
-//     margin: 0 auto;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   display: block;
 
-//     min-width: 595px;
-//     height: 61px;
+  //   width: 1160px;
+  //   height: 123px;
 
-//     bottom: -47px;
-//     left: -40%;
+  //   bottom: -47px;
+  //   left: -130%;
 
-//     background-image: url("../img/bg-triangle-white-footer.svg");
-//     background-repeat: no-repeat;
-//     z-index: 1;
-//   }
+  //   background-image: url("../img/bg-triangle-white-footer.svg");
+  //   background-repeat: no-repeat;
+  // }
 }
-
-// накладываем блок поверх карты
 
 .main-contacts__wraper {
   background-color: #ffffff;
   width: 100%;
   margin: 0 auto;
-  z-index: 2;
-  // position: relative;
+  position: relative;
 }
-
-// .main-contacts__map {
-//   content: "";
-//   position: absolute;
-//   display: block;
-//   top: -432px;
-//   z-index: -1;
-// }
 
 .main-contacts__map {
   content: "";
   position: absolute;
   display: block;
-  width: 100%;
-  // height: auto;
-
   top: -432px;
   z-index: -1;
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
 .main-contacts__headline {
@@ -120,19 +101,25 @@
   }
 }
 
-.map__mark {
-  content: "";
-  position: absolute;
-  display: block;
 
-  top: 1px;
-}
 // @media (min-width: $mobile-width) {
 
 // }
 
 
 @media (min-width: $tablet-width) {
+  .main-contacts {
+    @include tablet-size;
+    height: 778px;
+  }
+
+  .main-contacts__content {
+    &::before {
+      left: -35%;
+      bottom: -122px;
+    }
+  }
+
   .main-contacts__headline {
     @include heading-style-medium;
     width: 400px;
@@ -163,16 +150,24 @@
     margin-bottom: 0;
     }
   }
-
-  .map__mark {
-    width: 100%;
-    height: 848px;
-    background-image: url("../img/bg-map-desktop@1x.jpg");
-  background-position: center;
+  .main-contacts__map {
+    top: -270px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-contacts {
+    @include desktop-size;
+    height: 867px;
+  }
+
+  .main-contacts__content {
+    &::before {
+      left: 1%;
+      bottom: -122px;
+    }
+  }
+
   .main-contacts__wraper {
     width: 100%;
   }
@@ -195,10 +190,7 @@
     padding-bottom: 20px;
   }
 
-  .map__mark {
-    width: 100%;
-    height: 976px;
-    background-image: url("../img/bg-map-desktop@1x.jpg");
-  background-position: center;
+  .main-contacts__map {
+    top: -260px;
   }
 }

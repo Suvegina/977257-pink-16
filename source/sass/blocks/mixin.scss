@@ -14,6 +14,21 @@
   overflow: hidden;
 }
 
+@mixin mobile-size {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin tablet-size {
+  width: 660px;
+  margin: 0 auto;
+}
+
+@mixin desktop-size {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 //Общий стиль заголовков
 @mixin heading-style {
   font-size: 24px;
@@ -78,7 +93,7 @@
   vertical-align: middle;
   line-height: 30px;
   margin: 0;
-  padding: 45px 0 45px 0;
+  padding: 47px 0 45px 0;
   color: $main-color;
 }
 

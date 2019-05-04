@@ -1,4 +1,5 @@
 .feedback {
+  @include mobile-size;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -114,6 +115,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .feedback {
+    @include tablet-size;
+  }
+
   .feedback__wrapper {
     display: flex;
   }
@@ -160,6 +165,7 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
+    @include desktop-size;
     position: relative;
 
     &::before {
