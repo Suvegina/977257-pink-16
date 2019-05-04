@@ -1,0 +1,53 @@
+* {
+  box-sizing: inherit;
+}
+
+// html {
+//   box-sizing: border-box;
+// }
+
+body {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+@media (min-width: $mobile-width) {
+  // body {
+  //   width: 320px;
+  // }
+
+  .page-main,
+  .page-gallery,
+  .page-form {
+    margin-top: -70px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  // body {
+  //   width: 660px;
+  // }
+
+  .page-main,
+  .page-gallery,
+  .page-form {
+    margin-top: -110px;
+  }
+}
+
+// @media (min-width: $desktop-width) {
+//   // body {
+//   //   width: 1200px;
+//   // }
+// }

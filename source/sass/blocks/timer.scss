@@ -1,0 +1,49 @@
+.timer {
+  display: flex;
+  position: relative;
+}
+
+.timer__wrapper {
+  fill: $color-element;
+}
+
+.timer__inner {
+  content: "";
+  position: absolute;
+  display: block;
+  // z-index: 1;
+
+  bottom: 22px;
+  left: 22px;
+
+  path {
+    fill: $color-element;
+  }
+}
+
+.timer__clock {
+  content: "";
+  position: absolute;
+  display: block;
+
+  left: 80px;
+  bottom: 30px;
+
+  font-size: 120px;
+  font-weight: 700;
+  color: $color-element;
+}
+
+// @media (min-width: $tablet-width) {
+
+// }
+
+@media (min-width: $desktop-width) {
+  // .timer__inner {
+  //   bottom: 47px;
+  // }
+
+  // .timer__clock {
+  //   bottom: 55px;
+  // }
+}

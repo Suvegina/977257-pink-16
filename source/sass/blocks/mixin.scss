@@ -1,0 +1,185 @@
+// стиль подписи к блокам формы label / legend
+@mixin visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1;
+  height: 1;
+  margin: -1;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+
+  // -webkit-clip-path: inset(100%);
+  //     clip-path: inset(100%);
+  overflow: hidden;
+}
+
+@mixin mobile-size {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin tablet-size {
+  width: 660px;
+  margin: 0 auto;
+}
+
+@mixin desktop-size {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+//Общий стиль заголовков
+@mixin heading-style {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  // margin: 0;
+  padding: 0;
+}
+
+//Заголовки для планшета
+@mixin heading-style-medium {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 300;
+  // margin: 0;
+  padding: 0;
+}
+
+//Заголовки для декстопа
+@mixin heading-style-large {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 300;
+  // margin: 0;
+  padding: 0;
+}
+
+// Стиль описания
+@mixin caption-style {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+
+  padding: 0;
+  margin: 0;
+}
+
+@mixin caption-style-medium {
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+
+  // padding: 0;
+  // margin: 0;
+}
+
+@mixin caption-style-large {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+
+  // padding: 0;
+  // margin: 0;
+}
+
+// Единый стиль написания заголовков на обложках внутр. страниц
+@mixin page-cover-text {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  margin: 0;
+  padding: 47px 0 45px 0;
+  color: $main-color;
+}
+
+@mixin page-cover-text-medium {
+  display: block;
+  font-size: 40px;
+  max-width: 740px;
+  // text-align: center;
+  // vertical-align: middle;
+  line-height: auto;
+
+  // margin: 0;
+  // padding: 45px 0 45px 0;
+  // color: $main-color;
+}
+
+@mixin page-cover-text-large {
+  display: block;
+  font-size: 50px;
+  max-width: 740px;
+
+  // text-align: center;
+  // vertical-align: middle;
+  line-height: auto;
+
+  // margin: 0;
+  padding: 180px 0 100px 0;
+  // color: $main-color;
+}
+
+//Общий стиль описания для планшета
+//Общий стиль описания для декстопа
+
+// стиль подписи к блокам формы label / legend
+@mixin style-description {
+  display: block;
+  padding: 20px 0 10px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $color-element;
+}
+
+// // стиль полей для ввода
+@mixin input-form {
+  padding: 20px;
+  background-color: $white-color;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+@mixin input-form-hover {
+  border-color: $main-color;
+  outline: none;
+}
+
+@mixin input-form-active {
+  border-color: $color-element;
+  outline: none;
+}
+
+// стиль шрифта для плейсхолдера
+@mixin placeholder-style {
+  &::-webkit-input-placeholder {
+    color: #000000;
+    opacity: 1;
+  }/* webkit */
+
+  &::-moz-placeholder {
+    color: #000000;
+    opacity: 1;
+  }/* Firefox 19+ */
+
+  &:-moz-placeholder {
+    color: #000000;
+    opacity: 1;
+  }/* Firefox 18- */
+
+  &:-ms-input-placeholder {
+    color: #000000;
+    opacity: 1;
+  }/* IE */
+}
+
+// стиль рамок для fieldset
+// @mixin
+
+// @mixin

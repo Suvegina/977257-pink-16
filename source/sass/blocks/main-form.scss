@@ -6,7 +6,7 @@
 }
 
 .main-form__title {
-  @include page-cover-text
+  @include page-cover-text;
 
   font-size: 14px;
   font-weight: 300;
@@ -116,7 +116,6 @@
 //   }
 // }
 
-
 // .button
 
 .main-form__btn {
@@ -133,18 +132,18 @@
   &:hover,
   &:focus,
   &:active {
-  background-color: $btn-filter-main;
-  border: 2px solid $btn-filter-main;
+    background-color: $btn-filter-main;
+    border: 2px solid $btn-filter-main;
   }
 
   &:active {
-  color: $active-color;
+    color: $active-color;
   }
 
   &:disabled {
-  color: $white-color;
-  background-color: $btn-filter-disabled;
-  border: 2px solid $btn-filter-disabled;
+    color: $white-color;
+    background-color: $btn-filter-disabled;
+    border: 2px solid $btn-filter-disabled;
   }
 }
 
@@ -158,53 +157,15 @@
   text-transform: uppercase;
 }
 
+// @media (min-width: $mobile-width) {
 
-// Пример стилизации чекбоксов с проекта Седона
-
-
-// .filter-input {
-//   opacity: 0;
-// }
-
-// .filter-input:hover label,
-// .filter-input:focus label {
-//   color: #ffffff;
 // }
 
 
-// .filter-input-checkbox + label::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: -40px;
+// @media (min-width: $tablet-width) {
 
-//   width: 23px;
-//   height: 23px;
-
-//   background-image: url(../img/checkbox-off.svg);
-//   background-repeat: no-repeat;
 // }
 
-// .filter-input-checkbox:checked + label::after {
-//   content: "";
-//   position: absolute;
+// @media (min-width: $desktop-width) {
 
-//   top: 0;
-//   left: -40px;
-
-//   width: 27px;
-//   height: 23px;
-
-//   background-image: url(../img/checkbox-on.svg);
-//   background-repeat: no-repeat;
-// }
-
-// .filter-input:focus + label::before {
-//   outline: rgb(59, 153, 252) auto 3px;
-//   outline-style: solid;
-// }
-
-// .filter-input-checkbox:disabled + .disable,
-// .filter-input-checkbox:disabled + .disabled::before {
-//   opacity: 0.3;
 // }

@@ -1,38 +1,41 @@
-// comment-form.scss
-
 .add-comment {
   border: none;
   margin: 0 auto;
 }
 
 .add-comment__title {
-  @include style-description
   text-align: center;
   padding: 40px 0 15px 0;
-}
 
+  @include style-description;
+}
 
 // Стилизация инпутов
 .add-comment__input {
-  @include input-form
+  min-height: 200px;
   min-width: 240px;
-}
 
-.add-comment__input {
+  @include input-form;
+  @include placeholder-style;
+
   &:hover,
   &:focus {
-    @include input-form-hover
+    @include input-form-hover;
+  }
+
+  &:active {
+    @include input-form-active;
   }
 }
 
-.add-comment__input {
-  min-height: 200px;
+// @media (min-width: $mobile-width) {
 
-  &:active{
-    @include input-form-active
-  }
-}
+// }
 
-.add-comment__input {
-  @include placeholder-style
-}
+// @media (min-width: $tablet-width) {
+
+// }
+
+// @media (min-width: $desktop-width) {
+
+// }

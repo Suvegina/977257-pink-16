@@ -1,47 +1,66 @@
 .app {
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
-  background-color: $main-color;
-  background-repeat: no-repeat;
+  width: 100%;
+  z-index: -1;
+
+  @include mobile-size;
 }
 
 .app__head-title {
-  @include visually-hidden
+  @include visually-hidden;
+  margin: 0;
 }
 
 .app__header {
-  padding-top: 110px;
-  padding-bottom: 30px;
-  margin-bottom: 43px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .app__image {
-  display: block;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  width: 100%;
+  height: 461px;
+  display: flex;
+  align-items: flex-end;
+  z-index: -1;
 }
 
 .app__title {
+  display: none;
+  width: 220px;
   color: $white-color;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
 .app__device {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: $main-color;
-  padding-top: 28px;
+  padding-top: 33px;
+  padding-bottom: 30px;
 }
 
 .app__btn-device {
+  width: 250px;
   color: $white-color;
+  font-size: 18px;
   font-weight: 700;
-  border: 2px solid #fff;
-  border-radius: 30px;
-  background: none;
+  text-decoration: none;
+  text-align: center;
+
   padding: 13px;
   margin: 0 auto;
-  margin-bottom: 25px;
-  width: 280px;
+  margin-bottom: 31px;
+
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  background: none;
 
   &:hover,
   &:focus {
@@ -58,20 +77,141 @@
 .app__download {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .app__text {
   color: $white-color;
   font-weight: 300;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+  width: 250px;
 }
 
 .app__platform {
-
+  margin: 0 16px;
 }
 
 .app__application-name {
-  @include visually-hidden
+  @include visually-hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .app {
+    @include tablet-size;
+    min-height: 730px;
+
+    position: relative;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .app__header {
+    min-height: 730px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0 20px;
+  }
+
+  .app__image {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 700px;
+    height: 545px;
+
+    bottom: 0;
+    right: -20px;
+    background: none;
+  }
+
+  .app__device {
+    width: 300px;
+    display: flex;
+    background: none;
+    margin-bottom: 80px;
+    z-index: 1;
+  }
+
+  .app__title {
+    display: block;
+    width: 220px;
+    text-align: center;
+
+    @include heading-style-medium;
+  }
+
+  .app__btn-device {
+    width: 269px;
+    padding: 13px;
+    margin-top: 30px;
+    margin-bottom: 47px;
+  }
+
+  .app__download {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+  }
+
+  .app__text {
+    width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .app {
+    min-height: 865px;
+
+    @include desktop-size;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: top center;
+  }
+
+  .app__header {
+    width: 960px;
+    min-height: 865px;
+    height: auto;
+    margin: 0 10px;
+    margin-left: 104px;
+
+    justify-content: flex-end;
+  }
+
+  .app__image {
+    width: 1050px;
+    height: 645px;
+    right: 3px;
+  }
+
+  .app__device {
+    margin-left: 26px;
+    margin-bottom: 123px;
+    padding-bottom: 0;
+    background-color: none;
+  }
+
+  .app__title {
+    display: block;
+
+    @include heading-style-large;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .app__btn-device {
+    width: 270px;
+    font-size: 21px;
+    margin-top: 53px;
+    margin-bottom: 65px;
+  }
+
+  .app__download {
+    padding-bottom: 50px;
+  }
 }

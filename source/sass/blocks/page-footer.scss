@@ -1,5 +1,12 @@
 .page-footer {
+  @include mobile-size;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.page-footer__index {
+  display: none;
 }
 
 .page-footer__logo-wraper {
@@ -10,24 +17,23 @@
 }
 
 .page-footer__logo {
-
   &:hover path,
   &:focus path {
     fill: $color-element;
   }
+
   &:active path {
-  // fill: inherit;
     opacity: 0.3;
   }
 }
 
-.page-footer__social {
+// .page-footer__social {
 
-}
+// }
 
-.social {
+// .social {
 
-}
+// }
 
 .social__list {
   list-style: none;
@@ -59,10 +65,11 @@
   &:active path {
     opacity: 0.3;
   }
+
   &:hover,
   &:focus {
     border-color: $main-color;
-  };
+  }
 
   &:active {
     border-color: $main-color-element;
@@ -70,21 +77,11 @@
 }
 
 .social__name-hidden {
-  @include visually-hidden
+  @include visually-hidden;
 }
 
-//   .social__link {
-
-//     &--twitter,
-//     &--facebook,
-//     &--youtube {
-
-//       // ?
-//   }
-// }
-
 .page-footer__copyright {
-padding: 40px 0;
+  padding: 40px 0;
 }
 
 .copyright {
@@ -103,7 +100,6 @@ padding: 40px 0;
 }
 
 .copyright__link {
-
   :hover path,
   :focus path {
     fill: $main-color;
@@ -116,5 +112,56 @@ padding: 40px 0;
 }
 
 .copyright__hidden-text {
-  @include visually-hidden
+  @include visually-hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    @include tablet-size;
+    width: 620px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-footer__index {
+    display: flex;
+  }
+
+  .page-footer__logo-wraper {
+    padding-top: 35px;
+    padding-bottom: 50px;
+  }
+
+  .page-footer__copyright {
+    padding-top: 50px;
+
+    .copyright__text {
+      padding-bottom: 10px;
+    }
+  }
+
+  .social__item {
+    padding-left: 0;
+
+    &:nth-child(3) {
+      padding-right: 19px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    @include desktop-size;
+    width: 940px;
+    padding: 36px 10px;
+  }
+
+  .social__item:nth-child(3) {
+    padding-right: 0;
+  }
+
+  .copyright__text {
+    font-size: 18px;
+  }
 }

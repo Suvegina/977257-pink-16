@@ -1,6 +1,5 @@
 .data {
   margin: 0 20px 40px 20px;
-
 }
 
 .data__value {
@@ -8,30 +7,39 @@
 }
 
 // лэйблы к инпутам
+
 .data__last-name,
 .data__first-name,
 .data__patronym {
-  @include style-description
+  @include style-description;
   margin-left: 20px;
 }
 
 // Стилизация инпутов
-.data__input {
-  @include input-form
-  min-width: 240px;
-}
 
 .data__input {
+  @include input-form;
+  @include placeholder-style;
+  min-width: 240px;
+
   &:hover,
   &:focus {
-    @include input-form-hover
+    @include input-form-hover;
+  }
+
+  &:active {
+    @include input-form-active;
   }
 }
 
-.data__input {
-  @include placeholder-style
+// @media (min-width: $mobile-width) {
 
-  &:active{
-    @include input-form-active
-  }
-}
+// }
+
+// @media (min-width: $tablet-width) {
+
+// }
+
+// @media (min-width: $desktop-width) {
+
+// }

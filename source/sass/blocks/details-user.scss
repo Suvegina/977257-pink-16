@@ -6,16 +6,17 @@
 
 .details-user__mail,
 .details-user__phone {
+  @include style-description;
+  margin-left: 20px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   color: $color-element;
-
 }
 
 .details-user__input {
-  @include input-form
-  @include placeholder-style
+  @include input-form;
+  @include placeholder-style;
   min-width: 240px;
 
   &:hover,
@@ -37,30 +38,19 @@
 .details-user__list {
   list-style: none;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
-
-
-.details-user__title {
-  @include style-description
-  padding: 30px;
-  text-align: center;
-}
-.details-user__phone,
-.details-user__mail {
-  @include style-description
-  margin-left: 20px;
-}
-
-
-
-// .details-user
-// .details-user__wrapper
 
 .details-user__title {
   display: none; /*Скрыт на собильной версии*/
+  padding: 30px;
+  text-align: center;
+
+  @include style-description;
 }
 
+// .details-user
+// .details-user__wrapper
 
 // .title-legend
 // .details-user__list
@@ -69,3 +59,16 @@
 // .details-user__input
 
 // .details-user__mail-bottom
+
+// @media (min-width: $mobile-width) {
+
+// }
+
+
+// @media (min-width: $tablet-width) {
+
+// }
+
+// @media (min-width: $desktop-width) {
+
+// }

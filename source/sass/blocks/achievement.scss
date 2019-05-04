@@ -6,11 +6,10 @@
 
 .achievement__section {
   border: none;
-
 }
 
 .achievement__title {
-  @include style-description
+  @include style-description;
   padding: 30px;
   // padding-bottom: 0;
   text-align: center;
@@ -33,20 +32,16 @@
   user-select: none;
 }
 
-
-
-
 // чекбокс
 
 .achievement__input {
-  @include visually-hidden
+  @include visually-hidden;
 }
 
 .achievement__label {
   display: block;
   position: relative;
 }
-
 
 .achievement__input-checkbox + .achievement__label {
   cursor: pointer;
@@ -59,23 +54,26 @@
     width: 31px;
     height: 31px;
 
-    top: 0px;
+    // top: 0px;
     left: -64px;
 
     border: 2px solid #e5e5e5;
     background-color: $white-color;
-
-    &:hover,
-    &:focus {
-      @include input-form-hover
-    }
-
-    &:active {
-      @include input-form-active
-    }
   }
 }
 
+.achievement__input-checkbox + .achievement__label:hover,
+.achievement__input-checkbox + .achievement__label:focus {
+  &::before {
+    @include input-form-hover;
+  }
+}
+
+.achievement__input-checkbox + .achievement__label:active {
+  &::before {
+    @include input-form-active;
+  }
+}
 
 .achievement__input-checkbox:checked + .achievement__label {
   &::after {
@@ -88,17 +86,20 @@
     top: 9px;
     left: -57px;
 
-    background-image: url(../../img/icon-yes-check.svg);
+    background-image: url("../img/icon-yes-check.svg");
     background-repeat: no-repeat;
-
-
-    &:hover,
-    &:focus {
-      @include input-form-hover
-    }
-
-    &:active {
-      @include input-form-active
-    }
   }
 }
+
+
+// @media (min-width: $mobile-width) {
+
+// }
+
+// @media (min-width: $tablet-width) {
+
+// }
+
+// @media (min-width: $desktop-width) {
+
+// }
