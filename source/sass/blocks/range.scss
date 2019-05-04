@@ -43,9 +43,11 @@
 // }
 
 
-// @media (min-width: $tablet-width) {
-
-// }
+@media (min-width: $tablet-width) {
+  .range__scale {
+    width: 202px;
+  }
+}
 
 // @media (min-width: $desktop-width) {
 
