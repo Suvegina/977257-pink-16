@@ -178,7 +178,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    @include  desktop-size;
+    @include desktop-size;
   }
 
   .advantages__slogan,

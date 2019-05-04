@@ -24,9 +24,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
-  display: inline-block;
-  // border: 2px solid #e5e5e5;
   border-collapse: collapse;
   overflow: hidden;
 }
@@ -34,10 +31,6 @@
 .price__wrapper td,
 .price__wrapper th {
   border: 2px solid #e5e5e5;
-}
-
-.price__section {
-
 }
 
 .price__item {
@@ -59,7 +52,7 @@
   width: 276px;
 }
 
-.price__list  {
+.price__list {
   background-color: white;
 }
 
@@ -108,18 +101,13 @@
   margin: 0;
 }
 
-.price__title {
+// .price__title {
 
-}
+// }
 
-.price__cost {
+// .price__list-title {
 
-}
-
-
-.price__list-title {
-
-}
+// }
 
 .price__list-field {
   text-align: left;
@@ -129,9 +117,9 @@
   // justify-content: space-between;
 }
 
-.price__list-field--hidden {
+// .price__list-field--hidden {
 
-}
+// }
 
 .price__list-option-yes {
   content: "";

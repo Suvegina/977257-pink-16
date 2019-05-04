@@ -1,7 +1,8 @@
 .app {
   width: 100%;
-  @include mobile-size;
   z-index: -1;
+
+  @include mobile-size;
 }
 
 .app__head-title {
@@ -97,7 +98,6 @@
 
 @media (min-width: $tablet-width) {
   .app {
-
     @include tablet-size;
     min-height: 730px;
 

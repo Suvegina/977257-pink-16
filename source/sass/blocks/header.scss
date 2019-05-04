@@ -12,7 +12,6 @@
 .main-nav__toggle--open path,
 .main-nav__toggle--close path {
   fill: $white-color;
-
 }
 
 .main-nav__toggle--open,
@@ -56,11 +55,13 @@
   display: flex;
 }
 
-.main-nav__toggle--open,
-.main-nav__toggle--close {
-  fill: $white-color;
-  border: none;
-  background: none;
+.main-nav__toggle {
+  &--open,
+  &--close {
+    fill: $white-color;
+    border: none;
+    background: none;
+  }
 }
 
 .main-nav__list {
@@ -91,9 +92,6 @@
 @media (min-width: $desktop-width) {
   .page-header {
     @include desktop-size;
-  }
-
-  .page-header {
     position: relative;
     background-color: rgba(0, 0, 0, 0.3);
   }

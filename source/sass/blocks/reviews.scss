@@ -5,6 +5,7 @@
 
 .reviews__title {
   width: 240px;
+
   @include page-cover-text;
   margin: 0 auto;
 }
@@ -45,8 +46,6 @@
   margin: 0 auto;
 }
 
-
-
 .reviews__item {
   padding: 18px 17px 20px;
   margin: 20px;
@@ -55,10 +54,6 @@
   color: $main-color;
   background-color: $gray-color;
 }
-
-  // .reviews__info {
-
-  // }
 
 .reviews__autr-name {
   display: inline-block;
@@ -101,12 +96,6 @@
   color: $color-element;
   margin: 0 15px;
 }
-
-
-
-// @media (min-width: $mobile-width) {
-
-// }
 
 
 @media (min-width: $tablet-width) {

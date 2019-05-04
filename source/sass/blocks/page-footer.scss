@@ -84,7 +84,6 @@
   padding: 40px 0;
 }
 
-
 .copyright {
   display: flex;
   align-items: center;
@@ -116,11 +115,6 @@
   @include visually-hidden;
 }
 
-// @media (min-width: $mobile-width) {
-
-// }
-
-
 @media (min-width: $tablet-width) {
   .page-footer {
     @include tablet-size;
@@ -148,7 +142,7 @@
   }
 
   .social__item {
-    padding-left: 0px;
+    padding-left: 0;
 
     &:nth-child(3) {
       padding-right: 19px;
