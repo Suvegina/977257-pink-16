@@ -7,7 +7,8 @@
   margin: -1;
   border: 0;
   padding: 0;
-  white-space: nowrap;
+  // white-space: nowrap;
+  // box-sizing: border-box;
 
   // -webkit-clip-path: inset(100%);
   //     clip-path: inset(100%);
@@ -17,6 +18,7 @@
 @mixin mobile-size {
   width: 320px;
   margin: 0 auto;
+  // box-sizing: border-box;
 }
 
 @mixin tablet-size {

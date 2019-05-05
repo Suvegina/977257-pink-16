@@ -1,0 +1,42 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright__text {
+  padding-right: 15px;
+  margin: 0;
+}
+
+.copyright__link path {
+  fill: $color-element;
+}
+
+.copyright__link {
+  :hover path,
+  :focus path {
+    fill: $main-color;
+  }
+}
+
+.copyright__link:active path {
+  fill: $main-color;
+  opacity: 0.3;
+}
+
+.copyright__hidden-text {
+  @include visually-hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+  }
+}

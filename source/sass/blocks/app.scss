@@ -1,6 +1,8 @@
 .app {
   width: 100%;
   z-index: -1;
+  box-sizing: border-box;
+  overflow: hidden;
 
   @include mobile-size;
 }
