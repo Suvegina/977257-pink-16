@@ -29,11 +29,15 @@
   @include visually-hidden;
 }
 
-@media (min-width: $tablet-width) {
-  .copyright__text {
-    padding-bottom: 10px;
-  }
+.copyright__text {
+  padding-bottom: 10px;
 }
+
+// @media (min-width: $tablet-width) {
+//   // .copyright__text {
+//   //   padding-bottom: 10px;
+//   // }
+// }
 
 @media (min-width: $desktop-width) {
   .copyright__text {

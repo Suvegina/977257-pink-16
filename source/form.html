@@ -10,7 +10,7 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__container">
-                    <div class="main-nav__menu">
+          <div class="main-nav__menu">
             <div class="main-nav__menu-inner">
               <a class="page-header__logo page-header__logo--desk" href="#" aria-label="Логотип мобильного приложения Pink для раскрашивания серых будней в розовый цвет">
                 <!-- <picture>
@@ -94,27 +94,27 @@
     </header>
     <main class="page-form">
       <div class="page-cover">
-        <h1 class="page-cover__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="page-cover__title page-cover__title-form">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
       <form class="main-form" action="https://echo.htmlacademy.ru" method="get" aria-label="Для участия в конкурсе фотографий, заполните пожалуйста форму расположенную ниже.">
-        <p class="main-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="main-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="main-form__title-addition">Пожалуйста, заполните форму ниже:</span></p>
         <section class="data">
           <p class="data__value" aria-label="Обязательное поле для заполнения">
-            <label for="surname" class="data__last-name data__last-name-top">Фамилия:</label>
+            <label for="surname" class="data__info data__last-name">Фамилия:</label>
             <input id="surname" type="text" class="data__input" placeholder="Укажите фамилию *">
           </p>
           <p class="data__value" aria-label="Обязательное поле для заполнения">
-            <label for="name" class="data__first-name data__first-name-top">Имя:</label>
+            <label for="name" class="data__info data__first-name">Имя:</label>
             <input id="name" type="text" class="data__input" placeholder="Введите ваше имя *">
           </p>
           <p class="data__value">
-            <label for="patronym" class="data__patronym data__patronym-top">Отчество:</label>
+            <label for="patronym" class="data__info data__patronym">Отчество:</label>
             <input id="patronym" type="text" class="data__input" placeholder="Ну и отчество тоже">
           </p>
         </section>
         <div class="achievement">
           <fieldset class="achievement__section achievement__section--bg-gray">
-            <legend class="achievement__title title-legend">Ваши безбашенные достижения в путешествии</legend><!-- title-legend - общий стиль для текстового блока, прописываются основные настройки стилей на всей странице -->
+            <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend><!-- title-legend - общий стиль для текстового блока, прописываются основные настройки стилей на всей странице -->
             <ul class="achievement__list">
               <li class="achievement__item">
                 <input type="checkbox" name="achievement" value="selfie" id="achievement-1" class="visually-hidden achievement__input achievement__input-checkbox" checked>
@@ -145,14 +145,14 @@
         </div>
         <div class="details-user">
           <fieldset class="details-user__wrapper">
-            <legend class="details-user__title"><!-- details-user__title--hidden -->Контактная информация</legend>
+            <legend class="details-user__title">Контактная информация</legend>
             <ul class="details-user__list">
               <li class="details-user__item">
-                <label for="phone" class="details-user__phone details-user__phone-bottom">Номер телефона</label>
+                <label for="phone" class="details-user__info details-user__phone details-user__phone-bottom">Номер телефона</label>
                 <input id="phone" type="phohe" class="details-user__input" placeholder="Номер, пожалуйста">
               </li>
               <li class="details-user__item" aria-label="Обязательное поле для заполнения">
-                <label for="mail" class="details-user__mail  details-user__mail-bottom">Адрес почты</label>
+                <label for="mail" class="details-user__info details-user__mail  details-user__mail-bottom">Адрес почты</label>
                 <input id="mail" type="email" class="details-user__input" placeholder="Введите почту *">
               </li>
             </ul>
@@ -163,7 +163,7 @@
             <legend class="platform__title">С каким приложением путешествовали?</legend>
             <ul class="platform__list" aria-label="Выберите что-то одно из представленного списка ниже:">
               <li class="platform__item">
-                <input type="radio" id="ios" class="platform__radio platform__input-radio " name="platform-group">
+                <input type="radio" id="ios" class="platform__radio platform__input-radio " name="platform-group" checked>
                 <label class="platform__label" for="ios">Pink для iOS</label>
               </li>
               <li class="platform__item">
@@ -177,12 +177,16 @@
             </ul>
           </fieldset>
         </div>
-        <fieldset class="add-comment">
-          <legend class="add-comment__title title-legend">Опишите свои эмоции</legend>
-          <textarea class="add-comment__input" name="comment" rows="3" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </fieldset>
-        <button class="main-form__btn" type="submit">Отправить форму</button>
-        <p class="main-form__note"><span class="lettering-select">*</span> — обязательные поля</p>
+        <div class="add-comment">
+           <fieldset class="add-comment__wrapper">
+            <legend class="add-comment__title">Опишите свои эмоции</legend>
+            <textarea class="add-comment__input" name="comment" rows="3" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+        </div>
+        <div class="main-form__wrapper-submit-btn">
+          <button class="main-form__btn" type="submit">Отправить форму</button>
+          <p class="main-form__note"><span class="main-form__lettering-select">*</span> — обязательные поля</p>
+        </div>
       </form>
     </main>
     <footer class="page-footer page-footer__inner-page">

@@ -25,7 +25,9 @@
   margin: 0 auto;
 }
 
-
+.page-cover__title-form {
+  padding-top: 80px;
+}
 // @media (min-width: $mobile-width) {
 
 // }
@@ -44,6 +46,10 @@
     @include heading-style-large;
     padding: 35px 40px;
     padding-top: 65px;
+  }
+
+  .page-cover__title-form {
+    padding-top: 130px;
   }
 }
 

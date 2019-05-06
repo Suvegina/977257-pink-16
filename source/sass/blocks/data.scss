@@ -1,18 +1,22 @@
 .data {
+  @include mobile-size;
   margin: 0 20px 40px 20px;
+  box-sizing: content-box;
 }
 
 .data__value {
   margin: 0;
+  display: inline-block;
+
 }
 
 // лэйблы к инпутам
 
-.data__last-name,
-.data__first-name,
-.data__patronym {
+.data__info {
   @include style-description;
+  display: inline-block;
   margin-left: 20px;
+  // width: 210px;
 }
 
 // Стилизация инпутов
@@ -21,6 +25,7 @@
   @include input-form;
   @include placeholder-style;
   min-width: 240px;
+  margin-bottom: 3px;
 
   &:hover,
   &:focus {
@@ -32,14 +37,39 @@
   }
 }
 
-// @media (min-width: $mobile-width) {
+@media (min-width: $tablet-width) {
+  .data {
+    @include tablet-size;
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: center;
+    order: -9;
+  }
 
-// }
+  .data__info {
+    padding: 0;
+    padding-right: 24px;
+  }
 
-// @media (min-width: $tablet-width) {
+  .data__value {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    // box-sizing: content-box;
 
-// }
+    padding-right: 20px;
+    margin-bottom: 46px;
+  }
 
-// @media (min-width: $desktop-width) {
+  .data__input {
+    box-sizing: content-box;
+    flex-grow: 1;
+  }
+}
 
-// }
+@media (min-width: $desktop-width) {
+  .data {
+    @include desktop-size;
+  }
+}

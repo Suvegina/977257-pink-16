@@ -163,25 +163,35 @@
   &::-webkit-input-placeholder {
     color: #000000;
     opacity: 1;
+    line-height: 30px;
   }/* webkit */
 
   &::-moz-placeholder {
     color: #000000;
     opacity: 1;
+    line-height: 30px;
   }/* Firefox 19+ */
 
   &:-moz-placeholder {
     color: #000000;
     opacity: 1;
+    line-height: 30px;
   }/* Firefox 18- */
 
   &:-ms-input-placeholder {
     color: #000000;
     opacity: 1;
+    line-height: 30px;
   }/* IE */
 }
 
 // стиль рамок для fieldset
-// @mixin
 
-// @mixin
+@mixin style-border-fieldset {
+  border: 2px solid $color-border-fieldset;
+}
+
+@mixin style-title-legend {
+  padding: 10px 30px 10px;
+  margin-bottom: 35px;
+}

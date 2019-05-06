@@ -1,23 +1,53 @@
 // // details-user.scss
 
 .details-user {
+  order: -7;
   margin-bottom: 40px;
+  @include mobile-size;
+  box-sizing: content-box;
+}
+
+.details-user__wrapper {
+  border: none;
+  padding-top: 9px;
+  margin-bottom: 27px;
+  // margin: 0 auto;
+}
+
+.details-user__title {
+  padding: 30px;
+  text-align: center;
+
+  @include style-description;
+  display: none;
+}
+
+.details-user__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .details-user__mail,
 .details-user__phone {
   @include style-description;
+  padding-bottom: 8px;
   margin-left: 20px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   color: $color-element;
 }
+.details-user__mail {
+  padding-top: 15px;
+}
+
 
 .details-user__input {
   @include input-form;
   @include placeholder-style;
   min-width: 240px;
+  // margin-bottom: 15px;
 
   &:hover,
   &:focus {
@@ -31,29 +61,9 @@
   }
 }
 
-.details-user__wrapper {
-  border: none;
-}
-
-.details-user__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.details-user__title {
-  display: none; /*Скрыт на собильной версии*/
-  padding: 30px;
-  text-align: center;
-
-  @include style-description;
-}
-
 // .details-user
 // .details-user__wrapper
 
-// .title-legend
-// .details-user__list
 // .details-user__item
 // .details-user__phone-bottom
 // .details-user__input
@@ -65,10 +75,55 @@
 // }
 
 
-// @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .details-user {
+    @include tablet-size;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 45px;
+  }
 
-// }
+  .details-user__wrapper {
+    @include style-border-fieldset;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 45px;
+  }
 
-// @media (min-width: $desktop-width) {
+  .details-user__title {
+    @include style-title-legend;
+    display: inline-block;
+    margin-bottom: 19px;
+  }
 
-// }
+  .details-user__info {
+    padding: 0;
+  }
+
+  .details-user__item {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    align-items: flex-start;
+
+    padding: 0 40px;
+    margin-bottom: 27px;
+  }
+
+  .details-user__input {
+    box-sizing: border-box;
+    flex-grow: 2;
+    margin-bottom: 10px;
+
+    width: 100%;
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .details-user {
+    @include desktop-size;
+  }
+}

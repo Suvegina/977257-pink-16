@@ -1,19 +1,25 @@
 .add-comment {
+  @include mobile-size;
+  box-sizing: border-box;
   border: none;
   margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 21px;
 }
 
 .add-comment__title {
   text-align: center;
-  padding: 40px 0 15px 0;
+  padding: 40px 0 16px 0;
 
   @include style-description;
 }
 
 // Стилизация инпутов
 .add-comment__input {
-  min-height: 200px;
+  min-height: 158px;
   min-width: 240px;
+  box-sizing: content-box;
+  margin-bottom: 45px;
 
   @include input-form;
   @include placeholder-style;
@@ -28,14 +34,32 @@
   }
 }
 
-// @media (min-width: $mobile-width) {
 
-// }
+@media (min-width: $tablet-width) {
+  .add-comment {
+    @include tablet-size;
+    box-sizing: content-box;
+    padding: 0 20px;
+    margin-bottom: 66px;
+  }
 
-// @media (min-width: $tablet-width) {
+  .add-comment__wrapper {
+    @include style-border-fieldset;
+    padding: 0 56px;
+  }
 
-// }
+  .add-comment__title {
+    @include style-title-legend;
+    margin-bottom: 28px;
+  }
 
-// @media (min-width: $desktop-width) {
+  .add-comment__input {
+    width: 100%;
+    min-height: 192px;
+    box-sizing: border-box;
+  }
+}
 
-// }
+@media (min-width: $desktop-width) {
+
+}
