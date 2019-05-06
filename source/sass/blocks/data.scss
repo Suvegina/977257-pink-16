@@ -52,14 +52,8 @@
   }
 
   .data__value {
-    width: inherit;
-    display: flex;
-    align-items: center;
-    // justify-content: space-between;
-    // box-sizing: content-box;
-
-    padding-right: 20px;
-    margin-bottom: 46px;
+    // padding-right: 0;
+    // margin-bottom: 50px;
   }
 
   .data__input {
@@ -70,6 +64,29 @@
 
 @media (min-width: $desktop-width) {
   .data {
-    @include desktop-size;
+    // @include desktop-size;
+    width: 440px;
+    padding-right: 30px;
+  }
+
+  .data__info {
+    // padding: 0;
+    margin-left: 6px;
+  }
+
+  .data__value {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    // box-sizing: content-box;
+
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  .data__input {
+    box-sizing: content-box;
+    flex-grow: 1;
   }
 }

@@ -112,6 +112,9 @@
     margin-bottom: 27px;
   }
 
+  // .details-user__input input[type="phone"],
+  // .details-user__input input[type="email"]
+
   .details-user__input {
     box-sizing: border-box;
     flex-grow: 2;
@@ -120,6 +123,20 @@
     width: 100%;
     order: -1;
   }
+
+  // .details-user__input-phone {
+  //   background-color: $gray-color;
+  //   background-image: url("img/icon-phone.svg");
+  //   background-position: 270px center;
+  //   background-repeat: no-repeat;
+  // }
+
+  // .details-user__input-mail {
+  //   background-color: $gray-color;
+  //   background-image: url("img/icon-mail.svg");
+  //   background-position: 270px center;
+  //   background-repeat: no-repeat;
+  // }
 }
 
 @media (min-width: $desktop-width) {

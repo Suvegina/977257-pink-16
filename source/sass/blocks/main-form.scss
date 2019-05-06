@@ -73,17 +73,19 @@
 @media (min-width: $tablet-width) {
   .main-form {
     @include tablet-size;
+    align-content: center;
+    justify-content: space-between;
   }
 
   .main-form__title {
     font-size: 18px;
 
     padding: 91px 65px 71px;
-    margin: 0 20px auto;
+    margin: 0 40px auto;
   }
 
   .main-form__title-addition {
-    display: block;
+    display: inline-block;
   }
 
   .main-form__wrapper-submit-btn {
@@ -107,6 +109,29 @@
 
 @media (min-width: $desktop-width) {
   .main-form {
-    @include desktop-size;
+    width: 960px;
   }
+
+  .main-form__title {
+    padding-bottom: 62px;
+    // margin: 0 150px auto;
+  }
+
+  // .main-form__wrapper-submit-btn {
+  //   width: 100%;
+  //   margin: 0 20px;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   margin-bottom: 48px;
+  // }
+
+  // .main-form__btn {
+  //   padding: 20px 55px;
+  //   margin: 0;
+  // }
+
+  // .main-form__note {
+  //   padding: 0;
+  // }
 }

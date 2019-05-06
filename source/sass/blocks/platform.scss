@@ -137,6 +137,27 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .platform {
+    padding-right: 0;
+    width: 460px;
+  }
 
-// }
+  .platform__item {
+    padding-left: 122px;
+  }
+
+  .platform__input-radio + .platform__label {
+    &::before {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  .platform__input-radio:checked + .platform__label {
+    &::after {
+      top: 11px;
+      left: -53px;
+    }
+  }
+}
