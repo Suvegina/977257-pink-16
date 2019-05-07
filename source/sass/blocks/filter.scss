@@ -231,8 +231,10 @@
   }
 
   .filter__item {
-    width: 50%;
-    height: 50%;
+    width: 26px;
+    height: 26px;
+    // width: 50%;
+    // height: 50%;
 
     path,
     rect {
@@ -270,11 +272,6 @@
 
   // .filter__items--contrast {
   // }
-
-  .filter__item {
-    width: 26px;
-    height: 26px;
-  }
 
   // .filter__range {
   //   // margin-top: 30px;

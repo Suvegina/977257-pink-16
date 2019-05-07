@@ -2,6 +2,7 @@
   display: flex;
   // flex-direction: column;
   flex-wrap: wrap;
+
   @include mobile-size;
   font-size: 18px;
   font-weight: 400;
@@ -13,6 +14,7 @@
 
 .main-form__title {
   order: -10;
+
   @include page-cover-text;
   font-size: 14px;
   font-weight: 300;
@@ -114,12 +116,10 @@
     width: 960px;
     padding-left: 10px;
     padding-right: 5px;
-    justify-content: space-between;
   }
 
   .main-form__title {
     padding-bottom: 62px;
-    // margin: 0 150px auto;
   }
 
   .main-form__title-accessory {
@@ -129,13 +129,4 @@
   .main-form__wrapper-submit-btn {
     margin: 0;
   }
-
-  // .main-form__btn {
-  //   padding: 20px 55px;
-  //   margin: 0;
-  // }
-
-  // .main-form__note {
-  //   padding: 0;
-  // }
 }

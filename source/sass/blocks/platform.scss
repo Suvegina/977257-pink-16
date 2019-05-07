@@ -2,6 +2,7 @@
 
 .platform {
   order: -8;
+
   @include mobile-size;
   padding-top: 19px;
   background-color: $gray-color;
@@ -15,6 +16,7 @@
 
 .platform__title {
   display: block;
+
   @include style-description;
   text-align: center;
   margin: 40px 0 25px;
@@ -116,7 +118,7 @@
 @media (min-width: $tablet-width) {
   .platform {
     @include tablet-size;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 0 20px;
   }
 

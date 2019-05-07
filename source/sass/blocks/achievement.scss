@@ -99,7 +99,7 @@
 @media (min-width: $tablet-width) {
   .achievement {
     @include tablet-size;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 0 20px;
     order: -6;
   }

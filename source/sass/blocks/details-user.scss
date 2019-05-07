@@ -1,6 +1,7 @@
 .details-user {
   order: -8;
   margin-bottom: 40px;
+
   @include mobile-size;
   box-sizing: content-box;
 }
@@ -35,10 +36,10 @@
   text-transform: uppercase;
   color: $color-element;
 }
+
 .details-user__mail {
   padding-top: 15px;
 }
-
 
 .details-user__input {
   @include input-form;
