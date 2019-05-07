@@ -129,15 +129,23 @@
     padding: 0;
   }
 
+  .achievement__section {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .achievement__title {
     margin-bottom: 30px;
   }
 
   .achievement__inner {
-
+    padding: 0 56px 5px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .achievement__item {
+    padding-left: 64px;
     margin-bottom: 55px;
   }
 }

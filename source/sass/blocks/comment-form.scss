@@ -4,7 +4,12 @@
   border: none;
   margin: 0 auto;
   margin-top: 20px;
-  padding: 0 21px;
+  padding: 0 18px;
+}
+
+.add-comment__wrapper {
+  border: none;
+  padding: 0;
 }
 
 .add-comment__title {
@@ -16,10 +21,10 @@
 
 // Стилизация инпутов
 .add-comment__input {
-  min-height: 158px;
-  min-width: 240px;
-  box-sizing: content-box;
-  margin-bottom: 45px;
+  min-height: 207px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 40px;
 
   @include input-form;
   @include placeholder-style;
@@ -45,7 +50,7 @@
 
   .add-comment__wrapper {
     @include style-border-fieldset;
-    padding: 0 56px;
+    padding: 0 56px 5px;
   }
 
   .add-comment__title {
@@ -57,9 +62,25 @@
     width: 100%;
     min-height: 192px;
     box-sizing: border-box;
+    padding-top: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .add-comment {
+    @include desktop-size;
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 65px;
+  }
 
+  .add-comment__title {
+    margin-bottom: 22px;
+  }
+
+  .add-comment__input {
+    min-height: 130px;
+    padding-top: 15px;
+    margin-bottom: 30px;
+  }
 }
