@@ -10,7 +10,7 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__container">
-                    <div class="main-nav__menu">
+          <div class="main-nav__menu">
             <div class="main-nav__menu-inner">
               <a class="page-header__logo page-header__logo--desk" href="#" aria-label="Логотип мобильного приложения Pink для раскрашивания серых будней в розовый цвет">
                 <!-- <picture>
@@ -59,7 +59,6 @@
                   <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
                 </svg>
               </a>
-
               <button class="main-nav__toggle--open" type="button" aria-label="Открыть меню">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007">
                   <path fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
@@ -94,28 +93,60 @@
     </header>
     <main class="page-form">
       <div class="page-cover">
-        <h1 class="page-cover__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="page-cover__title page-cover__title-form">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
       <form class="main-form" action="https://echo.htmlacademy.ru" method="get" aria-label="Для участия в конкурсе фотографий, заполните пожалуйста форму расположенную ниже.">
-        <p class="main-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="main-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="main-form__title-addition">Пожалуйста, заполните форму ниже:</span></p>
         <section class="data">
           <p class="data__value" aria-label="Обязательное поле для заполнения">
-            <label for="surname" class="data__last-name data__last-name-top">Фамилия:</label>
+            <label for="surname" class="data__info data__last-name">Фамилия:</label>
             <input id="surname" type="text" class="data__input" placeholder="Укажите фамилию *">
           </p>
           <p class="data__value" aria-label="Обязательное поле для заполнения">
-            <label for="name" class="data__first-name data__first-name-top">Имя:</label>
+            <label for="name" class="data__info data__first-name">Имя:</label>
             <input id="name" type="text" class="data__input" placeholder="Введите ваше имя *">
           </p>
           <p class="data__value">
-            <label for="patronym" class="data__patronym data__patronym-top">Отчество:</label>
+            <label for="patronym" class="data__info data__patronym">Отчество:</label>
             <input id="patronym" type="text" class="data__input" placeholder="Ну и отчество тоже">
           </p>
         </section>
         <div class="achievement">
           <fieldset class="achievement__section achievement__section--bg-gray">
-            <legend class="achievement__title title-legend">Ваши безбашенные достижения в путешествии</legend><!-- title-legend - общий стиль для текстового блока, прописываются основные настройки стилей на всей странице -->
-            <ul class="achievement__list">
+            <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend>
+            <div class="achievement__inner">
+              <ul class="achievement__list">
+                <li class="achievement__item">
+                  <input type="checkbox" name="achievement" value="selfie" id="achievement-1" class="visually-hidden achievement__input achievement__input-checkbox" checked>
+                  <label for="achievement-1" class="achievement__label">Сделал селфи с акулой</label>
+                </li>
+                <li class="achievement__item">
+                  <input type="checkbox" name="achievement" value="burnt" id="achievement-2" class="visually-hidden achievement__input achievement__input-checkbox" checked>
+                  <label for="achievement-2" class="achievement__label">Обгорел на пляже</label>
+                </li>
+              </ul>
+              <ul class="achievement__list">
+                <li class="achievement__item">
+                  <input type="checkbox" name="achievement" value="see-star-man" id="achievement-3" class="visually-hidden achievement__input achievement__input-checkbox">
+                  <label for="achievement-3" class="achievement__label">Видел Чака Норриса</label>
+                </li>
+                <li class="achievement__item">
+                  <input type="checkbox" name="achievement" value="buying-gift" id="achievement-4" class="visually-hidden achievement__input achievement__input-checkbox">
+                  <label for="achievement-4" class="achievement__label">Накупил сувениров</label>
+                </li>
+              </ul>
+              <ul class="achievement__list">
+                <li class="achievement__item">
+                  <input type="checkbox" name="achievement" value="hold-tower" id="achievement-5" class="visually-hidden achievement__input achievement__input-checkbox" checked>
+                  <label for="achievement-5" class="achievement__label">Удержал башню</label>
+                </li>
+                <li class="achievement__item">
+                  <input type="checkbox" name="achievement" value="walk-over-hotel" id="achievement-6" class="visually-hidden achievement__input achievement__input-checkbox">
+                  <label for="achievement-6" class="achievement__label">Разгромил отель</label>
+                </li>
+              </ul>
+            </div>
+              <!-- <ul class="achievement__list">
               <li class="achievement__item">
                 <input type="checkbox" name="achievement" value="selfie" id="achievement-1" class="visually-hidden achievement__input achievement__input-checkbox" checked>
                 <label for="achievement-1" class="achievement__label">Сделал селфи с акулой</label>
@@ -140,20 +171,26 @@
                 <input type="checkbox" name="achievement" value="walk-over-hotel" id="achievement-6" class="visually-hidden achievement__input achievement__input-checkbox">
                 <label for="achievement-6" class="achievement__label">Разгромил отель</label>
               </li>
-            </ul>
+            </ul> -->
           </fieldset>
         </div>
         <div class="details-user">
           <fieldset class="details-user__wrapper">
-            <legend class="details-user__title"><!-- details-user__title--hidden -->Контактная информация</legend>
+            <legend class="details-user__title">Контактная информация</legend>
             <ul class="details-user__list">
               <li class="details-user__item">
-                <label for="phone" class="details-user__phone details-user__phone-bottom">Номер телефона</label>
-                <input id="phone" type="phohe" class="details-user__input" placeholder="Номер, пожалуйста">
+                <label for="phone" class="details-user__info details-user__phone">Номер телефона</label>
+                <div class="details-user__input-inner">
+                  <input id="phone" type="phohe" class="details-user__input details-user__input-phone" placeholder="Номер, пожалуйста">
+                  <span class="details-user__icon details-user__icon-phone"></span>
+                </div>
               </li>
               <li class="details-user__item" aria-label="Обязательное поле для заполнения">
-                <label for="mail" class="details-user__mail  details-user__mail-bottom">Адрес почты</label>
-                <input id="mail" type="email" class="details-user__input" placeholder="Введите почту *">
+                <label for="mail" class="details-user__info details-user__mail">Адрес почты</label>
+                <div class="details-user__input-inner">
+                  <input id="mail" type="email" class="details-user__input details-user__input-mail" placeholder="Введите почту *">
+                  <span class="details-user__icon details-user__icon-mail"></span>
+                </div>
               </li>
             </ul>
           </fieldset>
@@ -163,7 +200,7 @@
             <legend class="platform__title">С каким приложением путешествовали?</legend>
             <ul class="platform__list" aria-label="Выберите что-то одно из представленного списка ниже:">
               <li class="platform__item">
-                <input type="radio" id="ios" class="platform__radio platform__input-radio " name="platform-group">
+                <input type="radio" id="ios" class="platform__radio platform__input-radio " name="platform-group" checked>
                 <label class="platform__label" for="ios">Pink для iOS</label>
               </li>
               <li class="platform__item">
@@ -177,15 +214,19 @@
             </ul>
           </fieldset>
         </div>
-        <fieldset class="add-comment">
-          <legend class="add-comment__title title-legend">Опишите свои эмоции</legend>
-          <textarea class="add-comment__input" name="comment" rows="3" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </fieldset>
-        <button class="main-form__btn" type="submit">Отправить форму</button>
-        <p class="main-form__note"><span class="lettering-select">*</span> — обязательные поля</p>
+        <div class="add-comment">
+            <fieldset class="add-comment__wrapper">
+            <legend class="add-comment__title">Опишите свои эмоции</legend>
+            <textarea class="add-comment__input" name="comment" rows="3" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+        </div>
+        <div class="main-form__wrapper-submit-btn">
+          <button class="main-form__btn" type="submit">Отправить форму</button>
+          <p class="main-form__note"><span class="main-form__lettering-select">*</span> — обязательные <span class="main-form__title-accessory">Для заполнения</span> поля</p>
+        </div>
       </form>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer__inner-page">
       <div class="page-footer__logo-wraper">
         <a href="index.html" class="page-footer__logo">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">

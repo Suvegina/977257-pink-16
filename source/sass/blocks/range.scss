@@ -5,7 +5,7 @@
 
 .range__scale {
   width: 240px;
-  height: 2px;
+  height: 1.6px;
   background: $main-color;
 
   // position: relative;
@@ -18,14 +18,13 @@
 // }
 
 .range__toggle {
-
   content: "";
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
 
-  top: -7px;
-  left: 196px;
+  top: -6px;
+  left: 192px;
 
   background: $white-color;
   border: 2px solid $color-element;
@@ -44,10 +43,22 @@
 // }
 
 
-// @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .range__scale {
+    width: 202px;
+  }
+}
 
-// }
+@media (min-width: $desktop-width) {
+  .range__scale {
+    width: 291px;
+  }
 
-// @media (min-width: $desktop-width) {
+  .range__toggle {
+    width: 13px;
+    height: 13px;
 
-// }
+    top: -6px;
+    left: 192px;
+  }
+}

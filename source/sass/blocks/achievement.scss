@@ -1,16 +1,20 @@
-// achievement.scss
+// Чекбоксы на странице с заполнением формы
 
 .achievement {
+  @include mobile-size;
   background-color: $gray-color;
+  box-sizing: border-box;
+  order: -9;
 }
 
 .achievement__section {
   border: none;
+  padding-bottom: 0;
 }
 
 .achievement__title {
   @include style-description;
-  padding: 30px;
+  padding: 37px 30px;
   // padding-bottom: 0;
   text-align: center;
 }
@@ -22,7 +26,7 @@
 }
 
 .achievement__item {
-  margin-bottom: 55px;
+  margin-bottom: 52px;
   padding-left: 70px;
 
   position: relative;
@@ -92,14 +96,56 @@
 }
 
 
-// @media (min-width: $mobile-width) {
+@media (min-width: $tablet-width) {
+  .achievement {
+    @include tablet-size;
+    background-color: #ffffff;
+    padding: 0 20px;
+    order: -6;
+  }
 
-// }
+  .achievement__section {
+    @include style-border-fieldset;
+    margin-bottom: 48px;
+  }
 
-// @media (min-width: $tablet-width) {
+  .achievement__title {
+    @include style-title-legend;
+  }
 
-// }
+  .achievement__item {
+    padding-left: 108px;
+    margin-bottom: 52px;
+  }
 
-// @media (min-width: $desktop-width) {
+  // .achievement__item:nth-child(3) {
+  //   margin-bottom: 60px;
+  // }
+}
 
-// }
+@media (min-width: $desktop-width) {
+  .achievement {
+    @include desktop-size;
+    padding: 0;
+  }
+
+  .achievement__section {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .achievement__title {
+    margin-bottom: 30px;
+  }
+
+  .achievement__inner {
+    padding: 0 56px 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .achievement__item {
+    padding-left: 64px;
+    margin-bottom: 55px;
+  }
+}
