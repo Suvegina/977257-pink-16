@@ -1,5 +1,6 @@
 .main-form {
   display: flex;
+  // flex-direction: column;
   flex-wrap: wrap;
   @include mobile-size;
   font-size: 18px;
@@ -80,7 +81,7 @@
   .main-form__title {
     font-size: 18px;
 
-    padding: 91px 65px 71px;
+    padding: 91px 40px 71px;
     margin: 0 40px auto;
   }
 
@@ -110,6 +111,9 @@
 @media (min-width: $desktop-width) {
   .main-form {
     width: 960px;
+    padding-left: 15px;
+    padding-right: 5px;
+    justify-content: space-between;
   }
 
   .main-form__title {

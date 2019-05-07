@@ -3,7 +3,8 @@
 .achievement {
   @include mobile-size;
   background-color: $gray-color;
-  box-sizing: content-box;
+  box-sizing: border-box;
+  order: -9;
 }
 
 .achievement__section {
@@ -100,6 +101,7 @@
     @include tablet-size;
     background-color: #fff;
     padding: 0 20px;
+    order: -6;
   }
 
   .achievement__section {
@@ -124,5 +126,18 @@
 @media (min-width: $desktop-width) {
   .achievement {
     @include desktop-size;
+    padding: 0;
+  }
+
+  .achievement__title {
+    margin-bottom: 30px;
+  }
+
+  .achievement__inner {
+
+  }
+
+  .achievement__item {
+    margin-bottom: 55px;
   }
 }
