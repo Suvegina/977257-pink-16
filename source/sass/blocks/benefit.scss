@@ -64,7 +64,7 @@
 
   .benefit__wrapper {
     width: 620px;
-    padding-bottom: 14px;
+    padding: 20px 0 14px;
   }
 
   .benefit__inner {
@@ -95,6 +95,10 @@
     padding-top: 35px;
     padding-left: 70px;
     padding-bottom: 55px;
+  }
+
+  .benefit__line-break {
+    display: none;
   }
 
   .benefit__headline {

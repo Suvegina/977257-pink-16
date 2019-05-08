@@ -5,6 +5,7 @@
   justify-content: center;
   background-color: #ffffff;
   margin: 0 auto;
+  margin-bottom: 4px;
   position: relative;
   box-sizing: content-box;
   overflow: hidden;
@@ -22,6 +23,10 @@
 .feedback__slider-content {
   display: flex;
 }
+
+// .feedback__toggles {
+//   padding-right: 35px;
+// }
 
 .feedback__btn-arrow {
   display: none;
@@ -67,23 +72,8 @@
   text-align: center;
   margin: 0 25px;
   margin-bottom: 7px;
-  padding: 0 5px;
+  // padding: 0 5px;
 }
-
-// При позиционировании, нужно задать правильное расположение
-
-// .feedback::before {
-//   content: "";
-//   position: absolute;
-
-//   width: 320px;
-//   height: 123px;
-
-//   top: 0;
-
-//   background-image: url(../../img/bg-triangle-white.svg);
-//   background-repeat: no-repeat;
-// }
 
 .feedback__autr-name {
   display: block;
@@ -91,7 +81,6 @@
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
-  // margin-bottom: 25px;
   padding-bottom: 13px;
 }
 
@@ -124,7 +113,7 @@
   }
 
   // .feedback__list {
-
+  //   padding-bottom: 5px;
   // }
 
   // .feedback__list-inner {
@@ -136,10 +125,6 @@
 
     display: flex;
     flex-direction: column-reverse;
-    // text-align: center;
-    // flex-wrap: wrap;
-    // margin-bottom: 7px;
-    // padding: 0 5px;
   }
 
   .feedback__inner-autr {
@@ -149,17 +134,17 @@
   .feedback__autr-name {
     font-size: 20px;
     font-weight: 700;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
   }
 
   .feedback__autr-info {
     display: block;
-    padding-bottom: 7px;
+    padding-bottom: 10px;
   }
 
   .feedback__text {
     @include caption-style-medium;
-    padding-bottom: 35px;
+    padding-bottom: 37px;
   }
 }
 
@@ -217,7 +202,7 @@
   .feedback__autr-name {
     font-size: 24px;
     font-weight: 700;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
   }
 
   .feedback__autr-info {

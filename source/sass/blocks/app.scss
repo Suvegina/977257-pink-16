@@ -49,7 +49,7 @@
 }
 
 .app__btn-device {
-  width: 250px;
+  width: 283px;
   color: $white-color;
   font-size: 18px;
   font-weight: 700;
@@ -147,8 +147,8 @@
   }
 
   .app__btn-device {
-    width: 269px;
-    padding: 13px;
+    width: 300px;
+    padding: 13px 0;
     margin-top: 30px;
     margin-bottom: 47px;
   }
@@ -203,14 +203,14 @@
 
     @include heading-style-large;
     text-align: center;
-    margin: 0 auto;
+    // margin: 0 auto;
+    margin-left: 35px;
   }
 
   .app__btn-device {
-    width: 270px;
+    width: 300px;
     font-size: 21px;
-    margin-top: 53px;
-    margin-bottom: 65px;
+    margin: 53px 0 65px;
   }
 
   .app__download {

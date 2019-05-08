@@ -7,46 +7,31 @@
   @include visually-hidden;
 }
 
-// .map__mark {
-//   content: "";
-//   position: absolute;
-//   display: block;
+.map__mark {
+  content: "";
+  position: absolute;
+  display: block;
 
-//   top: 1px;
-// }
+  width: 42px;
+  height: 42px;
 
-// .map {
-//   display: block;
-//   margin: 0 auto;
-//   background-image: url(../img/bg-map-mobile@1x.png);
-//   background-repeat: no-repeat;
-//   background-position: center bottom;
-//   z-index: -1;
-// }
+  top: 84%;
+  left: 44%;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+}
 
-// .map__heading {
-//   @include visually-hidden;
-// }
 
-// -----------------------------------------------------------
-// .map::before {
-//   content: "";
-//   position: absolute;
-//   width: 320px;
-//   height: 123px;
+@media (min-width: $tablet-width) {
+  .map__mark {
+    top: 62%;
+    left: 47%;
+  }
+}
 
-//   top: 0;
-
-//   background-image: url(../img/bg-triangle-white-footer.svg);
-//   background-repeat: no-repeat;
-// }
-
-// .map__mark {
-//   display: inline-block;
-// }
-
-// @media (min-width: $tablet-width) {
-// }
-
-// @media (min-width: $desktop-width) {
-// }
+@media (min-width: $desktop-width) {
+  .map__mark {
+    top: 54%;
+    left: 48%;
+  }
+}
