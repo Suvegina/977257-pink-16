@@ -191,12 +191,12 @@
     margin-bottom: 75px;
   }
 
-    .advantages__section {
-      &::before {
-        top: 0;
-        left: 0;
-      }
+  .advantages__section {
+    &::before {
+      top: 0;
+      left: 0;
     }
+  }
 
   .advantages__container {
     width: 960px;
