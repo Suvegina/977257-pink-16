@@ -44,6 +44,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .range {
+    margin-bottom: 0;
+  }
+
   .range__scale {
     width: 202px;
   }
