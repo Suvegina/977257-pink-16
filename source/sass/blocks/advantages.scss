@@ -20,16 +20,14 @@
 }
 
 .advantages__slogan {
-  // margin: 40px 40px 30px 40px;
-  margin: 40px 0 30px 0;
+  margin: 40px 0 28px 0;
 }
 
 .advantages__flag {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .advantages__section {
-  // width: 100%;
   margin: 0 auto;
   background-color: $gray-color;
   box-sizing: border-box;
@@ -37,21 +35,21 @@
   position: relative;
   overflow: hidden;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   display: block;
-  //   margin: 0 auto;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: 0 auto;
 
-  //   min-width: 1200px;
-  //   height: 95px;
+    min-width: 1200px;
+    height: 95px;
 
-  //   top: -70px;
-  //   left: -1px;
+    top: -7%;
+    left: -40%;
 
-  //   background-image: url("../img/bg-triangle-white.svg");
-  //   background-repeat: no-repeat;
-  // }
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__container {
@@ -127,6 +125,7 @@
   .advantages__section {
     &::before {
       top: -30px;
+      left: -1%;
     }
   }
 
@@ -146,11 +145,9 @@
   }
 
   .advantages__wrapper {
-    // width: 265px;
-    // width: 44%;
     order: 0;
     justify-content: flex-end;
-    padding: 20px 10px 0 20px;
+    padding: 20px 10px 0 12px;
   }
 
   .advantages__mobil-screen {
@@ -158,8 +155,6 @@
   }
 
   .advantages__list {
-    // width: 312px;
-    // width: 56%;
 
     display: flex;
     flex-direction: column;
@@ -196,6 +191,13 @@
     margin-bottom: 75px;
   }
 
+  .advantages__section {
+    &::before {
+      top: 0;
+      left: 0;
+    }
+  }
+
   .advantages__container {
     width: 960px;
     flex-wrap: wrap;
@@ -204,9 +206,7 @@
   .advantages__wrapper {
     width: 1200px;
     padding: 0 15px 20px 15px;
-    // padding: 18px 15px 20px 15px;
     justify-content: space-between;
-    // justify-content: space-around;
   }
 
   .advantages__mobil-screen {
@@ -219,7 +219,6 @@
     display: flex;
     flex-direction: row;
     padding-top: 38px;
-    // padding: 0 15px 20px 15px;
     justify-content: space-between;
   }
 
