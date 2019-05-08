@@ -169,6 +169,8 @@
   }
 
   .filter__items:nth-child(1) {
+    padding-top: 8px;
+
     &::before {
       display: none;
     }
@@ -218,10 +220,6 @@
     width: 16px;
     height: 16px;
     padding-left: 7px;
-  }
-
-  .filter__items:nth-child(1) {
-    padding-top: 8px;
   }
 
   .filter__range {
