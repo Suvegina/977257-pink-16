@@ -146,6 +146,10 @@
   background-color: $white-color;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
+
+  &:-ms-input-placeholder {
+    padding-top: 15px;
+  }/* IE */
 }
 
 @mixin input-form-hover {
@@ -169,13 +173,13 @@
   &::-moz-placeholder {
     color: #000000;
     opacity: 1;
-    line-height: 30px;
+    line-height: inherit;
   }/* Firefox 19+ */
 
   &:-moz-placeholder {
     color: #000000;
     opacity: 1;
-    line-height: 30px;
+    line-height: inherit;
   }/* Firefox 18- */
 
   &:-ms-input-placeholder {
@@ -193,5 +197,5 @@
 
 @mixin style-title-legend {
   padding: 10px 30px 10px;
-  margin-bottom: 35px;
+  // margin-bottom: 35px;
 }
