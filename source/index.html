@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк. Главная страница.</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="picturefill-min.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -58,7 +60,6 @@
                   <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
                 </svg>
               </a>
-
               <button class="main-nav__toggle--open" type="button" aria-label="Открыть меню">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007">
                   <path fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
@@ -97,9 +98,11 @@
         <header class="app__header">
           <div class="app__image">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x"><!-- , img/iphone-hand-desktop@2x.png 2x -->
-              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x"><!-- , img/iphone-hand-tablet@2x.png 2x -->
-              <img src="img/iphone-hand-mobile@1x.png"  alt="Мобильное приложение подойдет для любого телефона!"><!-- srcset="img/iphone-hand-mobile@2x.png 2x" -->
+              <!-- [if IE 9]><video style="display: none;"><![endif] -->
+              <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+              <!-- [if IE 9]></video><![endif] -->
+              <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Мобильное приложение подойдет для любого телефона!">
             </picture>
           </div>
           <div class="app__device">
@@ -145,7 +148,7 @@
             <div class="advantages__wrapper">
               <div class="advantages__mobil-screen">
                 <picture>
-                  <source media="(min-width: 1000px)" srcset="img/iphone-screen-1-desktop@1x.png 1x">
+                  <source media="(min-width: 1000px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
                   <img src="img/iphone-screen-mobile@1x-crop.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Обычная фотография серых будней">
                 </picture>
               </div>
@@ -157,9 +160,9 @@
               </div>
               <div class="advantages__mobil-screen advantages__mobil-screen--on-mobile">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x"><!-- , img/iphone-screen-3-desktop@2x.png 2x -->
-                  <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x"><!-- , img/iphone-screen-3-tablet@2x.png 2x -->
-                  <img src="img/iphone-screen-mobile@1x-crop.png" alt="Фотография с нанесением смайла"><!--  srcset="img/iphone-screen-mobile@2x-crop.png 2x" -->
+                  <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                  <img src="img/iphone-screen-mobile@1x-crop.png" alt="Фотография с нанесением смайла" srcset="img/iphone-screen-mobile@2x-crop.png 2x">
                 </picture>
               </div>
             </div>
@@ -331,62 +334,6 @@
             </ul>
           </section>
         </div>
-<!--         <section class="price__content">
-          <table class="price__wrapper">
-            <tr class="price__section">
-              <th class="price__item price__item--hidden"></td>
-              <th class="price__item price__section-base">
-                <b class="price__title">База</b>
-                <p class="price__cost">1,99 USD</p>
-              </td>
-              <th class="price__item price__item-marking">
-                <p class="price__mark">хит</p>
-                <b class="price__title">Стандарт</b>
-                <p class="price__cost">3,99 USD</p>
-              </td>
-              <th class="price__item price__item-unlimited">
-                <b class="price__title">Анлим</b>
-                <p class="price__cost">9,99 USD</p>
-              </td>
-            </tr>
-            <tr class="price__list">
-              <td class="price__list-title price__list-title--hidden">Смайлики</td>
-              <td class="price__list-field price__list-field--hidden">Смайлики
-                <span class="price__list-option-yes"></span>
-              </td>
-              <td class="price__list-field price__list-field--hidden">Смайлики
-                <span class="price__list-option-yes"></span>
-              </td>
-              <td class="price__list-field price__list-field--hidden">Смайлики
-                <span class="price__list-option-yes"></span>
-              </td>
-            </tr>
-            <tr class="price__list">
-              <td class="price__list-title price__list-title--hidden">Розовый фильтр</td>
-              <td class="price__list-field price__list-field--hidden">Розовый фильтр
-                <span class="price__list-option-yes"></span>
-              </td>
-              <td class="price__list-field price__list-field--hidden">Розовый фильтр
-                <span class="price__list-option-yes"></span>
-              </td>
-              <td class="price__list-field price__list-field--hidden">Розовый фильтр
-                <span class="price__list-option-no"></span>
-              </td>
-            </tr>
-            <tr class="price__list">
-              <td class="price__list-title price__list-title--hidden">Комментарии</td>
-              <td class="price__list-field price__list-field--hidden">Комментарии
-                <span class="price__list-option-yes"></span>
-              </td>
-              <td class="price__list-field price__list-field--hidden">Комментарии
-                <span class="price__list-option-no"></span>
-              </td>
-              <td class="price__list-field price__list-field--hidden">Комментарии
-                <span class="price__list-option-no"></span>
-              </td>
-            </tr>
-          </table>
-        </section> -->
         <ul class="price__toggles slider__toggles" aria-label="Кнопки переключение слайдера с тарифами">
           <li class="slider__toggle" aria-label="первый слайд">
             <a href="#"></a>
@@ -424,9 +371,9 @@
           <span class="map__mark"></span>
           <div class="map_container">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x">
-              <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x">
-              <img src="img/bg-map-mobile@1x.png" alt="Фотография с нанесением смайла">
+              <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+              <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Фотография с нанесением смайла">
             </picture>
           </div>
         </section>
