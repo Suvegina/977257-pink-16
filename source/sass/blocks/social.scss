@@ -42,10 +42,6 @@
   }
 }
 
-.social__name-hidden {
-  @include visually-hidden;
-}
-
 
 @media (min-width: $tablet-width) {
   .social__list {

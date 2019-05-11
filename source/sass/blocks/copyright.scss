@@ -26,10 +26,6 @@
   opacity: 0.3;
 }
 
-.copyright__hidden-text {
-  @include visually-hidden;
-}
-
 // @media (min-width: $tablet-width) {
 //   // .copyright__text {
 //   //   padding-bottom: 10px;
