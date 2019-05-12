@@ -184,7 +184,7 @@
   align-items: center;
   box-sizing: content-box;
 
-  min-height: 53px;
+  height: 53px;
   padding: 3px 17px 3px 19px;
   background-color: $white-color;
   border-bottom: 2px solid #e5e5e5;
@@ -255,7 +255,7 @@
   }
 
   .price__list-option {
-    min-height: 43px;
+    height: 43px;
     padding: 0 11px;
   }
 
@@ -415,7 +415,7 @@
     align-items: center;
     box-sizing: content-box;
 
-    min-height: 53px;
+    height: 53px;
     padding: 3px 20px;
     background-color: $white-color;
     border-bottom: 2px solid #e5e5e5;

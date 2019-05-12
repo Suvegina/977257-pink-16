@@ -83,8 +83,13 @@
 
   .details-user__title {
     @include style-title-legend;
-    display: inline-block;
-    margin-bottom: 19px;
+    margin: 0 auto;
+    display: block;
+    // margin-bottom: 19px;
+  }
+
+  .details-user__list {
+    margin-top: 19px;
   }
 
   .details-user__item {
@@ -146,7 +151,7 @@
 @media (min-width: $desktop-width) {
   .details-user {
     @include desktop-size;
-    margin-top: 45px;
+    margin-top: 5px;
     padding: 0;
   }
 
@@ -158,6 +163,7 @@
   .details-user__list {
     display: flex;
     justify-content: space-between;
+    margin-top: 16px;
   }
 
   .details-user__item {
@@ -168,5 +174,9 @@
 
   .details-user__input {
     margin-bottom: 6px;
+  }
+
+  .details-user__info {
+    margin-top: 3px;
   }
 }

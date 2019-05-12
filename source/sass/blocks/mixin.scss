@@ -74,9 +74,6 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 300;
-
-  // padding: 0;
-  // margin: 0;
 }
 
 @mixin caption-style-large {
@@ -84,9 +81,6 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 300;
-
-  // padding: 0;
-  // margin: 0;
 }
 
 // Единый стиль написания заголовков на обложках внутр. страниц
@@ -103,31 +97,17 @@
   display: block;
   font-size: 40px;
   max-width: 740px;
-  // text-align: center;
-  // vertical-align: middle;
   line-height: auto;
-
-  // margin: 0;
-  // padding: 45px 0 45px 0;
-  // color: $main-color;
 }
 
 @mixin page-cover-text-large {
   display: block;
   font-size: 50px;
   max-width: 740px;
-
-  // text-align: center;
-  // vertical-align: middle;
   line-height: auto;
 
-  // margin: 0;
   padding: 180px 0 100px 0;
-  // color: $main-color;
 }
-
-//Общий стиль описания для планшета
-//Общий стиль описания для декстопа
 
 // стиль подписи к блокам формы label / legend
 @mixin style-description {
@@ -146,6 +126,10 @@
   background-color: $white-color;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
+
+  &:-ms-input-placeholder {
+    padding-top: 15px;
+  }/* IE */
 }
 
 @mixin input-form-hover {
@@ -169,13 +153,13 @@
   &::-moz-placeholder {
     color: #000000;
     opacity: 1;
-    line-height: 30px;
+    line-height: inherit;
   }/* Firefox 19+ */
 
   &:-moz-placeholder {
     color: #000000;
     opacity: 1;
-    line-height: 30px;
+    line-height: inherit;
   }/* Firefox 18- */
 
   &:-ms-input-placeholder {
@@ -185,6 +169,7 @@
   }/* IE */
 }
 
+
 // стиль рамок для fieldset
 
 @mixin style-border-fieldset {
@@ -193,5 +178,64 @@
 
 @mixin style-title-legend {
   padding: 10px 30px 10px;
-  margin-bottom: 35px;
+}
+
+
+// Стили для всплывающих окон
+
+@mixin style-popup-headline {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+@mixin style-popup-headline-medium {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+@mixin style-popup-description {
+  font-size: 14px;
+  line-height: 24px;
+  color: $main-color;
+  margin: 0 auto;
+  // margin-bottom: 40px;
+}
+
+@mixin style-popup-description-medium {
+  font-size: 18px;
+}
+
+// Стили для (зеленых) кнопок на странице с формой
+
+@mixin style-btn-form {
+
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 60px;
+  color: $white-color;
+  background-color: $btn-filter-color;
+  border: 2px solid $btn-filter-color;
+  border-radius: 2px;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $btn-filter-main;
+    border: 2px solid $btn-filter-main;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+
+  &:disabled {
+    color: $white-color;
+    background-color: $btn-filter-disabled;
+    border: 2px solid $btn-filter-disabled;
+  }
 }
