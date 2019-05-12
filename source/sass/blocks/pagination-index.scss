@@ -1,10 +1,10 @@
 
 .slider {
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 .slider__toggle {
-  margin: 0 auto;
+  // margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 40px;
 
@@ -42,9 +42,6 @@
   }
 }
 
-// @media (min-width: $mobile-width) {
-
-// }
 
 @media (min-width: $tablet-width) {
   .slider__toggle {

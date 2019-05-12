@@ -33,9 +33,6 @@
   cursor: pointer;
   position: relative;
 
-  // width: 48px;
-  // height: 48px;
-
   path,
   rect {
     fill: $main-color;
@@ -75,7 +72,6 @@
 }
 
 .filter__items--crop .filter__item {
-  // padding-top: 60px;
   padding-left: 15px;
 }
 
