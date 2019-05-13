@@ -5,8 +5,14 @@
 .filter__wraper {
   background-color: $gray-color;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.filter__upload-image {
+  padding-left: 20px;
 }
 
 .filter__caption {
@@ -106,8 +112,10 @@
   }
 
   .filter__wraper {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+
     padding: 58px 32px 53px 20px;
     margin: 0 auto;
   }

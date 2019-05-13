@@ -12,6 +12,7 @@
 }
 
 .feedback__wrapper {
+  width: 320px;
   margin-top: 45px;
 }
 
@@ -23,9 +24,9 @@
   display: flex;
 }
 
-.feedback__toggles {
-  padding-right: 0;
-}
+// .feedback__toggles {
+//   // padding-right: 0;
+// }
 
 .feedback__btn-arrow {
   display: none;
@@ -39,19 +40,18 @@
 }
 
 .feedback__btn-arrow-back {
-  display: none;
   background-image: url("../img/icon-review-arrow-left.svg");
   background-repeat: no-repeat;
 }
 
 .feedback__btn-arrow-next {
-  display: none;
   background-image: url("../img/icon-review-arrow-right.svg");
   background-repeat: no-repeat;
 }
 
 .feedback__btn-arrow-back,
 .feedback__btn-arrow-next {
+  display: none;
   padding: 0;
 
   &:hover,
@@ -96,7 +96,6 @@
   width: 70px;
   list-style: none;
   display: flex;
-  justify-content: center;
   align-items: center;
 
   margin: 0 auto;
@@ -110,6 +109,7 @@
 
   .feedback__wrapper {
     display: flex;
+    width: 660px;
   }
 
   .feedback__item {
@@ -163,12 +163,14 @@
   }
 
   .feedback__wrapper {
+    width: 1200px;
     margin-top: 185px;
+    margin-left: 130px;
     margin-bottom: 36px;
   }
 
   .feedback__list-inner {
-    padding: 0 72px;
+    padding: 0 54px;
   }
 
   .feedback__btn-arrow {
@@ -177,7 +179,7 @@
   }
 
   .feedback__item {
-    max-width: 820px;
+    width: 750px;
   }
 
   .feedback__autr-name {
@@ -192,6 +194,6 @@
 
   .feedback__text {
     display: inline-block;
-    width: 700px;
+    width: 750px;
   }
 }
