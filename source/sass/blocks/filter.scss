@@ -5,8 +5,16 @@
 .filter__wraper {
   background-color: $gray-color;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.filter__upload-image {
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-bottom: 36px;
 }
 
 .filter__caption {
@@ -24,17 +32,9 @@
   margin: 0;
 }
 
-.filter__upload-image {
-  padding-top: 20px;
-  margin-bottom: 36px;
-}
-
 .filter__item {
   cursor: pointer;
   position: relative;
-
-  // width: 48px;
-  // height: 48px;
 
   path,
   rect {
@@ -75,7 +75,6 @@
 }
 
 .filter__items--crop .filter__item {
-  // padding-top: 60px;
   padding-left: 15px;
 }
 
@@ -110,8 +109,10 @@
   }
 
   .filter__wraper {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+
     padding: 58px 32px 53px 20px;
     margin: 0 auto;
   }

@@ -31,8 +31,13 @@
   }
 }
 
-// .page-footer__social {
-// }
+.page-footer__logo--tab {
+  display: block;
+}
+
+.page-footer__logo--desk {
+  display: none;
+}
 
 .page-footer__copyright {
   padding: 40px 0;
@@ -71,5 +76,14 @@
 
   .page-footer__inner-page {
     padding: 33px 0;
+  }
+
+
+  .page-footer__logo--tab {
+    display: none;
+  }
+
+  .page-footer__logo--desk {
+    display: block;
   }
 }
