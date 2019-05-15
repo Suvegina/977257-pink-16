@@ -217,8 +217,9 @@
     display: block;
 
     @include heading-style-large;
+    width: auto;
     text-align: center;
-    margin-left: 35px;
+    // margin-left: 35px;
   }
 
   .app__btn-device {
