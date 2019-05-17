@@ -45,6 +45,7 @@
     "node": "8.15"
   },
   "dependencies": {
+    "del": "^4.1.1",
     "gulp-svgstore": "^7.0.1",
     "npx": "^10.2.0",
     "save-dev": "^2.0.0"
