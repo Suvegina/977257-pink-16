@@ -1,6 +1,6 @@
 .app {
   width: 100%;
-  z-index: -1;
+  // z-index: -1;
   box-sizing: border-box;
   overflow: hidden;
 
@@ -26,7 +26,7 @@
 
   display: flex;
   align-items: flex-end;
-  z-index: -1;
+  // z-index: -1;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -217,8 +217,9 @@
     display: block;
 
     @include heading-style-large;
+    width: auto;
     text-align: center;
-    margin-left: 35px;
+    // margin-left: 35px;
   }
 
   .app__btn-device {
