@@ -33,6 +33,10 @@
   padding: 20px;
 }
 
+.main-nav__menu--extra {
+  padding-bottom: 26px;
+}
+
 .main-nav__menu-inner {
   width: 320px;
   display: flex;
@@ -56,10 +60,15 @@
     display: block;
   }
 
+  .main-nav__menu--extra {
+    padding-bottom: 0;
+  }
+
   .main-nav__menu {
     border-bottom: 1px solid black;
     padding: 29px 20px 40px;
   }
+
 
   .main-nav__menu-inner {
     width: 660px;
@@ -89,7 +98,7 @@
   .main-nav {
     margin: 0 auto;
     padding-top: 25px;
-    padding-bottom: 15px;
+    padding-bottom: 23px;
     background-color: none;
   }
 
