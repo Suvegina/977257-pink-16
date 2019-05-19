@@ -180,7 +180,7 @@
 
 @media (min-width: $desktop-width) {
   .app {
-    height: 871px;
+    height: 867px;
 
     @include desktop-size;
     background-image: url("../img/bg-back-desktop@1x.jpg");
@@ -193,7 +193,7 @@
 
   .app__header {
     width: 960px;
-    height: 871px;
+    height: 867px;
     margin: 0 10px;
     margin-left: 104px;
 
