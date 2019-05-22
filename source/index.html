@@ -67,9 +67,9 @@
           <div class="app__image">
             <picture>
               <!-- Формат webp - начало -->
-              <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x"> -->
+              <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
               <!-- Формат webp - конец -->
               <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
@@ -121,7 +121,7 @@
               <div class="advantages__mobil-screen">
                 <picture>
                   <!-- Формат webp - начало -->
-                  <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x"> -->
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
                   <!-- Формат webp - конец -->
                   <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
                   <img src="img/iphone-screen-mobile@1x-crop.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Обычная фотография серых будней">
@@ -130,7 +130,7 @@
               <div class="advantages__mobil-screen">
                 <picture>
                   <!-- Формат webp - начало -->
-                  <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x"> -->
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
                   <!-- Формат webp - конец -->
                   <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x">
                   <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Фотография в розовом цвете">
@@ -139,9 +139,9 @@
               <div class="advantages__mobil-screen advantages__mobil-screen--on-mobile">
                 <picture>
                   <!-- Формат webp - начало -->
-                  <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/iphone-screen-mobile@1x-crop.webp 1x, img/iphone-screen-mobile@2x-crop.webp 2x"> -->
+                  <source type="image/webp" srcset="img/iphone-screen-mobile@1x-crop.webp 1x, img/iphone-screen-mobile@2x-crop.webp 2x">
                   <!-- Формат webp - конец -->
                   <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
                   <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
@@ -193,7 +193,7 @@
           <h2 class="feedback__heading">Отзывы наших пользователей:</h2>
           <div class="feedback__list slider">
             <div class="feedback__slider-content">
-              <input type="button" class="feedback__btn-arrow feedback__btn-arrow-back">
+              <button type="button" class="feedback__btn-arrow feedback__btn-arrow-back"></button>
               <div class="feedback__list-inner">
                 <blockquote class="feedback__item slider__items">
                   <div class="feedback__inner-autr">
@@ -217,7 +217,7 @@
                   <p class="feedback__text">«Супер приложение! Большинство крутых фишек доступно после оплаты. Но просто побаловаться возможностями приложения вы можете и без внесения денег. (Что меня как студента это радует)»</p>
                 </blockquote>
               </div>
-              <input type="button" class="feedback__btn-arrow feedback__btn-arrow-next">
+              <button type="button" class="feedback__btn-arrow feedback__btn-arrow-next"></button>
             </div>
             <ul class="feedback__toggles slider__toggles" aria-label="Кнопки переключение слайдера с отзывами">
               <li class="slider__toggle slider__toggle--active" aria-label="первый слайд">
@@ -236,7 +236,7 @@
       <div class="price">
         <h2 class="price__heading">Тарифы на покупку приложения Pink</h2>
         <div class="price__wrapper">
-          <section class="price__section price__section-naming">
+          <div class="price__section price__section-naming">
             <ul class="price__list">
               <li class="price__list-option">
                 <p class="price__list-field">Розовый фильтр</p>
@@ -248,8 +248,8 @@
                 <p class="price__list-field">Комментарии</p>
               </li>
             </ul>
-          </section>
-          <section class="price__section price__section-base">
+          </div>
+          <div class="price__section price__section-base">
             <div class="price__item">
               <div class="price__description">
                 <b class="price__title">База</b>
@@ -270,8 +270,8 @@
                 <span class="price__list-option-no"></span>
               </li>
             </ul>
-          </section>
-          <section class="price__section price__section-standard">
+          </div>
+          <div class="price__section price__section-standard">
             <div class="price__item price__item-marking">
               <p class="price__mark">ХИТ</p>
               <div class="price__description">
@@ -293,8 +293,8 @@
                 <span class="price__list-option-no"></span>
               </li>
             </ul>
-          </section>
-          <section class="price__section price__section-unlimited">
+          </div>
+          <div class="price__section price__section-unlimited">
             <div class="price__item">
               <div class="price__description">
                 <b class="price__title">Анлим</b>
@@ -315,7 +315,7 @@
                 <span class="price__list-option-yes"></span>
               </li>
             </ul>
-          </section>
+          </div>
         </div>
         <ul class="price__toggles slider__toggles" aria-label="Кнопки переключение слайдера с тарифами">
           <li class="slider__toggle" aria-label="первый слайд">
