@@ -109,6 +109,10 @@
   color: $main-color;
 }
 
+.advantages__line-break {
+  display: none;
+}
+
 
 @media (min-width: $tablet-width) {
   .advantages {
@@ -168,6 +172,10 @@
     width: 322px;
     text-align: left;
     padding-bottom: 3px;
+  }
+
+  .advantages__line-break {
+    display: block;
   }
 }
 
@@ -239,5 +247,9 @@
     text-align: center;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .advantages__line-break {
+    display: none;
   }
 }
