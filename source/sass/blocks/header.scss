@@ -16,11 +16,13 @@
 
 .main-nav__toggle--open,
 .main-nav__toggle--close {
-  display: block;
+  display: none;
+  padding: 0;
+  margin-right: 20px;
+
   fill: $white-color;
   border: none;
   background: none;
-  padding: 0;
 }
 
 .main-nav__toggle--open {
@@ -50,12 +52,6 @@
 
 .main-nav__toggle {
   right: 20px;
-}
-
-.main-nav__toggle--open,
-.main-nav__toggle--close {
-  display: none;
-  margin-right: 20px;
 }
 
 .main-nav__menu {
