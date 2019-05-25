@@ -28,7 +28,6 @@
   display: none;
 }
 
-.page-header__logo,
 .main-nav__toggle--open,
 .main-nav__toggle--close {
   &:hover path,
@@ -43,30 +42,51 @@
 
 .page-header__logo {
   margin-left: 20px;
+}
 
-  &:active path {
-    fill: $active-color;
-  }
+
+// Стилизация логотипа
+
+.page-header__logo:hover .page-header__logo-color path,
+.page-header__logo:focus .page-header__logo-color path,
+.page-header__logo:hover .page-header__logo-decor path,
+.page-header__logo:focus .page-header__logo-decor path {
+  fill: $color-element;
+}
+
+.page-header__logo:active .page-header__logo-color path,
+.page-header__logo:active .page-header__logo-decor path {
+  opacity: 0.3;
+}
+
+.page-header__logo:active .page-header__logo-color path {
+  fill: $white-color;
+}
+
+.page-header__logo:active .page-header__logo-decor path {
+  fill: $color-element;
 }
 
 
 // убираем интерактивность логотипа На главной странице
 
-.page-header__logo--disabled {
-  &:hover,
-  &:focus,
-  &:active {
-    opacity: 1;
-
-    .page-header__logo-color {
-      fill: $white-color;
-    }
-
-    .page-header__logo-decor {
-      fill: $color-element;
-    }
-  }
+.page-header__logo--disabled:hover .page-header__logo-color path,
+.page-header__logo--disabled:focus .page-header__logo-color path,
+.page-header__logo--disabled:active .page-header__logo-color path,
+.page-header__logo--disabled:active .page-header__logo-color path {
+  fill: $white-color;
+  opacity: 1;
 }
+
+// ... и его элемента
+
+.page-header__logo--disabled:hover .page-header__logo-decor path,
+.page-header__logo--disabled:focus .page-header__logo-decor path,
+.page-header__logo--disabled:active .page-header__logo-decor path {
+  fill: $color-element;
+  opacity: 1;
+}
+
 
 .main-nav__toggle {
   right: 20px;
@@ -120,7 +140,7 @@
   }
 
   .page-header__logo {
-    margin-left: 18px;
+    margin-left: 30px;
   }
 
   .page-header__logo-mob,
@@ -137,7 +157,7 @@
   }
 
   .main-nav {
-    @include desktop-size;
+    // @include desktop-size;
     margin: 0 auto;
     padding-top: 25px;
     padding-bottom: 23px;
