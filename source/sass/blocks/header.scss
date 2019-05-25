@@ -22,14 +22,7 @@
   fill: $white-color;
   border: none;
   background: none;
-}
 
-.main-nav__toggle--open {
-  display: none;
-}
-
-.main-nav__toggle--open,
-.main-nav__toggle--close {
   &:hover path,
   &:focus path {
     fill: $color-element;
@@ -38,6 +31,10 @@
   &:active path {
     fill: $active-color-element;
   }
+}
+
+.main-nav__toggle--open {
+  display: none;
 }
 
 .page-header__logo {
@@ -72,7 +69,6 @@
 
 .page-header__logo--disabled:hover .page-header__logo-color path,
 .page-header__logo--disabled:focus .page-header__logo-color path,
-.page-header__logo--disabled:active .page-header__logo-color path,
 .page-header__logo--disabled:active .page-header__logo-color path {
   fill: $white-color;
   opacity: 1;
