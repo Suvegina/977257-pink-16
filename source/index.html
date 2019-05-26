@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+<!--     <link rel="mask-icon" href="ico/htmlacademy-favicon.svg">
+    <link rel="apple-touch-icon" href="ico/htmlacademy-adaptive-touch-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="ico/htmlacademy-adaptive-favicon.ico"> -->
     <title>HTML Academy: Пинк. Главная страница.</title>
     <link href="css/style.min.css" rel="stylesheet">
   </head>
@@ -139,7 +142,7 @@
       </section>
       <section class="advantages">
         <h2 class="advantages__heading">Наши преимущества</h2>
-        <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+        <p class="advantages__slogan">Устали от серости<br class="advantages__slogan-break"> мегаполиса?</p>
         <p class="advantages__flag">Нам есть, что вам<br>предложить!</p>
         <div class="advantages__section">
           <div class="advantages__container">
@@ -362,15 +365,15 @@
             <ul class="main-contacts__contact">
               <li class="main-contacts__item">
                 <p class="main-contacts__title">Звоните:</p>
-                <a href="tel:+78125556666" class="main-contacts__link">+7 (812) 555-66-66</a>
+                <a href="tel:+78125556666" class="main-contacts__link main-contacts__link--style">+7 (812) 555-66-66</a>
               </li>
               <li class="main-contacts__item">
                 <p class="main-contacts__title">Пишите:</p>
-                <a href="mailto:mail@htmlacademy.ru" class="main-contacts__link">mail@htmlacademy.ru</a>
+                <a href="mailto:mail@htmlacademy.ru" class="main-contacts__link main-contacts__link--style">mail@htmlacademy.ru</a>
               </li>
               <li class="main-contacts__item">
                 <p class="main-contacts__title">Приезжайте в гости:</p>
-                <p class="main-contacts__link">ул. Большая Конюшенная, 19/8</p>
+                <p class="main-contacts__link main-contacts__link--style">ул. Большая Конюшенная, 19/8</p>
               </li>
             </ul>
           </div>
@@ -379,11 +382,12 @@
           <h2 class="map__heading">Наш офис на карте</h2>
           <span class="map__mark"></span>
           <div class="map_container">
-            <picture>
+            <!-- <picture>
               <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
               <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Фотография с нанесением смайла">
-            </picture>
+            </picture> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558860182654!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </section>
       </div>
@@ -444,7 +448,7 @@
           </li>
           <li class="social__item">
             <a href="https://www.youtube.com/htmlacademy" class="social__link social__link--youtube" aria-label="Youtube">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.64x" height="13.96" viewBox="0 0 14.64 13.96">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.64" height="13.96" viewBox="0 0 14.64 13.96">
                 <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"></path>
               </svg>
             </a>

@@ -1,5 +1,4 @@
 .price {
-  @include mobile-size;
   padding-top: 88px;
   padding-bottom: 5px;
   overflow: hidden;
@@ -12,7 +11,6 @@
   flex-wrap: nowrap;
 
   background-color: $gray-color;
-  // z-index: -1;
   position: relative;
 
   &::before {
@@ -37,21 +35,31 @@
 }
 
 .price__wrapper {
+  position: relative;
+  left: -262px;
+
   height: 280px;
   margin-bottom: 16px;
-  display: flex;
-  position: relative;
-}
-
-
-.price__section {
-  content: "";
-  width: 276px;
-  position: absolute;
-  overflow: auto;
   margin: 0 auto;
 
-  border: 2px solid #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.price__section {
+
+  width: 276px;
+  overflow: hidden;
+
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 276px;
+
+  border: 1px solid #e5e5e5;
   border-top: none;
   border-bottom: none;
 }
@@ -61,16 +69,17 @@
 }
 
 .price__section-base {
-  left: -258px;
+  // left: -258px;
 }
 
 .price__section-standard {
-  left: 20px;
+  // left: 20px;
   z-index: 1;
+  // position: relative;
 }
 
 .price__section-unlimited {
-  right: -256px;
+  // right: -256px;
 }
 
 .price__item {
@@ -79,7 +88,6 @@
   background: $main-color;
   position: relative;
   overflow: hidden;
-  border-radius: 3px;
 
   // &:nth-child(1) {
   //   border-radius: 3px 0 0 3px;
@@ -161,8 +169,9 @@
   display: flex;
   align-items: center;
 
-  margin: 0 auto;
   padding: 0;
+  margin: 0 auto;
+  margin-top: 18px;
 }
 
 .price__list {
@@ -175,6 +184,7 @@
   margin: 0;
   padding-left: 3px;
   text-transform: uppercase;
+  letter-spacing: 0.3px;
 }
 
 .price__list-option {
@@ -216,7 +226,7 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    @include tablet-size;
+    // @include tablet-size;
     padding-top: 85px;
     padding-bottom: 0;
 
@@ -244,7 +254,8 @@
 
   .price__section {
     content: "";
-    width: 152px;
+    width: 153px;
+    flex-basis: 152px;
     position: static;
     margin: 0;
 
@@ -264,6 +275,10 @@
 
   .price__mark {
     padding-top: 0;
+  }
+
+  .price__item {
+    border-radius: 3px;
   }
 
   .price__item-marking {
@@ -309,7 +324,7 @@
 
 @media (min-width: $desktop-width) {
   .price {
-    @include desktop-size;
+    // @include desktop-size;
     padding-top: 146px;
 
     &::before {
@@ -322,11 +337,12 @@
     height: 280px;
     margin-bottom: 96px;
     padding-left: 19px;
-    margin-left: 107px; //Убираю центрирование, потому что в IE показывает контент прилипшим к краю
+    // margin-left: 107px; //Убираю центрирование, потому что в IE показывает контент прилипшим к краю
   }
 
   .price__section {
     width: 235px;
+    flex-basis: 235px;
 
     border: 1px solid #e5e5e5;
     border-top: none;

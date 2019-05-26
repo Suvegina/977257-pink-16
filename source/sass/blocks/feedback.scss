@@ -13,7 +13,7 @@
 
 .feedback__wrapper {
   width: 320px;
-  margin-top: 45px;
+  margin-top: 40px;
 }
 
 .feedback__heading {
@@ -71,8 +71,8 @@
 
 .feedback__item {
   text-align: center;
-  margin: 0 25px;
-  margin-bottom: 7px;
+  margin: 0 20px;
+  margin-bottom: 10px;
 }
 
 .feedback__autr-name {
@@ -90,6 +90,8 @@
 
 .feedback__text {
   @include caption-style;
+
+  letter-spacing: 0.3px;
 }
 
 .feedback__toggles {
@@ -132,12 +134,14 @@
 
   .feedback__autr-info {
     display: block;
-    padding-bottom: 10px;
+    letter-spacing: 0.36px;
+    padding-bottom: 12px;
   }
 
   .feedback__text {
     @include caption-style-medium;
-    padding-bottom: 37px;
+    letter-spacing: 0.36px;
+    padding-bottom: 35px;
   }
 }
 
