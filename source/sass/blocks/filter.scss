@@ -16,6 +16,7 @@
 
 .filter__caption {
   @include caption-style;
+  letter-spacing: 0.3px;
   margin: 26px 20px 40px;
 }
 
