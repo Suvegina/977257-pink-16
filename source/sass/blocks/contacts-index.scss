@@ -24,7 +24,7 @@
   content: "";
   position: relative;
   display: block;
-  top: 0;
+  // top: 0;
   top: -68px;
 
   &::before {
@@ -104,10 +104,10 @@
     text-decoration: none;
 
     text-shadow:
-    -1px -1px white,
-    -1px 1px white,
-    1px -1px white,
-    1px 1px white;
+      -1px -1px white,
+      -1px 1px white,
+      1px -1px white,
+      1px 1px white;
     // border-bottom: 1px solid $main-color;
   }
 
@@ -127,7 +127,7 @@
     background-size: 1px 1em;
     box-shadow:
       inset 0 -0.175em white,
-      inset 0 -0.2em #000;
+      inset 0 -0.2em #000000;
   }
 
   &:active {
@@ -233,6 +233,13 @@
   }
 
   .main-contacts__map {
-    top: -260px;
+    height: 867px;
+    top: 0;
+
+    &::before {
+      top: -1px;
+      transform: scaleX(1.3);
+      // height: 115px;
+    }
   }
 }

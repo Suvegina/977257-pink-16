@@ -39,8 +39,11 @@
 }
 
 @media (min-width: $desktop-width) {
-//   .map__mark {
-//     top: 54%;
-//     left: 48%;
-//   }
+  .map_container iframe {
+    height: 580px;
+  }
+  // .map__mark {
+  //   top: 54%;
+  //   left: 48%;
+  // }
 }

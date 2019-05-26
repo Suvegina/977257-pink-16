@@ -39,8 +39,8 @@
   left: -262px;
 
   height: 280px;
-  margin-bottom: 16px;
   margin: 0 auto;
+  margin-bottom: 16px;
 
   display: flex;
   flex-direction: row;
@@ -330,6 +330,7 @@
     &::before {
       top: -2px;
       left: 0;
+      transform: scaleX(1.3);
     }
   }
 

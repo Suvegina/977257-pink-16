@@ -159,7 +159,7 @@
       width: 78px;
       height: 65px;
 
-      top: 16%;
+      top: 17%;
       left: 47%;
       background-image: url("../img/icon-quotes.svg");
       background-repeat: no-repeat;
@@ -168,9 +168,12 @@
 
   .feedback__wrapper {
     width: 1200px;
-    margin-top: 185px;
-    margin-left: 15px;
-    margin-bottom: 36px;
+    padding-top: 145px;
+    padding-bottom: 36px;
+  }
+
+  .feedback__list {
+    margin: 0 auto;
   }
 
   .feedback__list-inner {
@@ -199,6 +202,7 @@
   .feedback__text {
     display: inline-block;
     width: 750px;
+    padding-bottom: 38px;
     letter-spacing: 0.35px;
   }
 }

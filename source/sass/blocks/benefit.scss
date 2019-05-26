@@ -53,6 +53,10 @@
   padding-bottom: 15px;
 }
 
+.benefit__desk-break {
+  display: none;
+}
+
 .benefit__link {
   color: $color-element;
 }
@@ -122,7 +126,7 @@
     padding-bottom: 30px;
   }
 
-  // .timer__wrapper {
-
-  // }
+  .benefit__desk-break {
+    display: block;
+  }
 }
