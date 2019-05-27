@@ -6,7 +6,7 @@
 .slider__toggle {
   margin: 0 auto;
   margin-top: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 
   display: flex;
   align-items: center;
@@ -42,10 +42,17 @@
   }
 }
 
+// .slider__toggle--feedback {
+//   margin-bottom: 5px;
+// }
+
+// .slider__toggle--price {
+//   margin-bottom: 5px;
+// }
 
 @media (min-width: $tablet-width) {
   .slider__toggle {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 

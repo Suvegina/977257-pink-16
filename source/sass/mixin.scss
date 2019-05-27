@@ -27,7 +27,8 @@
 }
 
 @mixin desktop-size {
-  width: 960px;
+  width: 1200px;
+  // width: 960px;
   margin: 0 auto;
 }
 
@@ -112,12 +113,13 @@
 // стиль подписи к блокам формы label / legend
 @mixin style-description {
   display: block;
-  padding: 20px 0 10px 0;
   font-size: 14px;
   line-height: 18px;
   font-weight: 300;
+  padding: 20px 0 10px 0;
   text-transform: uppercase;
   color: $color-element;
+  letter-spacing: 0.3px;
 }
 
 // // стиль полей для ввода

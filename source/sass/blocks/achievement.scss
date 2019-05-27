@@ -19,10 +19,13 @@
   text-align: center;
 }
 
+.achievement__inner {
+  padding: 0;
+  margin: 0;
+}
+
 .achievement__list {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .achievement__item {
@@ -55,10 +58,10 @@
     position: absolute;
     display: inline-block;
 
-    width: 31px;
-    height: 31px;
+    width: 34px;
+    height: 34px;
 
-    // top: 0px;
+    top: -3px;
     left: -64px;
 
     border: 2px solid #e5e5e5;
@@ -71,6 +74,10 @@
   &::before {
     @include input-form-hover;
   }
+}
+
+.achievement__input-checkbox + .achievement__label:focus {
+  outline: 1px;
 }
 
 .achievement__input-checkbox + .achievement__label:active {
@@ -87,8 +94,8 @@
     width: 22px;
     height: 16px;
 
-    top: 9px;
-    left: -57px;
+    top: 7px;
+    left: -56px;
 
     background-image: url("../img/icon-yes-check.svg");
     background-repeat: no-repeat;
@@ -144,7 +151,7 @@
   }
 
   .achievement__inner {
-    padding: 0 56px 5px;
+    padding: 0 64px 5px;
     margin-top: 1px;
     margin-bottom: 0;
     display: flex;
@@ -152,7 +159,19 @@
   }
 
   .achievement__item {
-    padding-left: 64px;
+    padding-left: 50px;
     margin-bottom: 55px;
+  }
+
+  .achievement__input-checkbox + .achievement__label {
+    &::before {
+      left: -56px;
+    }
+  }
+
+  .achievement__input-checkbox:checked + .achievement__label {
+    &::after {
+      left: -49px;
+    }
   }
 }

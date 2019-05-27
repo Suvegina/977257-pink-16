@@ -23,6 +23,7 @@
 
 .page-cover__title {
   @include heading-style;
+  width: 300px;
   text-align: center;
   padding: 35px 40px;
   vertical-align: 0;

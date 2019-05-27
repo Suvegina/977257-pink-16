@@ -1,6 +1,6 @@
 .price {
-  padding-top: 88px;
-  padding-bottom: 5px;
+  // padding-top: 88px;
+  padding-bottom: 35px;
   overflow: hidden;
   list-style: none;
 
@@ -15,18 +15,18 @@
 
   &::before {
     content: "";
-    position: absolute;
+    position: relative;
     display: block;
     margin: 0 auto;
 
-    width: 1200px;
+    width: 100%;
     height: 95px;
 
-    top: -13%;
-    left: -40%;
+    top: -40px;
 
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -36,11 +36,12 @@
 
 .price__wrapper {
   position: relative;
-  left: -262px;
+  // left: -257px;
+  overflow: hidden;
+  width: 320px;
 
   height: 280px;
-  margin: 0 auto;
-  margin-bottom: 16px;
+  margin: 25px auto 16px;
 
   display: flex;
   flex-direction: row;
@@ -51,7 +52,7 @@
 }
 
 .price__section {
-
+  position: relative;
   width: 276px;
   overflow: hidden;
 
@@ -69,17 +70,17 @@
 }
 
 .price__section-base {
-  // left: -258px;
+  left: -258px;
 }
 
 .price__section-standard {
-  // left: 20px;
+  left: -258px;
   z-index: 1;
   // position: relative;
 }
 
 .price__section-unlimited {
-  // right: -256px;
+  left: -258px;
 }
 
 .price__item {
@@ -171,7 +172,6 @@
 
   padding: 0;
   margin: 0 auto;
-  margin-top: 18px;
 }
 
 .price__list {
@@ -226,19 +226,19 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    // @include tablet-size;
-    padding-top: 85px;
+    padding-top: 93px;
     padding-bottom: 0;
 
     &::before {
-      top: -11%;
-      left: 0;
+      position: absolute;
+      top: -22px;
     }
   }
 
   .price__wrapper {
     margin: 0 auto;
     // width: 100%;
+    width: 620px;
     height: 220px;
     display: flex;
     align-items: flex-end;
