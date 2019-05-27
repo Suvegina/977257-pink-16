@@ -335,6 +335,7 @@
   }
 
   .price__wrapper {
+    width: 940px;
     height: 280px;
     margin-bottom: 96px;
     padding-left: 19px;
@@ -343,7 +344,7 @@
 
   .price__section {
     width: 235px;
-    flex-basis: 235px;
+    flex-basis: 234px;
 
     border: 1px solid #e5e5e5;
     border-top: none;
@@ -389,7 +390,7 @@
   }
 
   .price__title {
-    padding-top: 19px;
+    padding-top: 15px;
     display: block;
     font-size: 18px;
     font-weight: 700;
