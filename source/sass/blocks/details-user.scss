@@ -8,8 +8,8 @@
 
 .details-user__wrapper {
   border: none;
-  padding-top: 9px;
-  margin-bottom: 27px;
+  padding: 10px 17px 10px;
+  margin-bottom: 32px;
 }
 
 .details-user__title {
@@ -29,7 +29,7 @@
 .details-user__mail,
 .details-user__phone {
   @include style-description;
-  padding-bottom: 8px;
+  padding-bottom: 5px;
   margin-left: 20px;
   font-size: 14px;
   line-height: 30px;
@@ -44,14 +44,14 @@
 .details-user__input {
   @include input-form;
   @include placeholder-style;
-  min-width: 240px;
+  width: 238px;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: $main-color;
     outline: none;
   }
 
+  &:focus,
   &:active {
     border-color: $color-element;
     outline: none;
@@ -66,8 +66,7 @@
 
 @media (min-width: $tablet-width) {
   .details-user {
-    @include tablet-size;
-    padding: 0 20px;
+    width: 625px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 45px;
@@ -151,7 +150,7 @@
 @media (min-width: $desktop-width) {
   .details-user {
     @include desktop-size;
-    margin-top: 5px;
+    // margin-top: 5px;
     padding: 0;
   }
 

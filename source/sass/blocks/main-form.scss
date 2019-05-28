@@ -1,9 +1,8 @@
 .main-form {
   display: flex;
-  // flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: column;
+  // flex-wrap: wrap;
 
-  @include mobile-size;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -16,9 +15,11 @@
   order: -10;
 
   @include page-cover-text;
+  @include mobile-size;
   font-size: 14px;
   font-weight: 300;
-  padding: 50px 20px 18px;
+  padding: 47px 20px 21px;
+  letter-spacing: 0.3px;
 }
 
 .main-form__title-addition,
@@ -26,15 +27,15 @@
   display: none;
 }
 
-// .main-form__submit-btn {
-
-// }
+.main-form__wrapper-submit-btn {
+  margin: 0 auto;
+}
 
 .main-form__btn {
   font-size: 18px;
   font-weight: 700;
   padding: 20px 46px;
-  margin-left: 20px;
+  // margin-left: 20px;
 
   background-color: $btn-filter-color;
   border: 2px solid $btn-filter-color;
@@ -70,22 +71,26 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  // margin-left: 20px;
   padding: 34px 0 15px;
 }
 
 
 @media (min-width: $tablet-width) {
   .main-form {
-    @include tablet-size;
     align-content: center;
     justify-content: space-between;
+    box-sizing: border-box;
   }
 
   .main-form__title {
+    // @include $tablet-size;
+    width: 600px;
     font-size: 18px;
+    letter-spacing: 0.35px;
 
-    padding: 91px 40px 71px;
-    margin: 0 40px auto;
+    padding: 88px 40px 71px;
+    margin: 0 auto;
   }
 
   .main-form__title-addition {
@@ -93,8 +98,8 @@
   }
 
   .main-form__wrapper-submit-btn {
-    width: 100%;
-    margin: 0 20px;
+    width: 620px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,15 +118,16 @@
 
 @media (min-width: $desktop-width) {
   .main-form {
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 960px;
     padding-left: 10px;
     padding-right: 5px;
   }
 
   .main-form__title {
-    padding-right: 45px;
-    padding-left: 45px;
-    padding-bottom: 62px;
+    width: 880px;
+    padding: 93px 45px 62px;
   }
 
   .main-form__title-accessory {
@@ -130,5 +136,10 @@
 
   .main-form__wrapper-submit-btn {
     margin: 0;
+    width: 1200px;
+  }
+
+  .main-form__note {
+    padding-right: 5px;
   }
 }

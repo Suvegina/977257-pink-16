@@ -1,6 +1,7 @@
 .data {
   @include mobile-size;
-  margin: 0 20px 40px 20px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
   box-sizing: border-box;
   order: -9;
 }
@@ -13,8 +14,7 @@
 .data__info {
   @include style-description;
   display: inline-block;
-  margin-left: 20px;
-  // width: 210px;
+  margin-left: 22px;
 }
 
 // Стилизация инпутов
@@ -25,11 +25,11 @@
   width: 100%;
   margin-bottom: 3px;
 
-  &:hover,
-  &:focus {
+  &:hover {
     @include input-form-hover;
   }
 
+  &:focus,
   &:active {
     @include input-form-active;
   }
@@ -38,8 +38,8 @@
 @media (min-width: $tablet-width) {
   .data {
     @include tablet-size;
-    min-height: 293px;
-    margin: 0 20px 46px;
+    height: 297px;
+    margin: 0 auto 46px;
 
     display: flex;
     flex-direction: column;
@@ -72,7 +72,8 @@
     // @include desktop-size;
     width: 436px;
     min-height: 293px;
-    padding-right: 30px;
+    padding-right: 0;
+    padding-left: 0;
     margin: 0;
     margin-top: 22px;
     margin-bottom: 45px;

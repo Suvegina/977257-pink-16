@@ -2,14 +2,13 @@
 
 .platform {
   order: -8;
-
-  @include mobile-size;
   padding-top: 19px;
   background-color: $gray-color;
   box-sizing: border-box;
 }
 
 .platform__wrapper {
+  @include mobile-size;
   border: none;
   padding-bottom: 0;
 }
@@ -62,7 +61,7 @@
     height: 32px;
 
     top: -1px;
-    left: -64px;
+    left: -68px;
 
     border: 2px solid #e5e5e5;
     background-color: $white-color;
@@ -71,7 +70,7 @@
     &:hover,
     &:focus {
       border-color: $main-color;
-      outline: none;
+      // outline: none;
     }
 
     &:active {
@@ -81,14 +80,21 @@
   }
 }
 
-.platform__input-radio + .platform__label:hover,
-.platform__input-radio + .platform__label:focus {
+.platform__input-radio:focus + .platform__label {
+  &::before {
+    outline: $color-element auto 3px;
+    outline-style: solid;
+  }
+}
+
+.platform__input-radio + .platform__label:hover {
   &::before {
     border-color: $main-color;
     outline: none;
   }
 }
 
+.platform__input-radio + .platform__label:focus,
 .platform__input-radio + .platform__label:active {
   &::before {
     border-color: $color-element;
@@ -105,7 +111,7 @@
     height: 16px;
 
     top: 9px;
-    left: -54px;
+    left: -58px;
 
     background-color: $color-element;
     border-radius: 50%;
@@ -115,17 +121,19 @@
 
 @media (min-width: $tablet-width) {
   .platform {
-    @include tablet-size;
     background-color: #ffffff;
     padding: 0 20px;
   }
 
   .platform__wrapper {
+    width: 620px;
+
     @include style-border-fieldset;
   }
 
   .platform__title {
     @include style-title-legend;
+    padding: 10px 30px 8px;
   }
 
   .platform__list {
@@ -140,13 +148,14 @@
     &::before {
       width: 34px;
       height: 34px;
+      left: -56px;
     }
   }
 
   .platform__input-radio:checked + .platform__label {
     &::after {
       top: 10px;
-      left: -53px;
+      left: -45px;
     }
   }
 
@@ -173,12 +182,16 @@
   .platform {
     width: 460px;
     min-height: 293px;
-    padding-right: 0;
+    // padding-right: 0;
     margin: 0;
   }
 
+  .platform__wrapper {
+    width: 435px;
+  }
+
   .platform__item {
-    padding-left: 122px;
+    padding-left: 117px;
   }
 
   .platform__input-radio + .platform__label {
@@ -191,7 +204,7 @@
   .platform__input-radio:checked + .platform__label {
     &::after {
       top: 10px;
-      left: -53px;
+      left: -45px;
     }
   }
 }

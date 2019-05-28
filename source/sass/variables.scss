@@ -5,6 +5,7 @@ $main-color: rgb(40, 54, 69);
 $main-color-element: rgba(40, 54, 69, 0.1);
 $main-color-underlay: rgba(40, 54, 69, 0.3);
 $main-color-menu: rgba(0, 0, 0, 0.3);
+$main-color-dark: rgb(29, 38, 46);
 
 $color-element: rgb(210, 40, 86);
 $active-color-element: rgba(210, 40, 86, 0.3);
@@ -27,7 +28,9 @@ $color-title-addvantages: #000000;
 $mobile-width: 320px;
 $tablet-width: 660px;
 $desktop-width: 1200px;
+// $desktop-width: 960px;
 $width-for-gadget: 1199px;
+// $width-for-gadget: 959px;
 $width-only-for-mobile: 559px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

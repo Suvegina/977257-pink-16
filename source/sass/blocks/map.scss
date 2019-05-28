@@ -6,31 +6,40 @@
   @include visually-hidden;
 }
 
-.map__mark {
-  content: "";
-  position: absolute;
-  display: block;
+// ------------------------
 
-  width: 42px;
-  height: 42px;
-
-  top: 84%;
-  left: 44%;
-  background-image: url("../img/icon-map-marker.svg");
-  background-repeat: no-repeat;
+.map_container iframe {
+  width: 100%;
+  height: 400px;
 }
+
+// .map__mark {
+//   content: "";
+//   position: absolute;
+//   display: block;
+
+//   width: 42px;
+//   height: 42px;
+
+//   top: 84%;
+//   left: 44%;
+//   background-image: url("../img/icon-map-marker.svg");
+//   background-repeat: no-repeat;
+// }
 
 
 @media (min-width: $tablet-width) {
-  .map__mark {
-    top: 62%;
-    left: 47%;
+  .map_container iframe {
+    height: 530px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .map__mark {
-    top: 54%;
-    left: 48%;
+  .map_container iframe {
+    height: 580px;
   }
+  // .map__mark {
+  //   top: 54%;
+  //   left: 48%;
+  // }
 }

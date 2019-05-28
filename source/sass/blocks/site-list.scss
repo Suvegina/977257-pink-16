@@ -3,6 +3,7 @@
   list-style: none;
   text-transform: uppercase;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .site-list__item {
@@ -56,7 +57,7 @@
   .site-list__item {
     border-top: none;
     border-bottom: none;
-    margin-left: 45px;
+    margin-left: 42px;
 
     & a {
       font-weight: 400;
@@ -67,6 +68,11 @@
         font-weight: 400;
       }
     }
+  }
+
+  .site-list__item:nth-last-child(1) {
+    padding-right: 10px;
+    // margin-right: 10px;
   }
 
   // для десктопного меню

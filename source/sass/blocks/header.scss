@@ -1,11 +1,28 @@
 .page-header {
-  @include mobile-size;
+  width: 100%;
   background-color: $main-color;
   position: relative;
   z-index: 1;
+  margin: 0 auto;
+  // box-sizing: content-box;
+  box-sizing: border-box;
 }
 
-.page-header__logo {
+.page-header__logo-desk,
+.page-header__logo-tab {
+  display: none;
+}
+
+.main-nav__toggle--open,
+.main-nav__toggle--close {
+  display: none;
+  padding: 0;
+  margin-right: 20px;
+
+  fill: $white-color;
+  border: none;
+  background: none;
+
   &:hover path,
   &:focus path {
     fill: $color-element;
@@ -16,30 +33,70 @@
   }
 }
 
-.page-header__logo--desk,
-.page-header__logo--tab {
-  display: none;
-}
-
 .main-nav__toggle--open {
   display: none;
 }
 
+.page-header__logo {
+  margin-left: 20px;
+}
+
+
+// Стилизация логотипа
+
+.page-header__logo:hover .page-header__logo-color path,
+.page-header__logo:focus .page-header__logo-color path,
+.page-header__logo:hover .page-header__logo-decor path,
+.page-header__logo:focus .page-header__logo-decor path {
+  fill: $color-element;
+}
+
+.page-header__logo:active .page-header__logo-color path,
+.page-header__logo:active .page-header__logo-decor path {
+  opacity: 0.3;
+}
+
+.page-header__logo:active .page-header__logo-color path {
+  fill: $white-color;
+}
+
+.page-header__logo:active .page-header__logo-decor path {
+  fill: $color-element;
+}
+
+
+// убираем интерактивность логотипа На главной странице
+
+.page-header__logo--disabled:hover .page-header__logo-color path,
+.page-header__logo--disabled:focus .page-header__logo-color path,
+.page-header__logo--disabled:active .page-header__logo-color path {
+  fill: $white-color;
+  opacity: 1;
+}
+
+// ... и его элемента
+
+.page-header__logo--disabled:hover .page-header__logo-decor path,
+.page-header__logo--disabled:focus .page-header__logo-decor path,
+.page-header__logo--disabled:active .page-header__logo-decor path {
+  fill: $color-element;
+  opacity: 1;
+}
+
+
+.main-nav__toggle {
+  right: 20px;
+}
+
 .main-nav__menu {
-  display: flex;
-
-  justify-content: flex-start;
-  border-bottom: 1px solid black;
-  padding: 20px;
-}
-
-.main-nav__menu--extra {
-  padding-bottom: 26px;
-}
-
-.main-nav__menu-inner {
   width: 320px;
+  margin: 0 auto;
+  padding: 20px 0;
+
   display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  box-sizing: content-box;
 }
 
 .main-nav__list {
@@ -49,45 +106,45 @@
 
 @media (min-width: $tablet-width) and (max-width: $width-for-gadget) {
   .page-header {
-    @include tablet-size;
+    width: 100%;
   }
 
-  .page-header__logo--mob {
+  .page-header__logo-mob {
     display: none;
   }
 
-  .page-header__logo--tab {
+  .page-header__logo-tab {
     display: block;
   }
 
-  .main-nav__menu--extra {
-    padding-bottom: 0;
-  }
-
   .main-nav__menu {
+    width: 660px;
     border-bottom: 1px solid black;
-    padding: 29px 20px 40px;
+    padding-top: 29px;
+    padding-bottom: 40px;
   }
 
-
-  .main-nav__menu-inner {
-    width: 660px;
+  .main-nav__toggle--close {
+    padding-top: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    @include desktop-size;
     position: relative;
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  .page-header__logo--mob,
-  .page-header__logo--tab {
+  .page-header__logo {
+    margin-left: 10px;
+  }
+
+  .page-header__logo-mob,
+  .page-header__logo-tab {
     display: none;
   }
 
-  .page-header__logo--desk {
+  .page-header__logo-desk {
     display: block;
   }
 
@@ -96,6 +153,7 @@
   }
 
   .main-nav {
+    // @include desktop-size;
     margin: 0 auto;
     padding-top: 25px;
     padding-bottom: 23px;
@@ -103,7 +161,7 @@
   }
 
   .main-nav__container {
-    width: 980px;
+    width: 960px;
     margin: 0 auto;
 
     display: flex;
@@ -114,11 +172,12 @@
   .main-nav__menu {
     width: 200px;
     border-bottom: none;
-    padding-left: 20px;
+    // padding-left: 20px;
     padding-top: 0;
+    margin-left: 0;
   }
 
-  .main-nav__menu-inner {
-    width: 1200px;
+  .main-nav__toggle {
+    display: none;
   }
 }

@@ -1,33 +1,37 @@
 // Чекбоксы на странице с заполнением формы
 
 .achievement {
-  @include mobile-size;
+  width: 100%;
   background-color: $gray-color;
   box-sizing: border-box;
   order: -9;
 }
 
 .achievement__section {
+  @include mobile-size;
   border: none;
   padding-bottom: 0;
 }
 
 .achievement__title {
   @include style-description;
-  padding: 37px 30px;
+  padding: 38px 30px;
   // padding-bottom: 0;
   text-align: center;
 }
 
+.achievement__inner {
+  padding: 0;
+  margin: 0;
+}
+
 .achievement__list {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .achievement__item {
   margin-bottom: 52px;
-  padding-left: 70px;
+  padding-left: 75px;
 
   position: relative;
   display: block;
@@ -55,14 +59,21 @@
     position: absolute;
     display: inline-block;
 
-    width: 31px;
-    height: 31px;
+    width: 34px;
+    height: 34px;
 
-    // top: 0px;
-    left: -64px;
+    top: -3px;
+    left: -68px;
 
     border: 2px solid #e5e5e5;
     background-color: $white-color;
+  }
+}
+
+.achievement__input-checkbox:focus + .achievement__label {
+  &::before {
+    outline: $color-element auto 3px;
+    outline-style: solid;
   }
 }
 
@@ -71,6 +82,10 @@
   &::before {
     @include input-form-hover;
   }
+}
+
+.achievement__input-checkbox + .achievement__label:focus {
+  outline: 1px;
 }
 
 .achievement__input-checkbox + .achievement__label:active {
@@ -87,14 +102,18 @@
     width: 22px;
     height: 16px;
 
-    top: 9px;
-    left: -57px;
+    top: 7px;
+    left: -58px;
 
     background-image: url("../img/icon-yes-check.svg");
     background-repeat: no-repeat;
   }
 }
 
+// .achievement__input-checkbox:disabled + .disable,
+// .achievement__input-checkbox:disabled + .disabled::before {
+//   opacity: 0.3;
+// }
 
 @media (min-width: $tablet-width) {
   .achievement {
@@ -105,8 +124,10 @@
   }
 
   .achievement__section {
+    width: 100%;
+
     @include style-border-fieldset;
-    margin-bottom: 48px;
+    margin-bottom: 30px;
   }
 
   .achievement__title {
@@ -119,13 +140,21 @@
   }
 
   .achievement__item {
-    padding-left: 108px;
+    padding-left: 105px;
     margin-bottom: 52px;
   }
 
-  // .achievement__item:nth-child(3) {
-  //   margin-bottom: 60px;
-  // }
+  .achievement__input-checkbox + .achievement__label {
+    &::before {
+      left: -60px;
+    }
+  }
+
+  .achievement__input-checkbox:checked + .achievement__label {
+    &::after {
+      left: -52px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -137,6 +166,7 @@
   .achievement__section {
     padding-right: 0;
     padding-left: 0;
+    margin-bottom: 44px;
   }
 
   .achievement__title {
@@ -144,14 +174,27 @@
   }
 
   .achievement__inner {
-    padding: 0 56px 5px;
+    padding: 0 64px 5px;
     margin-top: 1px;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
   }
 
   .achievement__item {
-    padding-left: 64px;
+    padding-left: 50px;
     margin-bottom: 55px;
+  }
+
+  .achievement__input-checkbox + .achievement__label {
+    &::before {
+      left: -56px;
+    }
+  }
+
+  .achievement__input-checkbox:checked + .achievement__label {
+    &::after {
+      left: -49px;
+    }
   }
 }
