@@ -5,13 +5,12 @@
 }
 
 .main-contacts__content {
-  background-color: #ffffff;
   @include mobile-size;
+  background-color: #ffffff;
 }
 
 .main-contacts__wraper {
   background-color: #ffffff;
-  // width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -20,16 +19,13 @@
 .map__decor {
   width: 100%;
   position: relative;
-  // bottom: 10px;
   top: 0;
-  // top: 124px;
   z-index: 2;
 }
 
 .main-contacts__map {
   width: 100%;
   height: 277px;
-  // height: 400px;
   overflow: hidden;
   content: "";
   position: relative;
@@ -55,7 +51,7 @@
   //   z-index: 2;
   // }
 
-// -------------------------
+  // -------------------------
 
   // &::before {
   //   content: "";

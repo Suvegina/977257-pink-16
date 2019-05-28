@@ -108,13 +108,7 @@
 
 
 @media (min-width: $tablet-width) {
-  // .filter {
-  // }
-
-  // .filter__wraper {
-  // }
-
-.filter__content {
+  .filter__content {
     width: 605px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -122,7 +116,7 @@
 
     padding: 58px 32px 53px 20px;
     margin: 0 auto;
-}
+  }
 
   .filter__caption {
     @include caption-style-medium;

@@ -114,6 +114,7 @@
 
   .achievement__section {
     width: 100%;
+
     @include style-border-fieldset;
     margin-bottom: 30px;
   }
