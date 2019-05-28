@@ -45,7 +45,7 @@
     height: 442px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: top;
-    background-size: inherit;
+    // background-size: inherit;
     background-color: $main-color;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -57,10 +57,15 @@
     @include heading-style-large;
     padding: 35px 40px;
     padding-top: 65px;
+    width: auto;
   }
 
   .page-cover__title-form {
+    display: block;
+    width: 600px;
     padding-top: 130px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

@@ -14,7 +14,7 @@
 
 .add-comment__title {
   text-align: center;
-  padding: 40px 0 16px 0;
+  padding: 40px 0 16px;
   margin: 0 auto;
 
   @include style-description;
@@ -43,9 +43,9 @@
 
 @media (min-width: $tablet-width) {
   .add-comment {
-    @include tablet-size;
+    width: 625px;
     box-sizing: content-box;
-    padding: 0 20px;
+    padding: 0;
     margin-bottom: 66px;
   }
 

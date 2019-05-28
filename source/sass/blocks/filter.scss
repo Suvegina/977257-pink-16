@@ -1,9 +1,13 @@
 .filter {
-  @include mobile-size;
+  width: 100%;
 }
 
 .filter__wraper {
   background-color: $gray-color;
+}
+
+.filter__content {
+  @include mobile-size;
   display: flex;
   flex-direction: column;
 }
@@ -16,8 +20,10 @@
 
 .filter__caption {
   @include caption-style;
+  display: block;
+  width: 280px;
   letter-spacing: 0.3px;
-  margin: 26px 20px 40px;
+  margin: 26px auto 40px;
 }
 
 .filter__edit {
@@ -102,22 +108,26 @@
 
 
 @media (min-width: $tablet-width) {
-  .filter {
-    @include tablet-size;
-  }
+  // .filter {
+  // }
 
-  .filter__wraper {
+  // .filter__wraper {
+  // }
+
+.filter__content {
+    width: 605px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
     padding: 58px 32px 53px 20px;
     margin: 0 auto;
-  }
+}
 
   .filter__caption {
     @include caption-style-medium;
     margin: 46px 69px 69px;
+    width: auto;
   }
 
   .filter__setting {
@@ -211,15 +221,14 @@
 
 @media (min-width: $desktop-width) {
   .filter {
-    @include desktop-size;
     margin-bottom: 31px;
   }
 
-  .filter__wraper {
+  .filter__content {
     width: 940px;
     display: flex;
     justify-content: space-between;
-    padding: 58px 60px 53px 80px;
+    padding: 55px 60px 53px 80px;
     box-sizing: border-box;
   }
 
