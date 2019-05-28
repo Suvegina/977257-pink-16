@@ -80,14 +80,21 @@
   }
 }
 
-.platform__input-radio + .platform__label:hover,
-.platform__input-radio + .platform__label:focus {
+.platform__input-radio:focus + .platform__label {
+  &::before {
+    outline: $color-element auto 3px;
+    outline-style: solid;
+  }
+}
+
+.platform__input-radio + .platform__label:hover {
   &::before {
     border-color: $main-color;
     outline: none;
   }
 }
 
+.platform__input-radio + .platform__label:focus,
 .platform__input-radio + .platform__label:active {
   &::before {
     border-color: $color-element;

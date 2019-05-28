@@ -25,11 +25,11 @@
   width: 100%;
   margin-bottom: 3px;
 
-  &:hover,
-  &:focus {
+  &:hover {
     @include input-form-hover;
   }
 
+  &:focus,
   &:active {
     @include input-form-active;
   }

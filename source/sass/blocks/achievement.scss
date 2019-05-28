@@ -70,6 +70,13 @@
   }
 }
 
+.achievement__input-checkbox:focus + .achievement__label {
+  &::before {
+    outline: $color-element auto 3px;
+    outline-style: solid;
+  }
+}
+
 .achievement__input-checkbox + .achievement__label:hover,
 .achievement__input-checkbox + .achievement__label:focus {
   &::before {
@@ -103,6 +110,10 @@
   }
 }
 
+// .achievement__input-checkbox:disabled + .disable,
+// .achievement__input-checkbox:disabled + .disabled::before {
+//   opacity: 0.3;
+// }
 
 @media (min-width: $tablet-width) {
   .achievement {

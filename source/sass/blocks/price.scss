@@ -22,9 +22,10 @@
     width: 100%;
     height: 95px;
 
-    top: -40px;
+    top: -1px;
 
     background-image: url("../img/bg-triangle-white.svg");
+    background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -36,7 +37,6 @@
 
 .price__wrapper {
   position: relative;
-  // left: -257px;
   overflow: hidden;
   width: 320px;
 
@@ -76,7 +76,6 @@
 .price__section-standard {
   left: -258px;
   z-index: 1;
-  // position: relative;
 }
 
 .price__section-unlimited {
@@ -89,14 +88,6 @@
   background: $main-color;
   position: relative;
   overflow: hidden;
-
-  // &:nth-child(1) {
-  //   border-radius: 3px 0 0 3px;
-  // }
-
-  // &:nth-child(3) {
-  //   border-radius: 0 3px 3px 0;
-  // }
 }
 
 .price__item-marking {
@@ -231,7 +222,7 @@
 
     &::before {
       position: absolute;
-      top: -22px;
+      // top: -22px;
     }
   }
 
@@ -325,12 +316,12 @@
 @media (min-width: $desktop-width) {
   .price {
     // @include desktop-size;
-    padding-top: 146px;
+    padding-top: 152px;
 
     &::before {
       top: -2px;
       left: 0;
-      transform: scaleX(1.3);
+      transform: scaleX(1.2);
     }
   }
 

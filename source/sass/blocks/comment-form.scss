@@ -30,11 +30,11 @@
   @include input-form;
   @include placeholder-style;
 
-  &:hover,
-  &:focus {
+  &:hover {
     @include input-form-hover;
   }
 
+  &:focus,
   &:active {
     @include input-form-active;
   }

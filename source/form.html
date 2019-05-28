@@ -96,11 +96,11 @@
         <section class="data">
           <p class="data__value" aria-label="Обязательное поле для заполнения">
             <label for="surname" class="data__info data__last-name">Фамилия:</label>
-            <input id="surname" type="text" class="data__input" placeholder="Укажите фамилию *">
+            <input id="surname" type="text" class="data__input" placeholder="Укажите фамилию *" required>
           </p>
           <p class="data__value" aria-label="Обязательное поле для заполнения">
             <label for="name" class="data__info data__first-name">Имя:</label>
-            <input id="name" type="text" class="data__input" placeholder="Введите ваше имя *">
+            <input id="name" type="text" class="data__input" placeholder="Введите ваше имя *" required>
           </p>
           <p class="data__value">
             <label for="patronym" class="data__info data__patronym">Отчество:</label>
@@ -158,7 +158,7 @@
               <li class="details-user__item" aria-label="Обязательное поле для заполнения">
                 <label for="mail" class="details-user__info details-user__mail">Адрес почты</label>
                 <div class="details-user__input-inner">
-                  <input id="mail" type="email" class="details-user__input details-user__input-mail" placeholder="Введите почту *">
+                  <input id="mail" type="email" class="details-user__input details-user__input-mail" placeholder="Введите почту *" required>
                   <span class="details-user__icon details-user__icon-mail"></span>
                 </div>
               </li>
