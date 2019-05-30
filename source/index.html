@@ -59,7 +59,7 @@
               </svg>
             </div>
             <!-- Кнопка открытия меню -->
-            <button class="main-nav__toggle main-nav__toggle--open" type="button" aria-label="Открыть меню">
+            <button class="main-nav__toggle main-nav__toggle--open show" type="button" aria-label="Открыть меню">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49.945" height="24.007" viewBox="0 0 49.945 24.007">
                 <path fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"></path>
                 <path fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"></path>
@@ -268,7 +268,7 @@
       </div>
       <div class="price">
         <h2 class="price__heading">Тарифы на покупку приложения Pink</h2>
-        <div class="price__wrapper">
+        <div class="price__wrapper slider">
           <div class="price__section price__section-naming">
             <ul class="price__list">
               <li class="price__list-option">
@@ -476,5 +476,13 @@
       </div>
     </footer>
     <script src="js/picturefill.js"></script>
+    <script type="text/javascript">
+      document.querySelector('.main-nav__toggle--open').addEventListener('click', menuToggle);
+      document.querySelector('.main-nav__toggle--close').addEventListener('click', menuToggle);
+      function menuToggle() {
+      document.querySelector('.main-nav__wrapper').classList.toggle('show');
+      document.querySelector('.main-nav__toggle--open').classList.toggle('show');
+      document.querySelector('.main-nav__toggle--close').classList.toggle('show');}
+    </script>
   </body>
 </html>
