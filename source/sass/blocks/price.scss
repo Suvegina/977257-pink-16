@@ -234,7 +234,7 @@
     align-items: flex-end;
     position: static;
     margin-bottom: 73px;
-    padding: 0 20px;
+    // padding: 0 20px;
   }
 
   .price__section-naming,
@@ -314,7 +314,6 @@
 
 @media (min-width: $desktop-width) {
   .price {
-    // @include desktop-size;
     padding-top: 152px;
 
     &::before {
@@ -328,8 +327,6 @@
     width: 940px;
     height: 280px;
     margin-bottom: 96px;
-    padding-left: 19px;
-    // margin-left: 107px; //Убираю центрирование, потому что в IE показывает контент прилипшим к краю
   }
 
   .price__section {

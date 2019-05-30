@@ -111,7 +111,7 @@
 
 @media (min-width: $tablet-width) {
   .app {
-    height: 730px;
+    height: 727px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: top center;
@@ -125,7 +125,7 @@
 
   .app__header {
     @include tablet-size;
-    height: 730px;
+    height: 727px;
     display: flex;
     justify-content: flex-end;
     padding: 0 20px;
