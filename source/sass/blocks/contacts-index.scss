@@ -118,19 +118,13 @@
 
 @media (min-width: $tablet-width) {
   .main-contacts {
-    // @include tablet-size;
-    height: 776px;
-
-    // &::before {
-    //   top: 45%;
-    //   left: -38%;
-    // }
+    height: 773px;
   }
 
   .main-contacts__headline {
     @include heading-style-medium;
     width: 400px;
-    padding-top: 46px;
+    padding-top: 42px;
     padding-bottom: 39px;
   }
 
