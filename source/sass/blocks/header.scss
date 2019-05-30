@@ -1,11 +1,15 @@
 .page-header {
   width: 100%;
-  background-color: $main-color;
   position: relative;
+  background-color: $main-color-menu;
   z-index: 1;
   margin: 0 auto;
-  // box-sizing: content-box;
   box-sizing: border-box;
+  border-bottom: 1px solid black;
+}
+
+.page-header--bg-gray {
+  background-color: $main-color;
 }
 
 .page-header__logo-desk,
@@ -32,14 +36,6 @@
     fill: $active-color-element;
   }
 }
-
-// .main-nav__toggle--open {
-//   display: none;
-// }
-
-// .main-nav__toggle--close {
-//   display: none;
-// }
 
 .page-header__logo {
   margin-left: 20px;
@@ -99,7 +95,6 @@
 
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
   box-sizing: content-box;
 }
 
@@ -138,11 +133,12 @@
 
   .main-nav__menu {
     width: 660px;
-    border-bottom: 1px solid black;
+    // border-bottom: 1px solid black;
     padding-top: 29px;
     padding-bottom: 40px;
   }
 
+  .main-nav__toggle--open,
   .main-nav__toggle--close {
     padding-top: 15px;
   }
@@ -169,6 +165,10 @@
 
   .page-main {
     margin-top: -120px;
+  }
+
+  .main-nav__wrapper {
+    display: block;
   }
 
   .main-nav {
