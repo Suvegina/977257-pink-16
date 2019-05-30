@@ -40,8 +40,7 @@
   overflow: hidden;
   width: 320px;
 
-  height: 280px;
-  margin: 25px auto 16px;
+  margin: 20px auto 16px;
 
   display: flex;
   flex-direction: row;
@@ -70,16 +69,16 @@
 }
 
 .price__section-base {
-  left: -258px;
+  left: -255px;
 }
 
 .price__section-standard {
-  left: -258px;
+  left: -255px;
   z-index: 1;
 }
 
 .price__section-unlimited {
-  left: -258px;
+  left: -255px;
 }
 
 .price__item {
